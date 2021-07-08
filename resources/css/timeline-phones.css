@@ -1,0 +1,54 @@
+
+@media screen and (max-width: 640px) {
+	.time-content {
+		padding: 0.5em;
+	}
+	.time-content .lang {
+		right: 0.75em;
+	}
+	.time-content .lang span {
+		font-size: 12px;
+	}
+	.time-content .year div {
+		margin: 0;
+	}
+	.time-content .year ul {
+		margin: 0;
+		left: 0;
+	}
+	.time-content .event:before {
+		left: 0;
+	}
+	.time-content .event dt {
+		width: 100%;
+	}
+	.time-content .event dd {
+		width: 100%;
+	}
+	.time-content .event li:nth-child(odd) dt {
+		text-align: left;
+	}
+	.time-content .event li:nth-child(odd) dt:after {
+		right: auto;
+		left: -0.4em;
+	}
+	.time-content .event li:nth-child(odd) dd {
+		margin: 0;
+	}
+	.time-content .event li:nth-child(even) dt {
+		float: left;
+	}
+	.time-content .event li:nth-child(even) dt:after {
+		left: -0.4em;
+	}
+	.time-content .event li:nth-child(even) dd {
+		float: left;
+		margin: 0;
+	}
+	
+	.codrops-demos a {
+		display: inline-block;
+		margin: 0.3em;
+		padding: 0.5em 0.7em;
+	}
+}
