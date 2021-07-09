@@ -1,0 +1,158 @@
+/* --- 導航選單 --- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: solid 1px #ebebeb;
+}
+
+#nav-toggle, .hamMenu {
+    display: none;
+}
+
+.udnLogo {
+    display: block;
+    overflow: hidden;
+    width: 143px;
+    height: 48px;
+    padding: 8px 0;
+}
+
+.headerInner {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    margin-left: auto;
+}
+.menu a {
+    padding-right: 36px;
+    line-height: 1;
+}
+.menu a:nth-of-type(6) {
+    padding-right: 24px;
+}
+.menu a:last-child {
+    padding-right: 0;
+    padding-left: 24px;
+    border-left: solid 1px #e0e0e0;
+}
+@media (max-width: 1199px) {
+    .udnLogo {
+        margin-left: 24px;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .ham {
+        position: relative;
+        width: 24px;
+        height: 18px;
+        display: block;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .ham-origin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .hambar {
+        height: 2px;
+        width: 24px;
+        position: absolute;
+        background: #212121;
+        margin: -1px 0 0 -13px;
+        transition: all .5s;
+    }
+    .hambar-top {
+        transform: translateY(-8px);
+    }
+    .hambar-bottom {
+        transform: translateY(8px);
+    }
+    #nav-toggle:checked ~ .ham .hambar-middle {
+        opacity: 0;
+    }
+    #nav-toggle:checked ~ .ham .hambar-top {
+        transform: rotate(45deg);
+    }
+    #nav-toggle:checked ~ .ham .hambar-bottom {
+        transform: rotate(135deg);
+    }
+    
+    .hamMenu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 1;
+        opacity: 0.5;
+        transition: all 500ms ease-in;
+    }
+    #nav-toggle:checked ~ .hamMenu {
+        left: 0;
+        opacity: 1;
+    }
+    .hamMenu .ham-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-bottom: solid 1px #ebebeb;
+    }
+    .hamMenu .ham-header .udnLogo {
+        margin: 0;
+    }
+    .hamMenu .ham-header .hamMenuLogin {
+        position: absolute;
+        right: 30px;
+        font-size: 18px;
+        color: #616161;
+    }
+    .hamMenu .ham-header .hamMenuLogin:hover {
+        color: #ee6700;
+    }
+    .hamMenu .ham-body > a {
+        display: block;
+        font-size: 24px;
+        line-height: 1.5;
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    .hamMenu .ham-body .mobileMenuLogo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 80%;
+        height: auto;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 767px) {
+    .udnLogo {
+        width: 119px;
+        height: 40px;
+    }
+
+    .hamMenu .ham-header .hamMenuLogin{
+        right: 16px;
+        font-size: 16px;
+    }
+    .hamMenu .ham-body > a {
+        margin-top: 36px;
+        font-size: 20px;
+    }
+}

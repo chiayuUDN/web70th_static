@@ -1,11 +1,13 @@
 body {
-  font-family: Roboto, 'Noto Sans TC', sans-serif;
+  font-family: NotoSansCJKtc, Roboto, 'Noto Sans TC', sans-serif;
   color: #212121;
   margin: 0px;
   padding: 0px;
 }
+ul {
+  margin: 0;
+}
 .container {
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
   max-width: 1280px;
@@ -18,90 +20,26 @@ a:hover {
   color: #ee6700;
 }
 
-/* --- 導航選單 --- */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 64px;
-  border-bottom: solid 1px #ebebeb;
-}
-.udnLogo {
-  width: 143px;
-  height: 48px;
-}
-.headerInner {
-  display: flex;
-  font-size: 20px;
-}
-.headerInner > ul {
-  width: 100%;
-  list-style: none;
-  text-align: right;
-}
-.headerInner > ul > li{
-  display: inline;
-  padding-left: 24px;
-}
-
 /* data 區塊開始 */
 .main {
-  margin-top: 64px;
+  margin-top: 65px;
 }
 
-footer {
-  background-image: url(../img/imgFooterBg.png);
-  font-size: 20px;
-  line-height: 1.2;
-  color: #444;
-}
-.footerContent {
-  padding: 82px 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.footerContent .infoText, .footerContent .udngroupText{
-  width: 50%;
-}
-.footerContent .udngroupText {
-  text-align: right;
-  color: #616161;
-  letter-spacing: normal;
-}
 @media (max-width: 1199px) {
   .container {
-    margin-right: 30px;
-    margin-left: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-
-  .footerContent {
-    padding: 40px 0;
-  }
-  .footerContent .infoText, .footerContent .udngroupText{
-    width: 100%;
-  }
-  .footerContent .udngroupText {
-    margin-top: 40px;
-    text-align: left;
-  }
+  
 }
 
 @media (max-width: 767px) {
   .container {
-    margin-right: 16px;
-    margin-left: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
-  footer {
-    font-size: 14px;
-  }
-  .footerContent {
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-  .footerContent .udngroupText {
-    margin-top: 20px;
-    color: #212121;
+  .main {
+    margin-top: 57px;
   }
 }

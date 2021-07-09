@@ -11,53 +11,18 @@
 </head>
 <body>
     <!-- 桌機頁首導航選單 開始 -->
-    <header>
-        <div class="headerInner container">
-            <a href="http://localhost:8080/"><img class="udnLogo" src="./resources/img/udnLogo.png" alt=""></a>
-            <ul>
-                <li>
-                    <a href="http://localhost:8080/#activiti" class="scroller active" title="最新消息" hashtag="#activiti">最新消息</a>
-                </li>
-                <li>
-                    <a href="http://localhost:8080/#knowUDN" class="scroller" title="認識聯合報系" hashtag="#knowUDN">認識聯合報系</a>
-                </li>
-                <li>
-                    <a href="http://localhost:8080/#mediaFeature" class="scroller" title="新媒體發展"hashtag="#mediaFeature">媒體發展</a>
-                </li>
-                <li>
-                    <a href="http://localhost:8080/#businessMap" class="scroller" title="事業版圖" hashtag="#businessMap">事業版圖</a>
-                </li>
-                <li>
-                    <a href="http://localhost:8080/#subscribe" class="scroller" title="加入會員" hashtag="#subscribe">加入會員</a>
-                </li>
-                <li>
-                    <a href="http://localhost:8080/#joinUs" class="scroller" title="人才招募" hashtag="#joinUs">人才招募</a>
-                </li>
-                <span class="demarcationLogin"></span>
-                <span><a href="http://localhost:8080/#" class="textLogin">員工登入</a></span>
-            </ul>
-        </div>
-    </header>
+    <header w3-include-html="header/header.html"></header>
     <!-- 桌機業首導航選單 結束   -->
 
     <!-- data 區塊開始 -->
     <div class="main">
         <!-- 第一分類為輪播 -->
+        
         <!-- 最新活動輪播 BN 區塊 開始 -->
         <div class="slideShow" w3-include-html="views/slideShow.html"></div>
     </div>
 
-    <footer>
-		<div class="footerContent container">
-            <div class="infoText">
-                <a href="tel:+886-2-8692-5588">聯絡我們</a>｜
-                <a href="http://localhost:8080/information/map">交通位置</a>｜
-                <a href="http://www.udngroup.com/members/udn_privacy">隱私權聲明</a>｜
-                <a href="http://localhost:8080/#">English</a>
-            </div>
-            <div class="udngroupText">聯合報系 著作權所有 © udngroup.com All Rights Reserved.</div>
-		</div>
-	</footer>
+    <footer w3-include-html="footer/footer.html"></footer>
 </body>
 
 <script>
