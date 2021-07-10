@@ -1,6 +1,25 @@
-.articlePageContent{
-  margin: 20px auto;
-  max-width: 1280px;
-  padding: 0 30px;
-  overflow: hidden;
-  }
+.large-category-article { /* 大分類文章 */
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.secend-category-article { /* 二分類文章 */
+    display: none;
+}
+.third-category-article { /* 三分類文章 */
+
+}
+.fourth-category-article { /* 四分類文章 */
+
+}
+
+.showArticle {
+    display: block;
+}
+
+@media (max-width: 1199px) {
+  
+}
+
+@media (max-width: 767px) {
+  
+}
