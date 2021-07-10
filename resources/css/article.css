@@ -1,3 +1,32 @@
+/* 二分類 */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.tabs .tab {
+    position: relative;
+    margin: 0 18px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+.tabs .tab.selected {
+    border-bottom: #ee6700 3px solid;
+}
+.tabs .tab.selected::before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #ee6700 transparent transparent transparent;
+}
+
 .large-category-article { /* 大分類文章 */
     padding-top: 80px;
     padding-bottom: 80px;
@@ -16,10 +45,16 @@
     display: block;
 }
 
+
 @media (max-width: 1199px) {
-  
+    .large-category-article {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    } 
 }
 
 @media (max-width: 767px) {
-  
+    .tabs .tab {
+        font-size: 14px;
+    }
 }
