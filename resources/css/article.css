@@ -29,7 +29,23 @@
 .tabs-3th {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+}
+.tabs-3th .tab {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 12px;
+    padding: 12px 16px;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    background-color: var(--gray-c3);
+    border-radius: 21px;
+}
+.tabs-3th .tab.selected {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .large-category-article { /* 大分類文章 */
@@ -40,7 +56,7 @@
     display: none;
 }
 .third-category-article { /* 三分類文章 */
-
+    display: none;
 }
 .fourth-category-article { /* 四分類文章 */
 
@@ -59,6 +75,12 @@
 }
 
 @media (max-width: 767px) {
+    .tabs-2th {
+        margin-bottom: 38px;
+    }
+    .tabs-3th {
+        margin-bottom: 20px;
+    }
     .tabs .tab {
         font-size: 18px;
     }
