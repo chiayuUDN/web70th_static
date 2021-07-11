@@ -47,6 +47,10 @@ header {
     border-left: solid 1px var(--gray-c3);
 }
 
+.menu a.active {
+    color: var(--orange);
+}
+
 @media (max-width: 1199px) {
     .udnLogo {
         margin-left: 24px;

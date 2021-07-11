@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="32" viewBox="0 0 108 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <path fill="#D1311C" d="M0 0H108V32H0z" transform="translate(-354.000000, -579.000000) translate(109.000000, 120.000000) translate(245.000000, 459.000000)"/>
+                    <text fill="#FFF" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC" font-size="16" transform="translate(-354.000000, -579.000000) translate(109.000000, 120.000000) translate(245.000000, 459.000000)">
+                        <tspan x="6" y="25">聯合報數位版</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

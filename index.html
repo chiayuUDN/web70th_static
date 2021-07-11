@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="./resources/css/_var.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/article.css">
-    <!-- <script src="./resources/js/jquery/jquery.lazyload.min.js"></script>
-    <script src="./resources/js/scrollerAnchor.js"></script> -->
     <script src="./w3.js"></script>
-    <script src="./js/selectTabs.js"></script>
+    <script src="./resources/js/selectTabs.js"></script>
 </head>
 
 <body>
@@ -21,18 +19,18 @@
     <!-- data 區塊開始 -->
     <div class="main">
         <!-- 最新消息(輪播) -->
-        <div id="activiti" class="slideShow" w3-include-html="slideShow/slideShow.html"></div>
+        <div id="activiti" class="slideshow" w3-include-html="slideshow/slideshow.html"></div>
 
         <div id="knowUDN" class="large-category-article">
             <div class="container">
                 <div class="indexTitle">認識聯合報系</div>
-                <div class="tabs">
+                <div class="tabs-2th">
                     <div class="tab selected" onclick="selectTabs(event, '#knowUDN')" data-id="udnVision">願景工程</div>
                     <div class="tab" onclick="selectTabs(event, '#knowUDN')" data-id="coreValue">核心價值</div>
                     <div class="tab" onclick="selectTabs(event, '#knowUDN')" data-id="udnOwner">經營團隊</div>
                     <div class="tab" onclick="selectTabs(event, '#knowUDN')" data-id="udnAwards">榮耀時刻</div>
                 </div>
-                <div id="udnVision" class="secend-category-article showArticle"  w3-include-html="views/udnVision.html"></div>
+                <div id="udnVision" class="secend-category-article showArticle" w3-include-html="views/udnVision.html"></div>
                 <div id="coreValue" class="secend-category-article">核心價值</div>
                 <div id="udnOwner" class="secend-category-article">經營團隊</div>
                 <div id="udnAwards" class="secend-category-article">榮耀時刻</div>
@@ -47,21 +45,31 @@
         <div id="businessMap" class="large-category-article">
             <div class="container">
                 <div class="indexTitle">事業版圖</div>
-                <div class="tabs">
+                <div class="tabs-2th">
                     <div class="tab selected" onclick="selectTabs(event, '#businessMap')" data-id="buMap">事業版圖</div>
                     <div class="tab" onclick="selectTabs(event, '#businessMap')" data-id="mediaMap">媒體事業</div>
                     <div class="tab" onclick="selectTabs(event, '#businessMap')" data-id="multBu">多元事業</div>
                 </div>
                 <div id="buMap" class="secend-category-article showArticle">事業版圖</div>
-                <div id="mediaMap" class="secend-category-article">媒體事業</div>
-                <div id="multBu" class="secend-category-article">多元事業</div>
+                <div id="mediaMap" class="secend-category-article">
+                    <div class="tabs-3th">
+                        <div class="tab selected" onclick="selectTabs(event, '#mediaMap')" data-id="">聯合報</div>
+                        <div class="tab" onclick="selectTabs(event, '#mediaMap')" data-id="">經濟日報</div>
+                        <div class="tab" onclick="selectTabs(event, '#mediaMap')" data-id="">聯合線上</div>
+                        <div class="tab" onclick="selectTabs(event, '#mediaMap')" data-id="">世界日報</div>
+                    </div>
+                    媒體事業
+                </div>
+                <div id="multBu" class="secend-category-article">
+                    多元事業
+                </div>
             </div>
         </div>
 
         <div id="subscribe" class="large-category-article bg-gray">
             <div class="container">
                 <div class="indexTitle">加入會員</div>
-                <div class="tabs">
+                <div class="tabs-2th">
                     <div class="tab selected" onclick="selectTabs(event, '#subscribe')" data-id="becomeMember">成為會員</div>
                     <div class="tab" onclick="selectTabs(event, '#subscribe')" data-id="membersInterests">會員權益</div>
                 </div>
@@ -73,7 +81,7 @@
         <div id="joinUs" class="large-category-article">
             <div class="container">
                 <div class="indexTitle">人才招募</div>
-                <div class="tabs">
+                <div class="tabs-2th">
                     <div class="tab selected" onclick="selectTabs(event, '#joinUs')" data-id="focusJobs">焦點職缺</div>
                     <div class="tab" onclick="selectTabs(event, '#joinUs')" data-id="careerDevelopment">職涯發展</div>
                     <div class="tab" onclick="selectTabs(event, '#joinUs')" data-id="jobBenefits">薪資福利</div>

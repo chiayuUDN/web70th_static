@@ -1,16 +1,16 @@
-.slideShow {
+.slideshow {
     height: 650px;
     background-color: gray;
 }
 
 @media (max-width: 1199px) {
-    .slideShow {
+    .slideshow {
         height: 640px;
     }
 }
 
 @media (max-width: 767px) {
-    .slideShow {
+    .slideshow {
         height: 345px;
     }
 }

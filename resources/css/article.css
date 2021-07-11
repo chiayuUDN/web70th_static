@@ -1,20 +1,20 @@
-/* 二分類 */
-.tabs {
+/* 二分類tabs */
+.tabs-2th {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
-.tabs .tab {
+.tabs-2th .tab {
     position: relative;
     margin: 0 18px;
     line-height: 1.5;
     padding-bottom: 8px;
     cursor: pointer;
 }
-.tabs .tab.selected {
+.tabs-2th .tab.selected {
     border-bottom: var(--orange) 3px solid;
 }
-.tabs .tab.selected::before {
+.tabs-2th .tab.selected::before {
     content: "";
     position: absolute;
     bottom: -11px;
@@ -24,6 +24,12 @@
     border-style: solid;
     border-width: 10px 10px 0 10px;
     border-color: var(--orange) transparent transparent transparent;
+}
+/* 三分類tabs */
+.tabs-3th {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .large-category-article { /* 大分類文章 */
@@ -54,6 +60,6 @@
 
 @media (max-width: 767px) {
     .tabs .tab {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
