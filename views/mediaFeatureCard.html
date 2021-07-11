@@ -1,6 +1,6 @@
 <div class="title">立體的多媒體敘事</div>
 <div class="content">在文字之上，我們透過影音、插畫等多媒體敘事呈現專題報導，讓新聞不再只是資訊傳遞，而是更觸動情感、有血有肉、立體的故事。</div>
-<div class="subtitle">她們的故事</div>
+<div>她們的故事</div>
 
 <style>
     /* 備註:要加入不同大小的內容, Card區塊要一樣長的情況 */
@@ -12,15 +12,25 @@
         padding: 76px 24px 24px 24px;
         margin-right: 24px;
         line-height: 1.5;
+        font-size: 24px;
     }
     .mediaCard .title {
         font-size: 36px;
     }
     .mediaCard .content {
-        margin-top: 24px;
+        margin-top: 20px;
         margin-bottom: 25px;
     }
-    .mediaCard .subtitle {
-        font-size: 24px;
+
+    @media (max-width: 1199px) {
+    .mediaCard {
+        font-size: 20px;
     }
+    .mediaCard .title {
+        font-size: 28px;
+    }
+    .mediaCard .content {
+        margin-bottom: 20px;
+    }
+}
 </style>
