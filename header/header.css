@@ -4,7 +4,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--white);
     border-bottom: solid 1px #ebebeb;
     z-index: 1;
 }
@@ -24,7 +24,6 @@ header {
 
 .headerInner {
     display: flex;
-    font-size: 20px;
     align-items: center;
 }
 
@@ -45,7 +44,7 @@ header {
 .menu a:last-child {
     padding-right: 0;
     padding-left: 24px;
-    border-left: solid 1px #e0e0e0;
+    border-left: solid 1px var(--gray-c3);
 }
 
 @media (max-width: 1199px) {
@@ -72,7 +71,7 @@ header {
         height: 2px;
         width: 24px;
         position: absolute;
-        background: #212121;
+        background: var(--black);
         margin: -1px 0 0 -13px;
         transition: all .5s;
     }
@@ -99,7 +98,7 @@ header {
         opacity: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #fff;
+        background-color: var(--white);
         z-index: 1;
         opacity: 0.5;
         transition: all 500ms ease-in;
@@ -112,7 +111,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
+        background-color: var(--white);
         border-bottom: solid 1px #ebebeb;
     }
     .hamMenu .ham-header .udnLogo {
@@ -122,10 +121,10 @@ header {
         position: absolute;
         right: 30px;
         font-size: 18px;
-        color: #616161;
+        color: var(--gray-c4);
     }
     .hamMenu .ham-header .hamMenuLogin:hover {
-        color: #ee6700;
+        color: var(--orange);
     }
     .hamMenu .ham-body>a {
         display: block;

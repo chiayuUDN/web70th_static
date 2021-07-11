@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁-聯合報系 United Daily News Group</title>
+    <link rel="stylesheet" href="./resources/css/_var.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/article.css">
     <!-- <script src="./resources/js/jquery/jquery.lazyload.min.js"></script>
@@ -22,8 +23,8 @@
         <!-- 最新消息(輪播) -->
         <div id="activiti" class="slideShow" w3-include-html="slideShow/slideShow.html"></div>
 
-        <div id="knowUDN">
-            <div class="container large-category-article">
+        <div id="knowUDN" class="large-category-article">
+            <div class="container">
                 <div class="indexTitle">認識聯合報系</div>
                 <div class="tabs">
                     <div class="tab selected" onclick="selectTabs(event, '#knowUDN')" data-id="udnVision">願景工程</div>
@@ -31,20 +32,20 @@
                     <div class="tab" onclick="selectTabs(event, '#knowUDN')" data-id="udnOwner">經營團隊</div>
                     <div class="tab" onclick="selectTabs(event, '#knowUDN')" data-id="udnAwards">榮耀時刻</div>
                 </div>
-                <div id="udnVision" class="secend-category-article showArticle">願景工程</div>
+                <div id="udnVision" class="secend-category-article showArticle"  w3-include-html="views/udnVision.html"></div>
                 <div id="coreValue" class="secend-category-article">核心價值</div>
                 <div id="udnOwner" class="secend-category-article">經營團隊</div>
                 <div id="udnAwards" class="secend-category-article">榮耀時刻</div>
             </div>
         </div>
-        <div id="mediaFeature" class="bg-gray">
-            <div class="container large-category-article">
-                <div class="indexTitle">媒體發展</div>
 
+        <div id="mediaFeature" class="large-category-article bg-gray">
+            <div class="container">
+                <div class="indexTitle">媒體發展</div>
             </div>
         </div>
-        <div id="businessMap">
-            <div class="container large-category-article">
+        <div id="businessMap" class="large-category-article">
+            <div class="container">
                 <div class="indexTitle">事業版圖</div>
                 <div class="tabs">
                     <div class="tab selected" onclick="selectTabs(event, '#businessMap')" data-id="buMap">事業版圖</div>
@@ -56,8 +57,9 @@
                 <div id="multBu" class="secend-category-article">多元事業</div>
             </div>
         </div>
-        <div id="subscribe" class="bg-gray">
-            <div class="container large-category-article">
+
+        <div id="subscribe" class="large-category-article bg-gray">
+            <div class="container">
                 <div class="indexTitle">加入會員</div>
                 <div class="tabs">
                     <div class="tab selected" onclick="selectTabs(event, '#subscribe')" data-id="becomeMember">成為會員</div>
@@ -67,8 +69,9 @@
                 <div id="membersInterests" class="secend-category-article">會員權益</div>
             </div>
         </div>
-        <div id="joinUs">
-            <div class="container large-category-article">
+
+        <div id="joinUs" class="large-category-article">
+            <div class="container">
                 <div class="indexTitle">人才招募</div>
                 <div class="tabs">
                     <div class="tab selected" onclick="selectTabs(event, '#joinUs')" data-id="focusJobs">焦點職缺</div>

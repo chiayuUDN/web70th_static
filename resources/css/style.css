@@ -1,8 +1,9 @@
 body {
     font-family: NotoSansCJKtc, Roboto, 'Noto Sans TC', sans-serif;
-    color: #212121;
+    color: var(--black);
     margin: 0px;
     padding: 0px;
+    font-size: 20px;
 }
 
 ul {
@@ -16,15 +17,16 @@ ul {
 }
 
 a {
-    color: #212121;
+    color: var(--black);
     text-decoration: none;
+    line-height: 1;
 }
 a:hover {
-    color: #ee6700;
+    color: var(--orange);
 }
 
 .bg-gray {
-    background-color: #fafafa;
+    background-color: var(--gray-c1);
 }
 
 /* data 區塊開始 */

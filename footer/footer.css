@@ -1,8 +1,7 @@
 footer {
     background-image: url(../resources/img/imgFooterBg.png);
-    font-size: 20px;
     line-height: 1.2;
-    color: #444;
+    color: #444444;
 }
 .footerContent {
     padding-top: 82px;
@@ -16,7 +15,7 @@ footer {
 }
 .footerContent .udngroupText {
     text-align: right;
-    color: #616161;
+    color: var(--gray-c4);
     letter-spacing: normal;
 }
 
@@ -44,6 +43,6 @@ footer {
     }
     .footerContent .udngroupText {
         margin-top: 20px;
-        color: #212121;
+        color: var(--black);
     }
 }
