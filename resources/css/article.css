@@ -1,3 +1,4 @@
+
 /* 二分類tabs */
 .tabs-2th {
     display: flex;
@@ -62,6 +63,12 @@
 
 }
 
+.tab:first-child {
+    margin-left: 0;
+}
+.tab:last-child {
+    margin-right: 0;
+}
 .showArticle {
     display: block;
 }
@@ -81,7 +88,7 @@
     .tabs-3th {
         margin-bottom: 20px;
     }
-    .tabs .tab {
+    .tab {
         font-size: 18px;
     }
 }

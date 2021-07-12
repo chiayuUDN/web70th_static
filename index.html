@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./resources/css/article.css">
     <script src="./w3.js"></script>
     <script src="./resources/js/selectTabs.js"></script>
+    <script src="./resources/js/carousel-slider.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                     <div class="tab" onclick="selectTabs(event, '#knowUDN', 2)" data-id="udnOwner">經營團隊</div>
                     <div class="tab" onclick="selectTabs(event, '#knowUDN', 2)" data-id="udnAwards">榮耀時刻</div>
                 </div>
-                <div id="udnVision" class="secend-category-article showArticle" w3-include-html="views/udnVision.html"></div>
+                <div id="udnVision" class="secend-category-article showArticle" w3-include-html="article/udnVision.html"></div>
                 <div id="coreValue" class="secend-category-article">核心價值</div>
                 <div id="udnOwner" class="secend-category-article">經營團隊</div>
                 <div id="udnAwards" class="secend-category-article">榮耀時刻</div>
@@ -41,13 +42,17 @@
             <div class="container">
                 <div class="indexTitle">媒體發展</div>
                 <div class="note">從15世紀古騰堡印刷術，到21世紀可攜式裝置；不論紙本數位，我們不斷精進媒體資訊傳播的工藝與技術，提供最適切有效的閱聽使用體驗。</div>
+                
                 <!-- 左右循環區塊 -->
-                <div class="mediaContent">
-                    <div class="mediaCard" w3-include-html="views/mediaFeatureCard.html"></div>
-                    <div class="mediaCard" w3-include-html="views/mediaFeatureCard.html"></div>
-                    <div class="mediaCard" w3-include-html="views/mediaFeatureCard.html"></div>
+                <div class="slider-container">
+                    <span class="prev"></span>
+                    <div class="slider">
+                        <div class="mediaCard" w3-include-html="article/mediaFeatureCard.html"></div>
+                        <div class="mediaCard" w3-include-html="article/mediaFeatureCard.html"></div>
+                        <div class="mediaCard" w3-include-html="article/mediaFeatureCard.html"></div>
+                    </div>
+                    <span class="next"></span>
                 </div>
-
             </div>
         </div>
         <div id="businessMap" class="large-category-article">
@@ -58,7 +63,7 @@
                     <div class="tab" onclick="selectTabs(event, '#businessMap', 2)" data-id="mediaMap">媒體事業</div>
                     <div class="tab" onclick="selectTabs(event, '#businessMap', 2)" data-id="multBu">多元事業</div>
                 </div>
-                <div id="buMap" class="secend-category-article showArticle">事業版圖</div>
+                <div id="buMap" class="secend-category-article showArticle" w3-include-html="article/buMap.html">事業版圖</div>
                 <div id="mediaMap" class="secend-category-article">
                     <div class="tabs-3th">
                         <div class="tab selected" onclick="selectTabs(event, '#mediaMap', 3)" data-id="udn">聯合報</div>

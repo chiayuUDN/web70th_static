@@ -29,6 +29,27 @@ a:hover {
     background-color: var(--gray-c1);
 }
 
+/* icon */
+.prev {
+    background-image: url(../icons/icon-leftarrow.svg);
+}
+.next {
+    background-image: url(../icons/icon-rightarrow.svg);
+}
+
+/* carousel-slider */
+.slider-container {
+    
+}
+.slider-container .slider {
+    display: flex;
+}
+/* .prev, .next {
+    z-index: 1;
+    border-radius: 50px;
+    background-color: var(--white);
+} */
+
 /* data 區塊開始 */
 .main {
     margin-top: 65px;
@@ -46,10 +67,6 @@ a:hover {
     margin-bottom: 40px;
 }
 
-.mediaContent {
-    display: flex;
-}
-
 @media (max-width: 1199px) {
     .container {
         padding-left: 30px;
@@ -58,10 +75,10 @@ a:hover {
 }
 
 @media (max-width: 767px) {
-    .container {
+    /* .container {
         padding-left: 16px;
         padding-right: 16px;
-    }
+    } */
     .main {
         margin-top: 57px;
     }
