@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁-聯合報系 United Daily News Group</title>
-    <link rel="stylesheet" href="./resources/css/_var.css">
-    <link rel="stylesheet" href="./resources/css/style.css">
-    <link rel="stylesheet" href="./resources/css/tab.css">
-    <link rel="stylesheet" href="./resources/css/article.css">
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <script src="./resources/js/plugins/selectTabs.js"></script>
+    <script src="./resources/js/plugins/carousel-slider.js"></script>
     <script src="./w3.js"></script>
-    <script src="./resources/js/selectTabs.js"></script>
+ 
+
+    <script  type="text/x-template" id="component-dropdown">
+        <div>ss</div>
+    </script>
+
+
 </head>
 
 <body>
@@ -19,15 +24,14 @@
     
     <!-- data 區塊開始 -->
     <div class="main">
-        <div id = "app">
-            <div>{{text}}</div>
-            <!-- <template src="./article/template.html"></template> -->
-            <test></test>
-        </div>
         <!-- 最新消息(輪播) -->
         <div id="activiti" class="slideshow" w3-include-html="slideshow/slideshow.html"></div>
 
         <!-- 迴圈產生資料 -->
+        <div id = "app">
+            <div>{{text}}</div>
+            <component-dropdown></component-dropdown>
+        </div>
         <div id="knowUDN" class="large-category-article">
             <div class="container">
                 <div class="indexTitle">認識聯合報系</div>
@@ -124,6 +128,9 @@
 <script>
     w3.includeHTML();
 </script>
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 <script src="./resources/js/app.js"></script>
+
+
 </html>

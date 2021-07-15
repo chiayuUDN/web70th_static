@@ -1,6 +1,9 @@
-vue.component('test', {
-    templat:'../article/template.html',
-})
+
+Vue.component("component-dropdown", {
+    template: '#component-dropdown',
+});
+
+
 new Vue({
     el: "#app",
     component: {test},

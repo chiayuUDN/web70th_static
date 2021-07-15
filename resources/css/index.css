@@ -1,10 +1,21 @@
-body {
-    font-family: NotoSansCJKtc, Roboto, 'Noto Sans TC', sans-serif;
-    color: var(--black);
-    margin: 0px;
-    padding: 0px;
-    font-size: 20px;
-}
+@import './_var.css';
+
+
+/* utilities */
+@import './utilities/_site.css';
+@import './utilities/_font.css';
+
+/* elements */
+@import './elements/_tab.css';
+@import './elements/_button.css';
+@import './elements/_dropdown.css';
+
+/* article */
+@import './article/article.css';
+
+
+/* 待整理 */
+
 
 ul {
     margin: 0;
