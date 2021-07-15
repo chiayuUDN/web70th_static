@@ -15,20 +15,20 @@
 <body>
     <header w3-include-html="header/header.html"></header>
     
-    <!-- data 區塊開始 -->s
+    <!-- data 區塊開始 -->
     <div class="main">
         <!-- 最新消息(輪播) -->
         <div id="activiti" class="slideshow" w3-include-html="slideshow/slideshow.html"></div>
 
         <!-- 迴圈產生資料 -->
-        <div id = "app">
+        <div id="app" class="container">
             <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies.slice(1)" :id="type1TH.taxonomyId" class="large-category-article">
                 <!-- 媒體發展 -->
-                <div v-if="idx1TH == 1" class="container">
+                <div v-if="idx1TH == 1">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
                     <div class="note">{{type1TH.desc}}</div>
                 </div>
-                <div v-else class="container">
+                <div v-else>
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
                     <div class="tabs-2th">
                         <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies"
@@ -69,7 +69,6 @@
                     </div>
                 </div>
             </div>
-            <div>{{text}}</div>
 
             <button class="udn-btn btn-orange">會員註冊</button>
             <button class="udn-btn btn-white">會員註冊</button>
