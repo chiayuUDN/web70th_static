@@ -8,24 +8,26 @@
     <title>首頁-聯合報系 United Daily News Group</title>
     <link rel="stylesheet" href="./resources/css/_var.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/tab.css">
     <link rel="stylesheet" href="./resources/css/article.css">
     <script src="./w3.js"></script>
     <script src="./resources/js/selectTabs.js"></script>
-    <script src="./resources/js/carousel-slider.js"></script>
 </head>
 
 <body>
     <header w3-include-html="header/header.html"></header>
-
+    
     <!-- data 區塊開始 -->
     <div class="main">
+        <div id = "app">
+            <div>{{text}}</div>
+            <!-- <template src="./article/template.html"></template> -->
+            <test></test>
+        </div>
         <!-- 最新消息(輪播) -->
         <div id="activiti" class="slideshow" w3-include-html="slideshow/slideshow.html"></div>
 
         <!-- 迴圈產生資料 -->
-        <div id = "app">
-            <div>{{text}}</div>
-        </div>
         <div id="knowUDN" class="large-category-article">
             <div class="container">
                 <div class="indexTitle">認識聯合報系</div>
