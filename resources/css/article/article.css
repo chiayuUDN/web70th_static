@@ -11,14 +11,10 @@
 .fourth-category-article { /* 四分類文章 */
     display: none;
     border: solid 1px #e4e4e4;
+    border-top: none;
+    padding: 20px 24px;
 }
 
-.tab:first-child {
-    margin-left: 0;
-}
-.tab:last-child {
-    margin-right: 0;
-}
 .showArticle {
     display: block;
 }
@@ -28,6 +24,10 @@
     .large-category-article {
         padding-top: 40px;
         padding-bottom: 40px;
-    } 
+    }
+    .fourth-category-article {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 

@@ -24,9 +24,6 @@
 
         <!-- 迴圈產生資料 -->
         <div id = "app">
-            <!-- <div>{{text}}</div> -->
-            <!-- <component-dropdown></component-dropdown> -->
-            <!-- {{sectionTypes}} -->
             <div v-for="(type1th, idx1th) in sectionTypes.childTaxonomies.slice(1)" :id="type1th.taxonomyId" class="large-category-article">
                 <!-- 媒體發展 -->
                 <div v-if="idx1th == 1" class="container">
@@ -44,7 +41,7 @@
                         </div>
                     </div>
                     <div v-for="(type2th, idx2th) in type1th.childTaxonomies" :id="type2th.taxonomyId" :class="['secend-category-article', {'showArticle':idx2th == 0}]">
-                        <div v-if="type2th.childTaxonomies.length == 0">{{type2th.taxonomyName}}文章</div>
+                        <div v-if="type2th.childTaxonomies.length == 0">{{type2th.taxonomyName}}文章{{type2th.taxonomyId}}</div>
                         <div v-else>
                             <div class="tabs-3th">
                                 <div v-for="(type3th, idx3th) in type2th.childTaxonomies"
@@ -55,7 +52,7 @@
                                 </div>
                             </div>
                             <div v-for="(type3th, idx3th) in type2th.childTaxonomies" :id="type3th.taxonomyId" :class="['third-category-article', {'showArticle':idx3th == 0}]">
-                                <div v-if="type3th.childTaxonomies.length == 0">{{type3th.taxonomyName}}文章</div>
+                                <div v-if="type3th.childTaxonomies.length == 0">{{type3th.taxonomyName}}文章{{type3th.taxonomyId}}</div>
                                 <div v-else>
                                     <div class="tabs-4th">
                                         <div v-for="(type4th, idx4th) in type3th.childTaxonomies"
@@ -66,7 +63,7 @@
                                         </div>
                                     </div>
                                     <div v-for="(type4th, idx4th) in type3th.childTaxonomies" :id="type4th.taxonomyId" :class="['fourth-category-article', {'showArticle':idx4th == 0}]">
-                                        {{type4th.taxonomyName}}文章
+                                        {{type4th.taxonomyName}}文章{{type4th.taxonomyId}}
                                     </div>
                                 </div>
                             </div>
