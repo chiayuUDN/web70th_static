@@ -30,6 +30,7 @@ header {
 .menu {
     display: flex;
     margin-left: auto;
+    font-size: 20px;
 }
 
 .menu a {
