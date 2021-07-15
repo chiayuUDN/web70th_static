@@ -1,0 +1,283 @@
+{
+    "result": {
+        "taxonomyUid": "792130a1-e197-47dd-8954-e2a396aa4403",
+        "taxonomyId": "main70thIT",
+        "taxonomyAbbrName": "聯合報系(70th - IT)",
+        "taxonomyName": "聯合報系(70th - IT)",
+        "childTaxonomies": [
+            {
+                "taxonomyUid": "6d1493f8-7a22-4c97-88d6-f8194579539d",
+                "taxonomyId": "activiti",
+                "taxonomyAbbrName": "最新消息",
+                "taxonomyName": "最新消息",
+                "childTaxonomies": [],
+                "desc": ""
+            },
+            {
+                "taxonomyUid": "6f083087-b027-4503-bbc1-0c33c9fd6fa9",
+                "taxonomyId": "knowUDN",
+                "taxonomyAbbrName": "認識聯合報系",
+                "taxonomyName": "認識聯合報系",
+                "childTaxonomies": [
+                    {
+                        "taxonomyUid": "5d960835-cf01-42d2-837d-cefbec2ee4c0",
+                        "taxonomyId": "udnVision",
+                        "taxonomyAbbrName": "願景工程",
+                        "taxonomyName": "願景工程",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    },
+                    {
+                        "taxonomyUid": "ab990505-c613-4e34-af96-e72ebed5b3ac",
+                        "taxonomyId": "coreValue",
+                        "taxonomyAbbrName": "核心價值",
+                        "taxonomyName": "核心價值",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    },
+                    {
+                        "taxonomyUid": "69d8d348-a20b-479f-b45f-f1739ff22049",
+                        "taxonomyId": "udnOwner",
+                        "taxonomyAbbrName": "經營團隊",
+                        "taxonomyName": "經營團隊",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    },
+                    {
+                        "taxonomyUid": "b6cfc439-9a9d-415b-8f7d-7088277f80b5",
+                        "taxonomyId": "udnAwards",
+                        "taxonomyAbbrName": "榮耀時刻",
+                        "taxonomyName": "榮耀時刻",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    }
+                ],
+                "desc": "",
+            },
+            {
+                "taxonomyUid": "6f6703f2-4296-4f71-a9d0-81eb14b95293",
+                "taxonomyId": "mediaFeature",
+                "taxonomyAbbrName": "新媒體發展",
+                "taxonomyName": "新媒體發展",
+                "childTaxonomies": [],
+                "desc": "在這個數位匯流的年代，聯合報系努力提供最適合的內容，使我們讀者能在這個多元的平台，取得資訊、發表意見、分享內容、參與活動。",
+            },
+            {
+                "taxonomyUid": "ef0eae32-1831-44d4-8099-2a4c4c9b3835",
+                "taxonomyId": "businessMap",
+                "taxonomyAbbrName": "事業版圖",
+                "taxonomyName": "事業版圖",
+                "childTaxonomies": [
+                    {
+                        "taxonomyUid": "65c00f17-5c63-4d37-bcc5-2284b8d6ebfb",
+                        "taxonomyId": "buMap",
+                        "taxonomyAbbrName": "事業版圖",
+                        "taxonomyName": "事業版圖",
+                        "childTaxonomies": [],
+                        "desc": "聯合報系透過「多元事業經營」及「報系數位轉型」支持媒體永續發展，維護新聞品質、公正與獨立姓。 我們延伸文教、醫藥、消費等長期深耕領域，打造文創、健康、教育、電傷等服務，滿足讀者生活各層面的需求。"
+                    },
+                    {
+                        "taxonomyUid": "8c418570-35b6-4995-ac97-06d224ad104c",
+                        "taxonomyId": "mediaMap",
+                        "taxonomyAbbrName": "媒體事業",
+                        "taxonomyName": "媒體事業版圖",
+                        "childTaxonomies": [
+                            {
+                                "taxonomyUid": "563ddd50-542a-42b3-9aa8-7f77928e1e9e",
+                                "taxonomyId": "OKQNmdowPW",
+                                "taxonomyAbbrName": "聯合報",
+                                "taxonomyName": "聯合報",
+                                "childTaxonomies": [],
+                                "desc": ""
+                            },
+                            {
+                                "taxonomyUid": "81b4fd01-301c-4bb3-a7cb-17721b55676a",
+                                "taxonomyId": "MneTCvGMbQ",
+                                "taxonomyAbbrName": "經濟日報",
+                                "taxonomyName": "經濟日報",
+                                "childTaxonomies": [],
+                                "desc": ""
+                            }
+                        ],
+                        "desc": ""
+                    },
+                    {
+                        "taxonomyUid": "a2864094-e257-4cfb-963f-71f365e86cf7",
+                        "taxonomyId": "multBu",
+                        "taxonomyAbbrName": "多元事業",
+                        "taxonomyName": "多元事業版圖",
+                        "childTaxonomies": [
+                            {
+                                "taxonomyUid": "3f0ad376-c4a8-4751-a60a-e3486291f38f",
+                                "taxonomyId": "uojLQjcQdV",
+                                "taxonomyAbbrName": "文創",
+                                "taxonomyName": "文創",
+                                "childTaxonomies": [
+                                    {
+                                        "taxonomyUid": "663a19f8-ac47-4939-b43f-02d145d544bd",
+                                        "taxonomyId": "vieYPAvYuD",
+                                        "taxonomyAbbrName": "聯合數位文創",
+                                        "taxonomyName": "聯合數位文創",
+                                        "childTaxonomies": [],
+                                        "desc": ""
+                                    },
+                                    {
+                                        "taxonomyUid": "9458e095-b9fb-4d3f-81ac-5e61545de883",
+                                        "taxonomyId": "vKSYlXCrtv",
+                                        "taxonomyAbbrName": "udn瘋活動",
+                                        "taxonomyName": "udn瘋活動",
+                                        "childTaxonomies": [],
+                                        "desc": ""
+                                    },
+                                    {
+                                        "taxonomyUid": "cb3088b5-4fdd-4f7d-a544-22244ce6d78f",
+                                        "taxonomyId": "CfIIUpyzuC",
+                                        "taxonomyAbbrName": "udn售票網",
+                                        "taxonomyName": "udn售票網",
+                                        "childTaxonomies": [],
+                                        "desc": ""
+                                    },
+                                    {
+                                        "taxonomyUid": "d5222635-a200-49dc-a5bd-a2b5b7d967a7",
+                                        "taxonomyId": "pHiDUNOnjI",
+                                        "taxonomyAbbrName": "uDesign有.設計",
+                                        "taxonomyName": "uDesign有.設計",
+                                        "childTaxonomies": [],
+                                        "desc": ""
+                                    }
+                                ],
+                                "desc": ""
+                            },
+                            {
+                                "taxonomyUid": "7c913fc0-6d0a-4603-99a7-0f37f121aa8d",
+                                "taxonomyId": "HbrooKOVoT",
+                                "taxonomyAbbrName": "電商",
+                                "taxonomyName": "電商",
+                                "childTaxonomies": [],
+                                "desc": ""
+                            },
+                            {
+                                "taxonomyUid": "3133d90c-d698-44c2-adaf-e2c2bd337350",
+                                "taxonomyId": "BoWjqtrDEB",
+                                "taxonomyAbbrName": "娛樂",
+                                "taxonomyName": "娛樂",
+                                "childTaxonomies": [],
+                                "desc": ""
+                            },
+                            {
+                                "taxonomyUid": "4edfa139-5d9d-4da3-a99d-c8f79d174f04",
+                                "taxonomyId": "mGvZCAvQix",
+                                "taxonomyAbbrName": "健康",
+                                "taxonomyName": "健康",
+                                "childTaxonomies": [],
+                                "desc": ""
+                            },
+                            {
+                                "taxonomyUid": "622c80fd-776a-43d0-ac5a-0bb327fa37b8",
+                                "taxonomyId": "tAlcxMcdKF",
+                                "taxonomyAbbrName": "行旅",
+                                "taxonomyName": "行旅",
+                                "childTaxonomies": [],
+                                "desc": ""
+                            },
+                            {
+                                "taxonomyUid": "6fd302e1-b161-47b7-939e-9e21a5237187",
+                                "taxonomyId": "NOiZEkFWha",
+                                "taxonomyAbbrName": "教育",
+                                "taxonomyName": "教育",
+                                "childTaxonomies": [],
+                                "desc": ""
+                            },
+                            {
+                                "taxonomyUid": "9dc54f15-b42c-4d59-bacb-5bd5d76018c8",
+                                "taxonomyId": "vhOJJJCHVB",
+                                "taxonomyAbbrName": "出版",
+                                "taxonomyName": "出版",
+                                "childTaxonomies": [],
+                                "desc": ""
+                            },
+                            {
+                                "taxonomyUid": "c0491d68-caf4-4eb3-8ea9-6020b527d3cb",
+                                "taxonomyId": "BdrEjlQdej",
+                                "taxonomyAbbrName": "其他",
+                                "taxonomyName": "其他",
+                                "childTaxonomies": [],
+                                "desc": ""
+                            }
+                        ],
+                        "desc": ""
+                    }
+                ],
+                "desc": ""
+            },
+            {
+                "taxonomyUid": "4deb3c06-7fb5-40cb-9173-4f6df19313a9",
+                "taxonomyId": "subscribe",
+                "taxonomyAbbrName": "加入會員",
+                "taxonomyName": "加入會員",
+                "childTaxonomies": [
+                    {
+                        "taxonomyUid": "28d72ad6-1152-4c2e-b73d-2e8b3704d95c",
+                        "taxonomyId": "ABDBkyqnTB",
+                        "taxonomyAbbrName": "成為會員",
+                        "taxonomyName": "成為會員",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    },
+                    {
+                        "taxonomyUid": "d98846c4-a562-4311-bf92-53ba35b13e14",
+                        "taxonomyId": "aQEQRMDdyE",
+                        "taxonomyAbbrName": "會員權益",
+                        "taxonomyName": "會員權益",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    }
+                ],
+                "desc": ""
+            },
+            {
+                "taxonomyUid": "2218c1ce-3129-4380-8311-61eae2ceafa6",
+                "taxonomyId": "joinUs",
+                "taxonomyAbbrName": "人才招募",
+                "taxonomyName": "人才招募",
+                "childTaxonomies": [
+                    {
+                        "taxonomyUid": "2b6240e8-114c-46a8-a6b7-a15188ce7332",
+                        "taxonomyId": "GPblRYyoti",
+                        "taxonomyAbbrName": "焦點職缺",
+                        "taxonomyName": "焦點職缺",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    },
+                    {
+                        "taxonomyUid": "45a17cb2-2240-44d3-bf1c-a02bd49c98a0",
+                        "taxonomyId": "UYhASyUxZD",
+                        "taxonomyAbbrName": "職涯發展",
+                        "taxonomyName": "職涯發展",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    },
+                    {
+                        "taxonomyUid": "c63416b8-849a-4d32-bed0-505d5c9e9cc3",
+                        "taxonomyId": "wbuXENWOxs",
+                        "taxonomyAbbrName": "薪資福利",
+                        "taxonomyName": "薪資福利",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    },
+                    {
+                        "taxonomyUid": "c76019f2-06e7-44c5-933f-d3bf9586d832",
+                        "taxonomyId": "SjhBQqDmhQ",
+                        "taxonomyAbbrName": "工作環境",
+                        "taxonomyName": "工作環境",
+                        "childTaxonomies": [],
+                        "desc": ""
+                    }
+                ],
+                "desc": ""
+            }
+        ],
+        "desc": ""
+    },
+    "success": true
+}
