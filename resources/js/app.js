@@ -4,7 +4,6 @@ Vue.component("component-dropdown", {
 
 new Vue({
     el: "#app",
-    component: {test},
     data: {
         text: '測試區域',
         items: ['測試1', '測試2', '測試3', '測試4'],
@@ -14,7 +13,7 @@ new Vue({
 
         axios.get("./../../resources/js/type.json")
           .then(response => {
-              let result = response.data;
+              let result = response.data.result ;
               console.log(result);
               this.sectionTypes = result;
           }).catch(err => console.log(err))
