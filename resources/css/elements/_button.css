@@ -1,0 +1,25 @@
+.udn-btn {
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    background: none;
+    border: none;
+    border-radius: 24px;
+}
+
+    .udn-btn.btn-orange {
+        background-color: var(--orange);
+        color: var(--white);
+    }
+
+    .udn-btn.btn-white {
+        background-color: var(--white);
+        color: var(--black);
+        border: solid 1px var(--gray-c5);
+    }
+
+        .udn-btn.btn-white:hover {
+            background-color: var(--black);
+            color: var(--white);
+            border: none;
+        }
