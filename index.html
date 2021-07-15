@@ -29,12 +29,59 @@
 
         <!-- 迴圈產生資料 -->
         <div id = "app">
-            <div>{{text}}</div>
-            <component-dropdown></component-dropdown>
-
-            {{sectionTypes}}
+            <!-- <div>{{text}}</div> -->
+            <!-- <component-dropdown></component-dropdown> -->
+            <!-- {{sectionTypes}} -->
+            <div v-for="(type1th, idx1th) in sectionTypes.childTaxonomies.slice(1)" :id="type1th.taxonomyId" class="large-category-article">
+                <!-- 媒體發展 -->
+                <div v-if="idx1th == 1" class="container">
+                    <div class="indexTitle">{{type1th.taxonomyName}}</div>
+                    <div class="note">{{type1th.desc}}</div>
+                </div>
+                <div v-else class="container">
+                    <div class="indexTitle">{{type1th.taxonomyName}}</div>
+                    <div class="tabs-2th">
+                        <div v-for="(type2th, idx2th) in type1th.childTaxonomies"
+                            :class="['tab',{'selected': idx2th == 0}]"
+                            @click="selectTabs(event, type1th.taxonomyId, 2)"
+                            :data-id="type2th.taxonomyId">
+                            {{type2th.taxonomyName}}
+                        </div>
+                    </div>
+                    <div v-for="(type2th, idx2th) in type1th.childTaxonomies" :id="type2th.taxonomyId" :class="['secend-category-article', {'showArticle':idx2th == 0}]">
+                        <div v-if="type2th.childTaxonomies.length == 0">{{type2th.taxonomyName}}文章</div>
+                        <div v-else>
+                            <div class="tabs-3th">
+                                <div v-for="(type3th, idx3th) in type2th.childTaxonomies"
+                                :class="['tab', {'selected': idx3th == 0}]"
+                                @click="selectTabs(event, type2th.taxonomyId, 3)"
+                                :data-id="type3th.taxonomyId">
+                                    {{type3th.taxonomyName}}
+                                </div>
+                            </div>
+                            <div v-for="(type3th, idx3th) in type2th.childTaxonomies" :id="type3th.taxonomyId" :class="['third-category-article', {'showArticle':idx3th == 0}]">
+                                <div v-if="type3th.childTaxonomies.length == 0">{{type3th.taxonomyName}}文章</div>
+                                <div v-else>
+                                    <div class="tabs-4th">
+                                        <div v-for="(type4th, idx4th) in type3th.childTaxonomies"
+                                        :class="['tab', {'selected': idx4th == 0}]"
+                                        @click="selectTabs(event, type3th.taxonomyId, 4)"
+                                        :data-id="type4th.taxonomyId">
+                                            {{type4th.taxonomyName}}
+                                        </div>
+                                    </div>
+                                    <div v-for="(type4th, idx4th) in type3th.childTaxonomies" :id="type4th.taxonomyId" :class="['fourth-category-article', {'showArticle':idx4th == 0}]">
+                                        {{type4th.taxonomyName}}文章
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="knowUDN" class="large-category-article">
+        
+        <!-- <div id="knowUDN" class="large-category-article">
             <div class="container">
                 <div class="indexTitle">認識聯合報系</div>
                 <div class="tabs-2th">
@@ -48,15 +95,12 @@
                 <div id="udnOwner" class="secend-category-article">經營團隊</div>
                 <div id="udnAwards" class="secend-category-article">榮耀時刻</div>
             </div>
-        </div>
+        </div> -->
         
-        <div id="mediaFeature" class="large-category-article bg-gray">
+        <!-- <div id="mediaFeature" class="large-category-article bg-gray">
             <div class="container">
                 <div class="indexTitle">媒體發展</div>
                 <div class="note">從15世紀古騰堡印刷術，到21世紀可攜式裝置；不論紙本數位，我們不斷精進媒體資訊傳播的工藝與技術，提供最適切有效的閱聽使用體驗。</div>
-                
-                <!-- 左右循環區塊 -->
-                <!-- 參考:https://codepen.io/rohanrit/pen/bGGNKXW -->
                 <div class="slider-container">
                     <span class="prev"></span>
                     <div class="slider">
@@ -121,7 +165,7 @@
                 <div id="jobBenefits" class="secend-category-article">薪資福利</div>
                 <div id="workEnvironment" class="secend-category-article">工作環境</div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <footer w3-include-html="footer/footer.html"></footer>

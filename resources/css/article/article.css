@@ -9,7 +9,8 @@
     display: none;
 }
 .fourth-category-article { /* 四分類文章 */
-
+    display: none;
+    border: solid 1px #e4e4e4;
 }
 
 .tab:first-child {

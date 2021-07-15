@@ -1,4 +1,6 @@
-
+.tab {
+    cursor: pointer;
+}
 /* 二分類tabs */
 .tabs-2th {
     display: flex;
@@ -10,7 +12,6 @@
     margin: 0 18px;
     line-height: 1.5;
     padding-bottom: 8px;
-    cursor: pointer;
 }
 .tabs-2th .tab.selected {
     border-bottom: var(--orange) 3px solid;
@@ -33,20 +34,44 @@
     margin-bottom: 24px;
 }
 .tabs-3th .tab {
-    position: relative;
-    display: flex;
-    align-items: center;
     margin: 0 12px;
     padding: 12px 16px;
     font-size: 18px;
     line-height: 1;
-    cursor: pointer;
     background-color: var(--gray-c3);
     border-radius: 21px;
 }
 .tabs-3th .tab.selected {
     background-color: var(--black);
     color: var(--white);
+}
+
+/* 四分類tabs */
+.tabs-4th {
+    display: flex;
+    background-color: #f6f6f6;
+    padding: 10px 24px;
+    margin-bottom: 24px;
+}
+.tabs-4th .tab {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 8px;
+    border-right: solid 1px var(--gray-c3);
+}
+.tabs-4th .tab:first-child {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 0;
+}
+.tabs-4th .tab:last-child {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-right: 0;
+    border: none;
+}
+.tabs-4th .tab.selected {
+    color: var(--orange);
 }
 
 @media (max-width: 767px) {
