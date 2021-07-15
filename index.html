@@ -12,6 +12,8 @@
     <script src="./w3.js"></script>
     <script src="./resources/js/selectTabs.js"></script>
     <script src="./resources/js/carousel-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="./resources/js/app.js"></script>
 </head>
 
 <body>
@@ -22,6 +24,10 @@
         <!-- 最新消息(輪播) -->
         <div id="activiti" class="slideshow" w3-include-html="slideshow/slideshow.html"></div>
 
+        <!-- 迴圈產生資料 -->
+        <div id = "app">
+            <div>{{text}}</div>
+        </div>
         <div id="knowUDN" class="large-category-article">
             <div class="container">
                 <div class="indexTitle">認識聯合報系</div>
@@ -37,7 +43,7 @@
                 <div id="udnAwards" class="secend-category-article">榮耀時刻</div>
             </div>
         </div>
-
+        
         <div id="mediaFeature" class="large-category-article bg-gray">
             <div class="container">
                 <div class="indexTitle">媒體發展</div>
