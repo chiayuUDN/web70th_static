@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁-聯合報系 United Daily News Group</title>
     <link rel="stylesheet" href="./resources/css/index.css">
-    <script src="./resources/js/plugins/selectTabs.js"></script>
-    <script src="./resources/js/plugins/carousel-slider.js"></script>
     <script src="./w3.js"></script>
 
 
@@ -24,49 +22,46 @@
 
         <!-- 迴圈產生資料 -->
         <div id = "app">
-            <!-- <div>{{text}}</div> -->
-            <!-- <component-dropdown></component-dropdown> -->
-            <!-- {{sectionTypes}} -->
-            <div v-for="(type1th, idx1th) in sectionTypes.childTaxonomies.slice(1)" :id="type1th.taxonomyId" class="large-category-article">
+            <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies.slice(1)" :id="type1TH.taxonomyId" class="large-category-article">
                 <!-- 媒體發展 -->
-                <div v-if="idx1th == 1" class="container">
-                    <div class="indexTitle">{{type1th.taxonomyName}}</div>
-                    <div class="note">{{type1th.desc}}</div>
+                <div v-if="idx1TH == 1" class="container">
+                    <div class="indexTitle">{{type1TH.taxonomyName}}</div>
+                    <div class="note">{{type1TH.desc}}</div>
                 </div>
                 <div v-else class="container">
-                    <div class="indexTitle">{{type1th.taxonomyName}}</div>
+                    <div class="indexTitle">{{type1TH.taxonomyName}}</div>
                     <div class="tabs-2th">
-                        <div v-for="(type2th, idx2th) in type1th.childTaxonomies"
-                            :class="['tab',{'selected': idx2th == 0}]"
-                            @click="selectTabs(event, type1th.taxonomyId, 2)"
-                            :data-id="type2th.taxonomyId">
-                            {{type2th.taxonomyName}}
+                        <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies"
+                            :class="['tab',{'selected': isCurrentTab(`${type1TH.taxonomyId}1TH`,type2TH.taxonomyId)}]"
+                            @click="selectedTab(`${type1TH.taxonomyId}1TH`, type2TH.taxonomyId)"
+                            :data-id="type2TH.taxonomyId">
+                            {{type2TH.taxonomyName}}
                         </div>
                     </div>
-                    <div v-for="(type2th, idx2th) in type1th.childTaxonomies" :id="type2th.taxonomyId" :class="['secend-category-article', {'showArticle':idx2th == 0}]">
-                        <div v-if="type2th.childTaxonomies.length == 0">{{type2th.taxonomyName}}文章</div>
+                    <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies" :id="type2TH.taxonomyId" class="secend-category-article" v-if="isCurrentTab(`${type1TH.taxonomyId}1TH`,type2TH.taxonomyId)">
+                        <div v-if="type2TH.childTaxonomies.length == 0">{{type2TH.taxonomyName}}文章</div>
                         <div v-else>
                             <div class="tabs-3th">
-                                <div v-for="(type3th, idx3th) in type2th.childTaxonomies"
-                                :class="['tab', {'selected': idx3th == 0}]"
-                                @click="selectTabs(event, type2th.taxonomyId, 3)"
-                                :data-id="type3th.taxonomyId">
-                                    {{type3th.taxonomyName}}
+                                <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies"
+                                :class="['tab', {'selected': isCurrentTab(`${type2TH.taxonomyId}2TH`,type3TH.taxonomyId)}]"
+                                @click="selectedTab(`${type2TH.taxonomyId}2TH`, type3TH.taxonomyId)"
+                                :data-id="type3TH.taxonomyId">
+                                    {{type3TH.taxonomyName}}
                                 </div>
                             </div>
-                            <div v-for="(type3th, idx3th) in type2th.childTaxonomies" :id="type3th.taxonomyId" :class="['third-category-article', {'showArticle':idx3th == 0}]">
-                                <div v-if="type3th.childTaxonomies.length == 0">{{type3th.taxonomyName}}文章</div>
+                            <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies" :id="type3TH.taxonomyId" class="third-category-article" v-if="isCurrentTab(`${type2TH.taxonomyId}2TH`,type3TH.taxonomyId)">
+                                <div v-if="type3TH.childTaxonomies.length == 0">{{type3TH.taxonomyName}}文章</div>
                                 <div v-else>
                                     <div class="tabs-4th">
-                                        <div v-for="(type4th, idx4th) in type3th.childTaxonomies"
-                                        :class="['tab', {'selected': idx4th == 0}]"
-                                        @click="selectTabs(event, type3th.taxonomyId, 4)"
-                                        :data-id="type4th.taxonomyId">
-                                            {{type4th.taxonomyName}}
+                                        <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies"
+                                        :class="['tab', {'selected': isCurrentTab(`${type3TH.taxonomyId}3TH`,type4TH.taxonomyId)}]"
+                                        @click="selectedTab(`${type3TH.taxonomyId}3TH`, type4TH.taxonomyId)"
+                                        :data-id="type4TH.taxonomyId">
+                                            {{type4TH.taxonomyName}}
                                         </div>
                                     </div>
-                                    <div v-for="(type4th, idx4th) in type3th.childTaxonomies" :id="type4th.taxonomyId" :class="['fourth-category-article', {'showArticle':idx4th == 0}]">
-                                        {{type4th.taxonomyName}}文章
+                                    <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies" :id="type4TH.taxonomyId" class="fourth-category-article" v-if="isCurrentTab(`${type3TH.taxonomyId}3TH`,type4TH.taxonomyId)">
+                                        {{type4TH.taxonomyName}}文章
                                     </div>
                                 </div>
                             </div>

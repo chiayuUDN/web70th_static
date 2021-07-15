@@ -21,11 +21,6 @@ ul {
     margin: 0;
 }
 
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1280px;
-}
 
 a {
     color: var(--black);
@@ -48,41 +43,52 @@ a:hover {
     background-image: url(../icons/icon-rightarrow.svg);
 }
 
-/* carousel-slider */
-.slider-container {
-    
-}
-.slider-container .slider {
-    display: flex;
-}
-/* .prev, .next {
-    z-index: 1;
-    border-radius: 50px;
-    background-color: var(--white);
-} */
+
+
+
+
 
 /* data 區塊開始 */
 .main {
     margin-top: 65px;
 }
+    .main .container {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1280px;
+    }
 
-.indexTitle {
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: center;
-    margin-bottom: 24px;
-}
-.note {
-    line-height: 1.5;
-    margin-bottom: 40px;
-}
+    .main .indexTitle {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .main  .note {
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+    .main .large-category-article { /* 大分類文章 */
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
 
 @media (max-width: 1199px) {
-    .container {
+
+    .main  .container {
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    .main .large-category-article {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    } 
+
 }
 
 @media (max-width: 767px) {
@@ -93,8 +99,8 @@ a:hover {
     .main {
         margin-top: 57px;
     }
-    .indexTitle {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
+        .main .indexTitle {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
 }
