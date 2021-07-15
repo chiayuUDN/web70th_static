@@ -6,6 +6,7 @@ let app = new Vue({
         order: 0
     },
     created() {
+        w3.includeHTML();
         axios.get("./../../resources/js/type.json")
           .then(response => {
               if(response.data.success) {
@@ -21,6 +22,9 @@ let app = new Vue({
     },
     mounted(){
         console.log(this.tabs);
+    },
+    updated(){
+        w3.includeHTML();
     },
     methods: {
         selectedTab(parentsIdKey,childrenId){
