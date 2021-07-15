@@ -10,12 +10,15 @@ new Vue({
         sectionTypes: {}
     },
     created() {
-
         axios.get("./../../resources/js/type.json")
           .then(response => {
-              let result = response.data.result ;
-              console.log(result);
-              this.sectionTypes = result;
+              if(response.data.success) {
+                  let result = response.data.result ;
+                  console.log(result);
+                  this.sectionTypes = result;
+              } else {
+                  console.log('err')
+              }
           }).catch(err => console.log(err))
     },
 });
