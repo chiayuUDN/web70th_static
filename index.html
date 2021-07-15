@@ -22,7 +22,7 @@
 
         <!-- 迴圈產生資料 -->
         <div id="app" class="container">
-            <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies.slice(1)" :id="type1TH.taxonomyId" class="large-category-article">
+            <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies" :id="type1TH.taxonomyId" class="large-category-article">
                 <!-- 媒體發展 -->
                 <div v-if="idx1TH == 1">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>

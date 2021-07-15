@@ -10,8 +10,8 @@ let app = new Vue({
         axios.get("./../../resources/js/type.json")
           .then(response => {
               if(response.data.success) {
-                  let result = response.data.result ;
-                  console.log(result);
+                  let result = response.data.result;
+                  result.childTaxonomies = result.childTaxonomies.slice(1)
                   this.sectionTypes = result;
                   filledTab(this.sectionTypes,this.order + 1);
 
