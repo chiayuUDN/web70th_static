@@ -1,3 +1,9 @@
+
+Vue.component("component-dropdown", {
+    template: '#component-dropdown',
+});
+
+
 new Vue({
     el: "#app",
     data: {

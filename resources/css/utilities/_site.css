@@ -1,0 +1,7 @@
+body {
+    font-family: NotoSansCJKtc, Roboto, 'Noto Sans TC', sans-serif;
+    color: var(--black);
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
