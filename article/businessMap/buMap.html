@@ -1,3 +1,81 @@
 <div>
-    事業版圖 html
+    <div class="title">事業版圖</div>
+    <div class="content">
+        <div class="pc">
+            <div class="paragraph">
+                去中⼼化的網路時代，不只了挑戰專業媒體的新聞影響⼒和話語權，更顛覆過去支撐媒體的商業模式。
+            </div>
+            <div class="paragraph">
+                我們於《聯合報2008關鍵報告》訂出雙引擎策略，即聯合報系集團將透過「多元事業經營」及「報紙數位轉型」，來⽀持媒體永續發展，以維護新聞的品質、公正與獨立性。
+            </div>
+            <div class="paragraph">
+                聯合報系以優質內容為核、新科技為輔，將聯合報、經濟日報、世界日報等報紙品牌進行數位化再造，以最適合當代閱聽習慣的載具、平台與媒體呈現方式，提供讀者更精準分眾的內容、更個人化的使用設計。
+            </div>
+            
+            <div class="paragraph">
+                與此同時，我們將文化、教育、醫療、民生消費新聞等聯合報系長期深耕的領域延伸，打造文創、電商、娛樂、健康、教育、出版、行旅等實體服務，一條龍式滿足讀者從「獲知資訊」到「獲得體驗」，生活各層面的需求。
+            </div>
+            <div class="paragraph">
+                在數位及數據的協助下，聯合報系從供應讀者專業新聞資訊的報業集團，拓展為提供使用者所需內容及服務的多元事業集團。
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="paragraph">
+                聯合報系以媒體為核心，包括聯合報、經濟日報、聯合線上及世界日報等，各媒體品牌並朝向創新事業的發展。除此之外，聯合報系致力打造包括文創、電商、娛樂、健康、教育、出版、行旅等多元型態的事業。
+            </div>
+        </div>
+        <div class="picture">
+            <img src="resources/img/img-business-domain.png" alt="">
+        </div>
+    </div>
 </div>
+
+<style>
+    #buMap .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #buMap .pc, #buMap .picture {
+        width: 48%;
+    }
+    #buMap .picture {
+        margin-left: auto;
+    }
+    #buMap .mobile {
+        display: none;
+    }
+    #buMap .title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    #buMap .paragraph {
+        font-weight: 500;
+        margin-bottom: 16px;
+        line-height: 1.5;
+    }
+    #buMap .paragraph:last-child {
+        margin-bottom: 0;
+    }
+    #buMap img {
+        width: 100%;
+    }
+
+    @media (max-width: 1199px) {
+        #buMap .pc {
+            display: none;
+        }
+        #buMap .mobile {
+            display: block;
+        }
+        #buMap .mobile, #buMap .picture {
+            width: 100%;
+        }
+        #buMap img {
+            max-width: 512px;
+            display: block;
+            margin:auto;
+            margin-top: 40px;
+        }
+    }
+</style>

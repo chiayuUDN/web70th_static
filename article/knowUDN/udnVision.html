@@ -1,3 +1,46 @@
+<!-- 願景工程 -->
 <div>
-    願景工程 html
+    <img class="pc" src="../resources/img/img-vision-pc.png" alt="">
+    <img class="mobile" src="../resources/img/img-vision-mobile@2x.png" alt="">
+    <a class="more" href="https://vision.udn.com/vision/index">看更多 <img class="icon" src="../resources/icons/icon-newwindow.svg" alt=""></a>
 </div>
+
+<style>
+    .mobile {
+        display: none;
+    }
+    img {
+        width: 100%;
+    }
+    .more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 354px;
+        height: 48px;
+        border-radius: 24px;
+        margin: auto;
+        border: solid 1px var(--gray-c4);
+        margin-top: 40px;
+    }
+    .icon {
+        width: 18px;
+        margin-left: 8px;
+    }
+
+    @media (max-width: 1199px) {
+        
+    }
+
+    @media (max-width: 767px) {
+        .pc {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        .more {
+            margin-top: 24px;
+        }
+    }
+</style>

@@ -27,6 +27,7 @@
                 <div v-if="idx1TH == 1">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
                     <div class="note">{{type1TH.desc}}</div>
+                    <div :w3-include-html="`article/mediaFeature/mediaFeature.html`"></div>
                 </div>
                 <div v-else>
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
