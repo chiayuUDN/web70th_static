@@ -1,6 +1,14 @@
 .tab {
     cursor: pointer;
 }
+
+    .tab:first-child {
+        margin-left: 0;
+    }
+    .tab:last-child {
+        margin-right: 0;
+    }
+
 /* 二分類tabs */
 .tabs-2th {
     display: flex;
