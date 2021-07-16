@@ -1,6 +1,41 @@
+/* 參考:https://zpl.io/V4RRzLy */
+.t1,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    line-height: 1.5;
+}
+/* 內頁大標題 */
+.t1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+/* 大標題 */
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+/* 副標題 */
+h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+/* 內文 */
+h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+/* 副標題或內文 */
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+}
+/* 附註 */
+h5 {
+    font-size: 16px;
+    font-weight: 300;
+}
 
 /* T1 */
-h1 ,.h1 {
+/* h1 ,.h1 {
     font-size: 48px;
     font-weight: 500;
 }
@@ -28,4 +63,7 @@ h5, .h5 {
 h6, .h6 {
     font-size: 16px;
     font-weight: 300;
-}
+} */
+
+
+
