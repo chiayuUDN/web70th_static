@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <script src="./w3.js"></script>
+</head>
+<body>
+    <div id="demo">
+        <div class="header">
+            <div class="tab" v-for="type in types" @click="select(type)">
+                {{type}}
+            </div>
+        </div>
+        <div class="body">
+            <div w3-include-html="component/button.html"></div>
+        </div>
+    </div>
+</body>
+<style>
+    #demo .header{
+        height: 80px;
+        background-color: var(--gray-c2);
+        border: 1px solid var(--gray-c3);
+        margin-bottom: 20px;
+    }
+    #demo .tab {
+        margin: 8px;
+        cursor: pointer;
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script>
+    new Vue({
+        el:'#demo',
+        data: {
+            types:['button'],
+            selectTab: 'button',
+        },
+        created(){
+            w3.includeHTML();
+        },
+        updated(){
+            w3.includeHTML();
+        },
+        methods:{
+            select(value){
+                this.selectTab = value;
+                console.log(this.selectTab)
+            }
+        }
+    })
+</script>
+</html>
