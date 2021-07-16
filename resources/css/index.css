@@ -50,7 +50,10 @@ a:hover {
 
 /* data 區塊開始 */
 .main {
-    margin-top: 65px;
+    /* margin-top: 65px; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
     .main .container {
