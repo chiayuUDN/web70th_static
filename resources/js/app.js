@@ -6,11 +6,12 @@ let app = new Vue({
         order: 0
     },
     created() {
+        w3.includeHTML();
         axios.get("./../../resources/js/type.json")
           .then(response => {
               if(response.data.success) {
-                  let result = response.data.result ;
-                  console.log(result);
+                  let result = response.data.result;
+                  result.childTaxonomies = result.childTaxonomies.slice(1)
                   this.sectionTypes = result;
                   filledTab(this.sectionTypes,this.order + 1);
 
@@ -21,6 +22,9 @@ let app = new Vue({
     },
     mounted(){
         console.log(this.tabs);
+    },
+    updated(){
+        w3.includeHTML();
     },
     methods: {
         selectedTab(parentsIdKey,childrenId){

@@ -22,7 +22,7 @@
 
         <!-- 迴圈產生資料 -->
         <div id="app" class="container">
-            <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies.slice(1)" :id="type1TH.taxonomyId" class="large-category-article">
+            <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies" :id="type1TH.taxonomyId" class="large-category-article">
                 <!-- 媒體發展 -->
                 <div v-if="idx1TH == 1">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies" :id="type2TH.taxonomyId" class="secend-category-article" v-if="isCurrentTab(`${type1TH.taxonomyId}1TH`,type2TH.taxonomyId)">
-                        <div v-if="type2TH.childTaxonomies.length == 0">{{type2TH.taxonomyName}}文章</div>
+                        <div v-if="type2TH.childTaxonomies.length == 0" :w3-include-html="`article/${type1TH.taxonomyId}/${type2TH.taxonomyId}.html`"></div>
                         <div v-else>
                             <div class="tabs-3th">
                                 <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies"
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies" :id="type3TH.taxonomyId" class="third-category-article" v-if="isCurrentTab(`${type2TH.taxonomyId}2TH`,type3TH.taxonomyId)">
-                                <div v-if="type3TH.childTaxonomies.length == 0">{{type3TH.taxonomyName}}文章</div>
+                                <div v-if="type3TH.childTaxonomies.length == 0" :w3-include-html="`article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${type3TH.taxonomyId}.html`"></div>
                                 <div v-else>
                                     <div class="tabs-4th">
                                         <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies"
@@ -61,7 +61,7 @@
                                         </div>
                                     </div>
                                     <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies" :id="type4TH.taxonomyId" class="fourth-category-article" v-if="isCurrentTab(`${type3TH.taxonomyId}3TH`,type4TH.taxonomyId)">
-                                        {{type4TH.taxonomyName}}文章
+                                        <div :w3-include-html="`article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${type3TH.taxonomyId}/${type4TH.taxonomyId}.html`"></div>
                                     </div>
                                 </div>
                             </div>
@@ -164,9 +164,6 @@
     <footer w3-include-html="footer/footer.html"></footer>
 </body>
 
-<script>
-    w3.includeHTML();
-</script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 <script src="./resources/js/app.js"></script>
