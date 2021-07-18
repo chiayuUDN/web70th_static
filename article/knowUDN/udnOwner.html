@@ -1,3 +1,229 @@
+<!-- PC -->
 <div>
-    經營團隊 html
+    <div class="card-special">
+        <div class="card-body">
+            <div class="item-img">
+                <img src="resources/img/img-leader-1.png" alt="">
+            </div>
+            <div class="item-title">
+                <span class="h2">王文杉</span><span class="h4 text-gray">董事長</span>
+            </div>
+            <div class="item-content text-gray">
+                聯合報股份有限公司董事長<br>
+                聯合報系總管理處總經理<br>
+                聯合報系新事業處處長<br>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card">
+            <span class="h2">項國寧</span><span class="h4 text-gray">執行董事</span>
+        </div>
+        <div class="card">
+            <span class="h2">王效蘭</span><span class="h4 text-gray">聯合報發行人</span>
+        </div>
+        <div class="card">
+            <span class="h2">胡立台</span><span class="h4 text-gray">經濟日報發行人</span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card">
+            <div>
+                <span class="h2">劉永平</span><span class="h4 text-gray">聯合報系總管理處副總經理暨策略長</span>
+                <p class="text-gray">
+                    聯合線上公司董事長<br>
+                    聯經數位公司董事長<br>
+                    聯合智網公司董事長<br>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <span class="h2">游美月</span><span class="h4 text-gray">聯合報社長</span>
+        </div>
+        <div class="card">
+            <span class="h2">黃素娟</span><span class="h4 text-gray">經濟日報社長</span>
+        </div>
+    </div>
 </div>
+<style>
+    .h2 {
+        margin-right: 8px;
+    }
+    img {
+        width: 100%;
+    }
+    .text-gray {
+        color: var(--gray-c4);
+    }
+    .card-special, .card {
+        height: 173px;
+        background-color: var(--gray-c1);
+        margin-bottom: 24px;
+    }
+    .card-special {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-special .card-body {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        grid-auto-flow: row;
+    }
+    .card-special .card-body .item-img {
+        width: 118px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin-right: 16px;
+    }
+    .card-special .card-body .item-title {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .card-special .card-body .item-content {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .wrapper {
+        display: flex;
+    }
+    .card {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .card:not(:last-child) {
+        margin-right: 24px;
+    }
+    .card p{
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 767px) {
+        .h4 {
+            display: block;
+        }
+        .card-special {
+            display: block;
+            height: auto;
+            padding: 16px;
+        }
+        .card-special .card-body .item-img {
+            grid-column: 2;
+            grid-row: 1;
+            width: 80px;
+            height: 80px;
+            margin-right: 0;
+        }
+        .card-special .card-body .item-title {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .card-special .card-body .item-content {
+            grid-row: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .wrapper {
+            display: block;
+        }
+        .card {
+            width: auto;
+            height: auto;
+            margin-bottom: 20px;
+            padding: 16px;
+        }
+        .card:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+</style>
+<!-- Mobile -->
+<!-- <div>
+    <div class="card-special">
+        <div class="item-title">
+            <span class="h2">王文杉</span><span class="h4 text-gray">董事長</span>
+        </div>
+        <div class="item-img">
+            <img src="resources/img/img-leader-1.png" alt="">
+        </div>
+        <div class="item-content text-gray">
+            聯合報股份有限公司董事長<br>
+            聯合報系總管理處總經理<br>
+            聯合報系新事業處處長<br>
+        </div>
+    </div>
+    <div class="card">
+        <span class="h2">項國寧</span>
+        <span class="h4 text-gray">執行董事</span>
+    </div>
+    <div class="card">
+        <span class="h2">王效蘭</span>
+        <span class="h4 text-gray">聯合報發行人</span>
+    </div>
+    <div class="card">
+        <span class="h2">胡立台</span>
+        <span class="h4 text-gray">經濟日報發行人</span>
+    </div>
+    <div class="card">
+        <span class="h2">劉永平</span>
+        <span class="h4 text-gray">聯合報系總管理處副總經理暨策略長</span>
+        <p class="text-gray">
+            聯合線上公司董事長<br>
+            聯經數位公司董事長<br>
+            聯合智網公司董事長<br>
+        </p>
+    </div>
+    <div class="card">
+        <span class="h2">游美月</span>
+        <span class="h4 text-gray">聯合報社長</span>
+    </div>
+    <div class="card">
+        <span class="h2">黃素娟</span>
+        <span class="h4 text-gray">經濟日報社長</span>
+    </div>
+</div>
+
+<style>
+    .h2 {
+        display: block;
+    }
+    img {
+        width: 100%;
+    }
+    .card-special, .card {
+        background-color: var(--gray-c1);
+        padding: 16px;
+    }
+    .card-special {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        margin-bottom: 20px;
+    }
+    .card-special .item-title {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .card-special .item-img {
+        grid-column: 2;
+        grid-row: 1;
+        width: 80px;
+        height: 80px;
+    }
+    .card-special .item-content {
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .card:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .card p {
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+</style> -->
