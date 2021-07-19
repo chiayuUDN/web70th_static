@@ -2,10 +2,13 @@ let app = new Vue({
     el: "#app",
     data: {
         sectionTypes: {},
-        currentNav: null,
+        currentMenu: 'activiti',
         specialBlock: 'mediaFeature',
         tabs: {}, // 紀錄選擇的tabs
         order: 1,
+        openNav: false,
+        media: media,
+        isShowGoTop: false
     },
     created() {
         w3.includeHTML();
@@ -20,11 +23,16 @@ let app = new Vue({
         }).catch(err => console.log(err));
         
     },
+    mounted() {
+        window.addEventListener('scroll', () => {
+            this.isShowGoTop = window.pageYOffset > 0 ? true : false
+        });
+    },
     updated(){
         w3.includeHTML();
     },
     computed:{
-        navigations() {
+        menus() {
             let nav = [];
             if(Object.keys(this.sectionTypes).length != 0) {
                 this.sectionTypes.childTaxonomies.forEach(item => {
@@ -45,7 +53,18 @@ let app = new Vue({
         isCurrentTab(parentsIdKey,childrenId){
             return this.tabs[parentsIdKey] == childrenId;
         },
-        
+        goTop() {
+            window.scroll(0, 0);
+        }
+    },
+    watch: {
+        openNav(){
+            if(this.openNav) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'visible';
+            }
+        }
     }
 });
 
@@ -70,3 +89,4 @@ function filledTab(taxonomies, order) {
     });
 
 }
+

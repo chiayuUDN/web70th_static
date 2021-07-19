@@ -12,26 +12,76 @@
 
 <body>
     <div id="app" class="main">
-        
-        <div v-for="nav in navigations" v-if="navigations.length != 0" class="container">
-            {{nav}}
 
-        </div>
+        <nav>
+            <div class="navContent">
+                <div class="nav-pc container">
+                    <div class="menu-btn">
+                        <button :class="['btn',{'active':openNav}]" @click="openNav = !openNav">
+    
+                              <span class="line line-top"></span>
+                              <span class="line line-middle"></span>
+                              <span class="line line-bottom"></span>
+                        </button>
+                    </div> 
+    
+                    <div class="udnLogo">
+                        <a class="img" href="#"><img class="udnLogo" src="./resources/icons/icon-udn-logo.svg" alt="聯合報系 United Daily News Group"></a>
+                    </div>
+    
+                    <div class="menus">
+                        <div class="menu-item" v-for="menu in menus" v-if="menus.length != 0">
+                            <a :href="`#${menu.taxonomyId}`" :class="{'active': menu.taxonomyId == currentMenu}" title="menu.taxonomyName" v-text="menu.taxonomyName"
+                                v-smooth-scroll="{offset: -65}"></a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" title="員工登入" v-text="`員工登入`"></a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- data 區塊開始 -->
-        <!-- 最新消息(輪播) -->
-        <div id="activiti" class="slideshow" w3-include-html="slideshow/slideshow.html"></div>
+                <transition name="slide-fade" v-if="media.isPadDown">
+                    <div class="nav-mb" v-show="openNav && media.isPadDown ">
 
-        <!-- 迴圈產生資料 -->
-        <div class="container">
-            <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies" :id="type1TH.taxonomyId" v-if="idx1TH >= 1" class="large-category-article container">
+                        <div class="top">
+                            <div class="udnLogo">
+                                <a class="img" href="#"><img class="udnLogo" src="./resources/icons/icon-udn-logo.svg" alt=""></a>
+                            </div>
+    
+                            <div class="login">
+                                <a href="#" class="active" title="員工登入" v-text="`員工登入`"></a>
+                            </div>
+                        </div>
+
+                        <div class="menus">
+                            <div class="menu-item" v-for="menu in menus" v-if="menus.length != 0">
+                                <a :href="`#${menu.taxonomyId}`" :class="{'active': menu.taxonomyId == currentMenu}" title="menu.taxonomyName" v-text="menu.taxonomyName"
+                                    v-smooth-scroll="{offset: -65}" @click="openNav = false"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </transition>
+            </div> 
+
+
+
+        </nav>
+
+        <div class="content">
+            <!-- data 區塊開始 -->
+            <!-- 最新消息(輪播) -->
+            <div id="activiti" class="slideshow" w3-include-html="slideshow/slideshow.html"></div>
+    
+            <!-- 迴圈產生資料 -->
+            <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies" :id="type1TH.taxonomyId" :class="['large-category-article',{'bg-gray': idx1TH%2 == 0}]" v-if="idx1TH > 0">
                 <!-- 媒體發展 -->
                 <div v-if="type1TH.taxonomyId == specialBlock">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
                     <div class="note">{{type1TH.desc}}</div>
                     <div :w3-include-html="`article/mediaFeature/mediaFeature.html`"></div>
                 </div>
-                <div v-else>
+                <div v-else class="container">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
                     <div class="tabs-2th">
                         <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies"
@@ -72,17 +122,32 @@
                     </div>
                 </div>
             </div>
-
         </div>
-        <footer w3-include-html="footer/footer.html"></footer>
+
+        <footer>
+            <div class="footerContent container">
+                <div class="infoText">
+                    <a href="tel:+886-2-8692-5588">聯絡我們</a>｜
+                    <a href="http://localhost:8080/information/map">交通位置</a>｜
+                    <a href="http://www.udngroup.com/members/udn_privacy">隱私權聲明</a>｜
+                    <a href="http://localhost:8080/#">English</a>
+                </div>
+                <div class="udngroupText">聯合報系 著作權所有 © udngroup.com All Rights Reserved.</div>
+            </div>
+        </footer>
+
+        <div class="fab-buttom" v-show="isShowGoTop">
+            <a href="#app" v-smooth-scroll="{offset: -135}">
+               <img src="./resources/icons/icon-gotop.svg" alt=""> 
+            </a>
+        </div>
     </div>
 </body>
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-<!-- <script src="./resources/js/lib/vuex.js"></script>
-<script src="./resources/js/store.js"></script> -->
+<script src="./resources/js/service/media.js"></script>
+<script src="./resources/js/vue2-smooth-scroll.js"></script>
 <script src="./resources/js/app.js"></script>
 
 

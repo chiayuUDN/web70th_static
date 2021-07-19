@@ -1,3 +1,112 @@
+/* 二分類tabs */
+.tabs-2th {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+    .tabs-2th .tab {
+        position: relative;
+        margin: 0 18px;
+        font-size: 20px;
+        line-height: 1.5;
+        padding-bottom: 8px;
+    }
+
+        .tabs-2th .tab.selected {
+            border-bottom: var(--orange) 3px solid;
+        }
+
+            .tabs-2th .tab.selected::before {
+                content: "";
+                position: absolute;
+                bottom: -11px;
+                left: calc(50% - 10px);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 10px 0 10px;
+                border-color: var(--orange) transparent transparent transparent;
+            }
+
+/* 三分類tabs */
+.tabs-3th {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .tabs-3th .tab {
+        margin: 0 12px;
+        padding: 12px 16px;
+        font-size: 18px;
+        line-height: 1;
+        background-color: var(--gray-c3);
+        border-radius: 21px;
+        margin-bottom: 24px;
+    }
+
+        .tabs-3th .tab.selected {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+/* 四分類tabs */
+.tabs-4th {
+    background-color: var(--gray-c2);
+    padding: 10px 24px;
+}
+
+    .tabs-4th .tab {
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 0 8px;
+        display: inline;
+        border-right: solid 1px var(--gray-c3);
+    }
+
+        .tabs-4th .tab:first-child {
+            font-size: 18px;
+            line-height: 1.5;
+            padding-left: 0;
+        }
+
+        .tabs-4th .tab:last-child {
+            font-size: 18px;
+            line-height: 1.5;
+            padding-right: 0;
+            border: none;
+        }
+
+        .tabs-4th .tab.selected {
+            color: var(--orange);
+        }
+
+@media (max-width: 767px) {
+    .tabs-2th {
+        margin-bottom: 20px;
+    }
+
+    .tabs-2th .tab {
+        margin: 0 8px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .tabs-3th {
+        justify-content:start;
+    }
+
+        .tabs-3th .tab{
+            margin-bottom: 20px;
+        }
+
+    .tab {
+        font-size: 18px;
+    }
+}
+
+
 .tab {
     cursor: pointer;
 }
@@ -5,95 +114,7 @@
     .tab:first-child {
         margin-left: 0;
     }
+
     .tab:last-child {
         margin-right: 0;
     }
-
-/* 二分類tabs */
-.tabs-2th {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.tabs-2th .tab {
-    position: relative;
-    margin: 0 18px;
-    font-size: 20px;
-    line-height: 1.5;
-    padding-bottom: 8px;
-}
-.tabs-2th .tab.selected {
-    border-bottom: var(--orange) 3px solid;
-}
-.tabs-2th .tab.selected::before {
-    content: "";
-    position: absolute;
-    bottom: -11px;
-    left: 30px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 10px 0 10px;
-    border-color: var(--orange) transparent transparent transparent;
-}
-/* 三分類tabs */
-.tabs-3th {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.tabs-3th .tab {
-    margin: 0 12px;
-    padding: 12px 16px;
-    font-size: 18px;
-    line-height: 1;
-    background-color: var(--gray-c3);
-    border-radius: 21px;
-    margin-bottom: 24px;
-}
-.tabs-3th .tab.selected {
-    background-color: var(--black);
-    color: var(--white);
-}
-
-/* 四分類tabs */
-.tabs-4th {
-    background-color: var(--gray-c2);
-    padding: 10px 24px;
-}
-.tabs-4th .tab {
-    font-size: 18px;
-    line-height: 1.5;
-    padding: 0 8px;
-    display: inline;
-    border-right: solid 1px var(--gray-c3);
-}
-.tabs-4th .tab:first-child {
-    font-size: 18px;
-    line-height: 1.5;
-    padding-left: 0;
-}
-.tabs-4th .tab:last-child {
-    font-size: 18px;
-    line-height: 1.5;
-    padding-right: 0;
-    border: none;
-}
-.tabs-4th .tab.selected {
-    color: var(--orange);
-}
-
-@media (max-width: 767px) {
-    .tabs-2th {
-        margin-bottom: 38px;
-    }
-    .tabs-3th {
-        justify-content:start;
-    }
-    .tabs-3th .tab{
-        margin-bottom: 20px;
-    }
-    .tab {
-        font-size: 18px;
-    }
-}
