@@ -2,6 +2,7 @@ let app = new Vue({
     el: "#app",
     data: {
         sectionTypes: {},
+        menus:[],
         currentMenu: 'activiti',
         specialBlock: 'mediaFeature',
         tabs: {}, // 紀錄選擇的tabs
@@ -16,34 +17,21 @@ let app = new Vue({
             if(response.data.success) {
                 let result = response.data.result;
                 this.sectionTypes = result;
+                this.getMenus();
                 filledTab(this.sectionTypes,this.order);
             } else {
                 console.log('err')
             }
         }).catch(err => console.log(err));
-        
     },
     mounted() {
         window.addEventListener('scroll', () => {
-            this.isShowGoTop = window.pageYOffset > 0 ? true : false
+            this.isShowGoTop = window.pageYOffset > 0 ? true : false;
+            this.mapScroll(window.pageYOffset);
         });
     },
     updated(){
         w3.includeHTML();
-    },
-    computed:{
-        menus() {
-            let nav = [];
-            if(Object.keys(this.sectionTypes).length != 0) {
-                this.sectionTypes.childTaxonomies.forEach(item => {
-                    nav.push({
-                        taxonomyName: item.taxonomyName,
-                        taxonomyId: item.taxonomyId
-                    })
-                })
-            }
-            return nav;
-        }
     },
     methods: {
         selectedTab(parentsIdKey,childrenId){
@@ -52,6 +40,27 @@ let app = new Vue({
         },
         isCurrentTab(parentsIdKey,childrenId){
             return this.tabs[parentsIdKey] == childrenId;
+        },
+        mapScroll(pageYOffset){
+            this.menus.forEach((item,idx) => {
+                if(this.$refs[item.taxonomyId][0]){
+                    if(pageYOffset >= this.$refs[item.taxonomyId][0].offsetTop) {
+                        this.currentMenu = item.taxonomyId;
+                    }else if(pageYOffset < this.$refs[this.menus[1].taxonomyId][0].offsetTop){
+                        this.currentMenu = this.menus[0].taxonomyId;
+                    }
+                }
+            })
+        },
+        getMenus() {
+            if(Object.keys(this.sectionTypes).length != 0) {
+                this.sectionTypes.childTaxonomies.forEach(item => {
+                    this.menus.push({
+                        taxonomyName: item.taxonomyName,
+                        taxonomyId: item.taxonomyId
+                    })
+                })
+            }
         },
         goTop() {
             window.scroll(0, 0);
@@ -67,6 +76,8 @@ let app = new Vue({
         }
     }
 });
+
+// console.log(app)
 
 
 function getSectionTypes() {
