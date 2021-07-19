@@ -12,7 +12,6 @@
 
 <body>
     <div id="app" class="main">
-
         <nav>
             <div class="navContent">
                 <div class="nav-pc container">
@@ -63,9 +62,6 @@
 
                 </transition>
             </div> 
-
-
-
         </nav>
 
         <div class="content">
@@ -76,7 +72,7 @@
             <!-- 迴圈產生資料 -->
             <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies" :id="type1TH.taxonomyId" :class="['large-category-article',{'bg-gray': idx1TH%2 == 0}]" v-if="idx1TH > 0">
                 <!-- 媒體發展 -->
-                <div v-if="type1TH.taxonomyId == specialBlock">
+                <div v-if="type1TH.taxonomyId == specialBlock" class="container">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
                     <div class="note">{{type1TH.desc}}</div>
                     <div :w3-include-html="`article/mediaFeature/mediaFeature.html`"></div>
@@ -149,6 +145,5 @@
 <script src="./resources/js/service/media.js"></script>
 <script src="./resources/js/plugins/vue2-smooth-scroll.js"></script>
 <script src="./resources/js/app.js"></script>
-
 
 </html>
