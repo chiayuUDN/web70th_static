@@ -84,14 +84,14 @@
 
 @media (max-width: 767px) {
     #app .main .tabs-2th {
-        margin-bottom: 20px;
+        margin-bottom: 38px;
     }
 
-    #app .main .tabs-2th .tab {
-        margin: 0 8px;
-        font-size: 16px;
-        font-weight: 300;
-    }
+        #app .main .tabs-2th .tab {
+            margin: 0 8px;
+            font-size: 16px;
+            font-weight: 300;
+        }
 
     #app .main .tabs-3th {
         justify-content: start;
@@ -101,9 +101,9 @@
             margin-bottom: 20px;
         }
 
-        #app .main .tab {
-            font-size: 18px;
-        }
+    #app .main .tab {
+        font-size: 18px;
+    }
 }
 
 
