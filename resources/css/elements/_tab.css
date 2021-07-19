@@ -1,11 +1,11 @@
 /* 二分類tabs */
-.tabs-2th {
+#app .main .tabs-2th {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-    .tabs-2th .tab {
+    #app .main .tabs-2th .tab {
         position: relative;
         margin: 0 18px;
         font-size: 20px;
@@ -13,11 +13,11 @@
         padding-bottom: 8px;
     }
 
-        .tabs-2th .tab.selected {
+        #app .main .tabs-2th .tab.selected {
             border-bottom: var(--orange) 3px solid;
         }
 
-            .tabs-2th .tab.selected::before {
+            #app .main .tabs-2th .tab.selected::before {
                 content: "";
                 position: absolute;
                 bottom: -11px;
@@ -30,7 +30,7 @@
             }
 
 /* 三分類tabs */
-.tabs-3th {
+#app .main .tabs-3th {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -52,12 +52,12 @@
         }
 
 /* 四分類tabs */
-.tabs-4th {
+#app .main .tabs-4th {
     background-color: var(--gray-c2);
     padding: 10px 24px;
 }
 
-    .tabs-4th .tab {
+    #app .main .tabs-4th .tab {
         font-size: 18px;
         line-height: 1.5;
         padding: 0 8px;
@@ -65,56 +65,56 @@
         border-right: solid 1px var(--gray-c3);
     }
 
-        .tabs-4th .tab:first-child {
+        #app .main .tabs-4th .tab:first-child {
             font-size: 18px;
             line-height: 1.5;
             padding-left: 0;
         }
 
-        .tabs-4th .tab:last-child {
+        #app .main .tabs-4th .tab:last-child {
             font-size: 18px;
             line-height: 1.5;
             padding-right: 0;
             border: none;
         }
 
-        .tabs-4th .tab.selected {
+        #app .main .tabs-4th .tab.selected {
             color: var(--orange);
         }
 
 @media (max-width: 767px) {
-    .tabs-2th {
+    #app .main .tabs-2th {
         margin-bottom: 20px;
     }
 
-    .tabs-2th .tab {
+    #app .main .tabs-2th .tab {
         margin: 0 8px;
         font-size: 16px;
         font-weight: 300;
     }
 
-    .tabs-3th {
-        justify-content:start;
+    #app .main .tabs-3th {
+        justify-content: start;
     }
 
-        .tabs-3th .tab{
+        #app .main .tabs-3th .tab{
             margin-bottom: 20px;
         }
 
-    .tab {
-        font-size: 18px;
-    }
+        #app .main .tab {
+            font-size: 18px;
+        }
 }
 
 
-.tab {
+#app .main .tab {
     cursor: pointer;
 }
 
-    .tab:first-child {
+    #app .main .tab:first-child {
         margin-left: 0;
     }
 
-    .tab:last-child {
+    #app .main .tab:last-child {
         margin-right: 0;
     }

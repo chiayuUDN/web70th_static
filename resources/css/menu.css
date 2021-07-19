@@ -11,7 +11,7 @@ opacity: 0;
 }
 
 
-nav {
+#app nav {
     border-bottom: solid 1px #ebebeb;
     background-color: var(--white);
     position: fixed;
@@ -21,11 +21,11 @@ nav {
     left: 0;
 }
 
-    nav .navContent {
+    #app nav .navContent {
         height: 64px;
     }
 
-    nav .navContent .nav-pc {
+    #app nav .navContent .nav-pc {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -33,21 +33,21 @@ nav {
         background-color: var(--white);
     }
 
-        nav .navContent .nav-pc .menu-btn {
+        #app nav .navContent .nav-pc .menu-btn {
             display: none;
             margin-right: 24px;
             z-index: 3;
         }
 
-        nav .navContent .nav-pc .udnLogo .img {
+        #app nav .navContent .nav-pc .udnLogo .img {
             display: block;
         }
 
-        nav .navContent .login {
+        #app nav .navContent .login {
             display: none;
         }
 
-            nav .navContent .nav-pc .menu-btn .btn {
+            #app nav .navContent .nav-pc .menu-btn .btn {
                 background: none;
                 border: none;
                 margin: 0;
@@ -55,7 +55,7 @@ nav {
                 cursor: pointer;
             }
             
-            nav .navContent .nav-pc .menu-btn .btn .line {
+            #app nav .navContent .nav-pc .menu-btn .btn .line {
                 display: block;
                 background-color: black;
                 width: 24px;
@@ -65,61 +65,61 @@ nav {
                 position: relative;
             }
 
-            nav .navContent .nav-pc .menu-btn .btn.active .line-top {
+            #app nav .navContent .nav-pc .menu-btn .btn.active .line-top {
                 transform: translateY(550%) rotate(45deg);
             }
               
-            nav .navContent .nav-pc .menu-btn .btn.active .line-middle {
+            #app nav .navContent .nav-pc .menu-btn .btn.active .line-middle {
                 opacity: 0;
             }
             
-            nav .navContent .nav-pc .menu-btn .btn.active .line-bottom {
+            #app nav .navContent .nav-pc .menu-btn .btn.active .line-bottom {
                 transform: translateY(-220%) rotate(135deg);
             }
 
-        nav .navContent .nav-pc .menus {
+        #app nav .navContent .nav-pc .menus {
             display: flex;
             align-content: center;
         }
 
-        nav .navContent .nav-pc .menus .menu-item {
+        #app nav .navContent .nav-pc .menus .menu-item {
             padding: 0 18px;
             font-size: 20px;
         }
 
-            nav .navContent  .nav-pc .menus .menu-item:first-child {
+            #app nav .navContent  .nav-pc .menus .menu-item:first-child {
                 padding-left: 0;
             }
 
-            nav .navContent .nav-pc .menus .menu-item:last-child {
+            #app nav .navContent .nav-pc .menus .menu-item:last-child {
                 padding-right: 0;
             }
 
-            nav .navContent .menus .menu-item .active {
+            #app nav .navContent .menus .menu-item .active {
                 color: var(--orange)
             }
 
 
 @media (max-width: 1199px) {
 
-    nav .navContent {
+    #app nav .navContent {
         position: relative;
     }
 
-    nav .navContent .nav-pc {
+    #app nav .navContent .nav-pc {
         justify-content: flex-start;
         z-index: 1;
     }
 
-        nav .navContent .nav-pc .menus {
+        #app nav .navContent .nav-pc .menus {
             display: none;
         }
 
-        nav .navContent .nav-pc .menu-btn {
+        #app nav .navContent .nav-pc .menu-btn {
             display: block;
         }
 
-        nav .navContent .nav-mb {
+        #app nav .navContent .nav-mb {
             position: fixed;
             top: 0;
             background-color: var(--white);
@@ -128,7 +128,7 @@ nav {
             width: 100%;
         }
         
-        nav .navContent .nav-mb .top {
+        #app nav .navContent .nav-mb .top {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -137,7 +137,7 @@ nav {
             padding: 0 30px;
         }
 
-            nav .navContent .nav-mb .top .udnLogo {
+            #app nav .navContent .nav-mb .top .udnLogo {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -146,11 +146,11 @@ nav {
                 width: 100%;
             }
 
-            nav .navContent .nav-mb .top .udnLogo .img{
+            #app nav .navContent .nav-mb .top .udnLogo .img{
                 width: 143px;
             }
 
-            nav .navContent .nav-mb .top .login {
+            #app nav .navContent .nav-mb .top .login {
                 display: block;
             }
 
@@ -159,7 +159,7 @@ nav {
                     white-space: nowrap;
                 }
 
-            nav .navContent .nav-mb .menus {
+            #app nav .navContent .nav-mb .menus {
                 position: absolute;
                 background-color: var(--white);
                 background: url('./../img/img-unn-emptylogo.png') right bottom no-repeat;
@@ -171,7 +171,7 @@ nav {
                 padding: 20px;
             }
 
-            nav .navContent .nav-mb .menus .menu-item {
+            #app nav .navContent .nav-mb .menus .menu-item {
                 font-size: 24px;
                 margin: 20px 0 34px 0;
             }
