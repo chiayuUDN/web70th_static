@@ -30,9 +30,9 @@
 </div>
 <style>
     .content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
     }
     img {
         width: 100%;
@@ -43,8 +43,12 @@
         text-align: right;
         margin-bottom: 20px;
     }
-    .left, .right {
-        max-width: 48%;
+    .left {
+        grid-column: 1;
+    }
+    .right {
+        grid-column: 2;
+        margin-left: 48px;
     }
     p {
         margin-bottom: 40px;
@@ -54,15 +58,17 @@
     }
 
     @media (max-width: 767px) {
-        .left, .right {
-            max-width: 100%;
+        .right {
+            grid-column: 1;
+            margin-top: 20px;
+            margin-left: 0;
         }
-        p, .left {
+        p {
+            margin-top: 10px;
             margin-bottom: 20px;
         }
     }
 </style>
-
 <!-- Mobile -->
 <!-- <div>
     <img src="resources/img/img-upright.png" alt="">
