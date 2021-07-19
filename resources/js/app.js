@@ -77,9 +77,6 @@ let app = new Vue({
     }
 });
 
-// console.log(app)
-
-
 function getSectionTypes() {
     return  axios.get("./../../resources/js/type.json");
 }
