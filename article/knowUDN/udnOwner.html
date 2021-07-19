@@ -17,18 +17,22 @@
     </div>
     <div class="wrapper">
         <div class="card">
-            <span class="h2">項國寧</span><span class="h4 text-gray">執行董事</span>
+            <div class="card-body">
+                <span class="h2">項國寧</span><span class="h4 text-gray">執行董事</span>
+            </div>
         </div>
         <div class="card">
-            <span class="h2">王效蘭</span><span class="h4 text-gray">聯合報發行人</span>
+            <div class="card-body">
+                <span class="h2">王效蘭</span><span class="h4 text-gray">聯合報發行人</span>
+            </div>
         </div>
         <div class="card">
-            <span class="h2">胡立台</span><span class="h4 text-gray">經濟日報發行人</span>
+            <div class="card-body">
+                <span class="h2">胡立台</span><span class="h4 text-gray">經濟日報發行人</span>
+            </div>
         </div>
-    </div>
-    <div class="wrapper">
         <div class="card">
-            <div>
+            <div class="card-body">
                 <span class="h2">劉永平</span><span class="h4 text-gray">聯合報系總管理處副總經理暨策略長</span>
                 <p class="text-gray">
                     聯合線上公司董事長<br>
@@ -38,10 +42,14 @@
             </div>
         </div>
         <div class="card">
-            <span class="h2">游美月</span><span class="h4 text-gray">聯合報社長</span>
+            <div class="card-body">
+                <span class="h2">游美月</span><span class="h4 text-gray">聯合報社長</span>
+            </div>
         </div>
         <div class="card">
-            <span class="h2">黃素娟</span><span class="h4 text-gray">經濟日報社長</span>
+            <div class="card-body">
+                <span class="h2">黃素娟</span><span class="h4 text-gray">經濟日報社長</span>
+            </div>
         </div>
     </div>
 </div>
@@ -92,17 +100,23 @@
     }
     .wrapper {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .card {
+        width: 100%;
         display: flex;
         align-items: center;
-        width: 100%;
-        padding: 0 20px;
+        max-width: 32%;
     }
-    .card:not(:last-child) {
-        margin-right: 24px;
+    .card .card-body {
+        margin: 0 20px
     }
-
+    @media (max-width: 1199px) {
+        .card {
+            max-width: 48.5%;
+        }
+    }
     @media (max-width: 767px) {
         .h4 {
             display: block;
@@ -129,17 +143,13 @@
             grid-column-end: 3;
             margin-top: 0;
         }
-        .wrapper {
-            display: block;
-        }
         .card {
-            width: auto;
+            max-width: 100%;
             height: auto;
             margin-bottom: 20px;
-            padding: 16px;
         }
-        .card:not(:last-child) {
-            margin-right: 0;
+        .card .card-body {
+            margin: 16px
         }
     }
 </style>
@@ -163,14 +173,6 @@
         <span class="h4 text-gray">執行董事</span>
     </div>
     <div class="card">
-        <span class="h2">王效蘭</span>
-        <span class="h4 text-gray">聯合報發行人</span>
-    </div>
-    <div class="card">
-        <span class="h2">胡立台</span>
-        <span class="h4 text-gray">經濟日報發行人</span>
-    </div>
-    <div class="card">
         <span class="h2">劉永平</span>
         <span class="h4 text-gray">聯合報系總管理處副總經理暨策略長</span>
         <p class="text-gray">
@@ -178,6 +180,14 @@
             聯經數位公司董事長<br>
             聯合智網公司董事長<br>
         </p>
+    </div>
+    <div class="card">
+        <span class="h2">王效蘭</span>
+        <span class="h4 text-gray">聯合報發行人</span>
+    </div>
+    <div class="card">
+        <span class="h2">胡立台</span>
+        <span class="h4 text-gray">經濟日報發行人</span>
     </div>
     <div class="card">
         <span class="h2">游美月</span>
@@ -195,6 +205,9 @@
     }
     img {
         width: 100%;
+    }
+    .text-gray {
+        color: var(--gray-c4)
     }
     p {
         font-weight:300;
