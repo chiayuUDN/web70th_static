@@ -1,0 +1,47 @@
+
+[data-templet-desktop="article-templet-albums"] .text {
+    color: var(--black);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+[data-templet-desktop="article-templet-albums"] [data-row="four-col"] {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 40px 24px;
+}
+
+    [data-templet-desktop="article-templet-albums"] [data-row="four-col"] [data-col="col"] {
+        text-align: center;
+    }
+
+        [data-templet-desktop="article-templet-albums"] [data-row="four-col"] [data-col="col"] > .image {
+            width: 100%;
+        }
+
+        [data-templet-desktop="article-templet-albums"] [data-row="four-col"] [data-col="col"] > .image-description {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 300;
+            color: var(--black);
+        }
+
+
+@media (max-width: 767px) {
+
+    [data-templet-desktop="article-templet-albums"] .text {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    [data-templet-desktop="article-templet-albums"] [data-row="four-col"] {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-gap: 20px 20px;
+    }
+
+        [data-templet-desktop="article-templet-albums"] [data-row="four-col"] [data-col="col"] > .image-description {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+}
