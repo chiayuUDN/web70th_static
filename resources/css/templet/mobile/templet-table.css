@@ -1,6 +1,6 @@
 [data-templet-mobile="templet-table"] {
     background-color: transparent;
-    text-align: left;
+    text-align: justify;
     padding: 0;
 }
 
@@ -14,7 +14,7 @@
 [data-templet-mobile="templet-table"] .image-description {
     font-size: 18px;
     color: var(--gray-c4);
-    text-align: left;
+    text-align: justify;
     font-weight: 300;
     margin-top: 20px;
 }

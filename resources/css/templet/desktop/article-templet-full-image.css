@@ -39,7 +39,7 @@
 }
 
     [data-templet-desktop="article-templet-full-image"] > .text {
-        text-align: left;
+        text-align: justify;
     }
 
     [data-templet-desktop="article-templet-full-image"] > .image-description {

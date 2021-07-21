@@ -73,12 +73,12 @@
 @media (max-width: 767px) {
     [data-templet-desktop="templet-table"] {
         background-color: transparent;
-        text-align: left;
+        text-align: justify;
         padding: 0;
     }
 
     [data-templet-desktop="templet-table"] .text{
-        text-align: left;
+        text-align: justify;
     }
 
         [data-templet-desktop="templet-table"] [data-horizontal="two-col"] {

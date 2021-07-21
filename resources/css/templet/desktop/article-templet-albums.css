@@ -31,7 +31,7 @@
 
     [data-templet-desktop="article-templet-albums"] .text {
         margin-bottom: 40px;
-        text-align: left;
+        text-align: justify;
     }
 
     [data-templet-desktop="article-templet-albums"] [data-row="four-col"] {
