@@ -1,0 +1,34 @@
+[data-templet-desktop="article-templet-full-image"] {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    [data-templet-desktop="article-templet-full-image"] .full-image {
+        width: 100%;
+    }
+
+    [data-templet-desktop="article-templet-full-image"] .udn-btn {
+        width: 354px;
+        margin-top: 46px;
+    }
+
+        [data-templet-desktop="article-templet-full-image"] .udn-btn .icon {
+            margin-left: 8px;
+            width: 18px;
+            width: 18px;
+        }
+
+@media (max-width: 767px) {
+
+[data-templet-desktop="article-templet-full-image"] .udn-btn {
+    width: 100%;
+    margin-top: 40px;
+}
+
+    [data-templet-desktop="article-templet-full-image"] .udn-btn .icon {
+        margin-left: 8px;
+        width: 16px;
+        width: 16px;
+    }
+}

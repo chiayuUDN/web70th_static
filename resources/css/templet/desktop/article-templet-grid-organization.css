@@ -1,0 +1,117 @@
+:root {
+    --pc-col: 3;
+    --pc-row: 3;
+
+    --pad-col: 2;
+    --pad-row: 4;
+
+    --mobile-col: 1;
+    --mobile-row: 7;
+}
+
+[data-templet-desktop="article-templet-grid-organization"] {
+    display: grid;
+    grid-template-columns: repeat(var(--pc-col), 1fr);
+    grid-template-rows: repeat(var(--pc-row), 1fr);
+    grid-gap: 24px 24px;
+}
+
+[data-templet-desktop="article-templet-grid-organization"] .text {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--gray-c4);
+}
+
+[data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] {
+    background-color: var(--gray-c1);
+    padding: 24px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+[data-templet-desktop="article-templet-grid-organization"] [data-grid="col"]:first-child {
+    grid-column: 1/calc(var(--pc-col) + 1);
+    justify-content: center;
+}
+
+[data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] .personal-image {
+    margin-right: 16px;
+}
+
+[data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
+        margin-left: 8px;
+    }
+    
+    [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] > .text:first-of-type {
+        margin-top: 12px;
+    }
+
+    [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title > * {
+        white-space: nowrap;
+    }
+    
+
+    [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] .personal-image img {
+        width: 118px;
+        height: 118px;
+    }
+
+@media (max-width: 1199px) {
+
+[data-templet-desktop="article-templet-grid-organization"] {
+    grid-template-columns: repeat(var(--pad-col), 1fr);
+    grid-template-rows: repeat(var(--pad-row), 1fr);
+}
+
+    [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"]:first-child  {
+        grid-column: 1/calc(var(--pad-col) + 1);
+    }
+}
+
+@media (max-width: 767px) {
+
+[data-templet-desktop="article-templet-grid-organization"] {
+    grid-template-columns: repeat(var(--mobile-col), 1fr);
+    grid-template-rows: repeat(var(--mobile-row), min-content) ;
+}
+
+    [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] {
+        order: attr(data-count,number);
+        padding: 16px;
+        align-items: flex-start;
+        position: relative;
+    }
+    
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"]:first-child {
+            grid-column: unset;
+            justify-content: space-between;
+        }
+
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"]:first-child .personal-image {
+            order: 1;
+            margin-right: 0;
+            margin-left: 24px;
+        }
+
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"]:first-child .personal-image img {
+            width: 80px;
+            height: 80px;
+        }
+
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title {
+            display: block;
+        }
+
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
+            margin: 0;
+        }
+}

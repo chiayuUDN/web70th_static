@@ -33,15 +33,20 @@ let app = new Vue({
     updated(){
         w3.includeHTML();
     },
+    computed: {
+        getMediaVersion(){
+            return media.isPhone ? 'mobile' : 'desktop';
+        }
+    },
     methods: {
-        selectedTab(parentsIdKey,childrenId){
+        selectedTab(parentsIdKey,childrenId) {
             this.tabs[parentsIdKey] = childrenId;
             this.$forceUpdate(); // 強迫更新畫面
         },
         isCurrentTab(parentsIdKey,childrenId){
             return this.tabs[parentsIdKey] == childrenId;
         },
-        mapScroll(pageYOffset){
+        mapScroll(pageYOffset) {
             this.menus.forEach((item,idx) => {
                 if(this.$refs[item.taxonomyId][0]){
                     if(pageYOffset >= this.$refs[item.taxonomyId][0].offsetTop) {

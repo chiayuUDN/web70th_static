@@ -1,17 +1,31 @@
+@import './utilities/_reset.css';
 @import './_var.css';
 
 
 /* utilities */
 @import './utilities/_site.css';
 @import './utilities/_font.css';
+@import './utilities/_spacing.css';
 
 /* elements */
 @import './elements/_tab.css';
 @import './elements/_button.css';
 @import './elements/_dropdown.css';
 
-/* article */
-@import './article/article.css';
+
+/* templet desktop */
+@import './templet/desktop/article-templet-full-image.css';
+@import './templet/desktop/article-templet-grid-horizontal-two-col.css';
+@import './templet/desktop/article-templet-grid-organization.css';
+@import './templet/desktop/templet-table.css';
+
+/* templet mobile */
+@import './templet/mobile/article-templet-full-image.css';
+@import './templet/mobile/article-templet-grid-vertical.css';
+@import './templet/mobile/article-templet-grid-organization.css';
+@import './templet/mobile/templet-table.css';
+
+
 
 @import './menu.css';
 @import './footer.css';

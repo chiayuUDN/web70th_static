@@ -1,0 +1,96 @@
+[data-templet-desktop="templet-table"]  {
+    padding: 40px 36px;
+    background-color: var(--white);
+}
+
+    [data-templet-desktop="templet-table"] .text {
+        color: var(--black);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    [data-templet-desktop="templet-table"] [data-horizontal="two-col"] {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    [data-templet-desktop="templet-table"] table {
+        width: 100%;
+    }
+
+    [data-templet-desktop="templet-table"] table:first-of-type:not(:last-of-type) {
+            border-right: 1px solid #e4e4e4;;
+    }
+
+        [data-templet-desktop="templet-table"] table thead tr {
+            background-color: var(--orange);
+        }
+        
+            [data-templet-desktop="templet-table"] table thead tr th {
+                padding: 13px 24px;
+                font-size: 20px;
+                font-weight: 500;
+                color: var(--white);
+                text-align: left;
+            }
+
+        [data-templet-desktop="templet-table"] table tbody tr {
+            background-color: var(--white);
+        }
+
+            [data-templet-desktop="templet-table"] table tbody tr:nth-child(odd) {
+                background-color: #fbfbfb; 
+            }
+
+            [data-templet-desktop="templet-table"] table tbody tr td {
+                padding: 13px 24px;
+                font-size: 20px;
+                font-weight: 300;
+                color: var(--black);
+            }
+
+
+@media (max-width: 767px) {
+    [data-templet-desktop="templet-table"] {
+        background-color: transparent;
+        text-align: left;
+        padding: 0;
+    }
+
+    [data-templet-desktop="templet-table"] .text{
+        text-align: left;
+    }
+
+        [data-templet-desktop="templet-table"] [data-horizontal="two-col"] {
+            display: block;
+        }
+
+            [data-templet-desktop="templet-table"] table:not(:first-child)  {
+                border: none;
+            }
+
+        [data-templet-desktop="templet-table"] table,
+        [data-templet-desktop="templet-table"] thead,
+        [data-templet-desktop="templet-table"] tbody,
+        [data-templet-desktop="templet-table"] tr,
+        [data-templet-desktop="templet-table"] th,
+        [data-templet-desktop="templet-table"] td {
+            display: block;
+        }
+
+        [data-templet-desktop="templet-table"] thead {
+            display: none;
+        }
+
+        [data-templet-desktop="templet-table"] table tbody tr {
+            padding: 8px 16px;
+        }
+
+            [data-templet-desktop="templet-table"] table tbody tr td {
+                padding: 8px 0;
+                font-size: 18px;
+                font-weight: 300;
+                color: var(--black);
+            }
+    
+}

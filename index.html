@@ -17,7 +17,6 @@
                 <div class="nav-pc container">
                     <div class="menu-btn">
                         <button :class="['btn',{'active':openNav}]" @click="openNav = !openNav">
-    
                               <span class="line line-top"></span>
                               <span class="line line-middle"></span>
                               <span class="line line-bottom"></span>
@@ -59,7 +58,6 @@
                             </div>
                         </div>
                     </div>
-
                 </transition>
             </div> 
         </nav>
@@ -75,7 +73,7 @@
                 <div v-if="type1TH.taxonomyId == specialBlock" class="container">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
                     <div class="note">{{type1TH.desc}}</div>
-                    <div :w3-include-html="`article/mediaFeature/mediaFeature.html`"></div>
+                    <div :w3-include-html="`article/mediaFeature/${getMediaVersion}/mediaFeature.html`"></div>
                 </div>
                 <div v-else class="container">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
@@ -88,7 +86,7 @@
                         </div>
                     </div>
                     <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies" :id="type2TH.taxonomyId" class="secend-category-article" v-if="isCurrentTab(`${type1TH.taxonomyId}1TH`,type2TH.taxonomyId)">
-                        <div v-if="type2TH.childTaxonomies.length == 0" :w3-include-html="`article/${type1TH.taxonomyId}/${type2TH.taxonomyId}.html`"></div>
+                        <div v-if="type2TH.childTaxonomies.length == 0" :w3-include-html="`article/${type1TH.taxonomyId}/${getMediaVersion}/${type2TH.taxonomyId}.html`"></div>
                         <div v-else>
                             <div class="tabs-3th">
                                 <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies"
@@ -99,7 +97,7 @@
                                 </div>
                             </div>
                             <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies" :id="type3TH.taxonomyId" class="third-category-article" v-if="isCurrentTab(`${type2TH.taxonomyId}2TH`,type3TH.taxonomyId)">
-                                <div v-if="type3TH.childTaxonomies.length == 0" :w3-include-html="`article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${type3TH.taxonomyId}.html`"></div>
+                                <div v-if="type3TH.childTaxonomies.length == 0" :w3-include-html="`article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${getMediaVersion}/${type3TH.taxonomyId}.html`"></div>
                                 <div v-else>
                                     <div class="tabs-4th">
                                         <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies"
@@ -110,7 +108,7 @@
                                         </div>
                                     </div>
                                     <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies" :id="type4TH.taxonomyId" class="fourth-category-article" v-if="isCurrentTab(`${type3TH.taxonomyId}3TH`,type4TH.taxonomyId)">
-                                        <div :w3-include-html="`article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${type3TH.taxonomyId}/${type4TH.taxonomyId}.html`"></div>
+                                        <div :w3-include-html="`article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${type3TH.taxonomyId}/${getMediaVersion}/${type4TH.taxonomyId}.html`"></div>
                                     </div>
                                 </div>
                             </div>
