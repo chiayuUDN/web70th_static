@@ -4,9 +4,24 @@
 }
 
     [data-templet-desktop="templet-table"] .text {
+        font-size: 20px;
+        font-weight: 300;
         color: var(--black);
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         text-align: center;
+    }
+    
+    [data-templet-desktop="templet-table"] .image-description {
+        font-size: 18px;
+        color: var(--gray-c4);
+        text-align: left;
+        font-weight: 300;
+        margin-top: 40px;
+    }
+
+    [data-templet-desktop="templet-table"] .sub-title {
+        margin-bottom: 20px;
+        color: var(--black);
     }
 
     [data-templet-desktop="templet-table"] [data-horizontal="two-col"] {
@@ -48,6 +63,11 @@
                 font-weight: 300;
                 color: var(--black);
             }
+
+                [data-templet-desktop="templet-table"] table tbody tr td a {
+                    position: relative;
+                    vertical-align: middle;
+                }
 
 
 @media (max-width: 767px) {

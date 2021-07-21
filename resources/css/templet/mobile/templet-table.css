@@ -5,7 +5,23 @@
 }
 
 [data-templet-mobile="templet-table"] .text{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+
+[data-templet-mobile="templet-table"] .image-description {
+    font-size: 18px;
+    color: var(--gray-c4);
     text-align: left;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+[data-templet-mobile="templet-table"] .sub-title {
+    margin-bottom: 20px;
+    color: var(--black);
 }
 
     [data-templet-mobile="templet-table"] {

@@ -1,8 +1,22 @@
 [data-templet-mobile="article-templet-full-image"] {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
 }
+
+    [data-templet-mobile="article-templet-full-image"] > .text {
+        font-size: 20px;
+        font-weight: 300;
+        color: var(--black);
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    [data-templet-mobile="article-templet-full-image"] > .image-description {
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--gray-c4);
+        margin-top: 40px;
+        text-align: left;
+    }
 
     [data-templet-mobile="article-templet-full-image"] .full-image {
         width: 100%;
