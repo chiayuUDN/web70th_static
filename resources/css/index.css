@@ -18,12 +18,14 @@
 @import './templet/desktop/article-templet-grid-horizontal-two-col.css';
 @import './templet/desktop/article-templet-grid-organization.css';
 @import './templet/desktop/templet-table.css';
+@import './templet/desktop/article-templet-albums.css';
 
 /* templet mobile */
 @import './templet/mobile/article-templet-full-image.css';
 @import './templet/mobile/article-templet-grid-vertical.css';
 @import './templet/mobile/article-templet-grid-organization.css';
 @import './templet/mobile/templet-table.css';
+@import './templet/mobile/article-templet-albums.css';
 
 
 
