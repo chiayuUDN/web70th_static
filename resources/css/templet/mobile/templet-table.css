@@ -15,6 +15,8 @@
     font-size: 18px;
     color: var(--gray-c4);
     text-align: justify;
+    word-wrap: break-word;
+    word-break: break-all;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -60,3 +62,8 @@
                 font-weight: 300;
                 color: var(--black);
             }
+
+            [data-templet-mobile="templet-table"] table tbody tr td a {
+                    position: relative;
+                    vertical-align: middle;
+                }
