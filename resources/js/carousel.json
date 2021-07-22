@@ -1,0 +1,86 @@
+{
+    "result": [
+      {
+        "articleUid": "07e4354a-7141-4779-8be8-5014c8094a84",
+        "articleTitle": "躲貓貓-櫻花祭",
+        "articleContentType": "U",
+        "articleAbstract": "<p class=\"resize-p\">＊無簡介＊</p>\n",
+        "articleContent": "<div id=\"scroll_div\" style=\"width:100%;overflow:auto;\"><div id=\"style_area\"><style> strong{font-weight: 900;}@media only screen and (max-device-width: 480px) { .resize{ height:100%; width:100%; } .resize-table{ word-wrap: break-word; table-layout:fixed; word-break: break-all; } .resize-td{ width:auto; word-wrap: break-word; word-break: break-all; } .resize-p{ word-wrap: break-word; word-break: break-all; } } </style></div>\n</div>",
+        "publishDate": 1622592000000,
+        "hasLink": true,
+        "hasAttachment": true,
+        "updateDate": 1622688836000,
+        "articleLinks": [
+          {
+            "linkName": "躲貓貓-櫻花季",
+            "linkSource": "udn瘋活動",
+            "linkUrl": "http://uevent.udnfunlife.com/sakuracatspopup/",
+            "isOpenNewWindow": "Y"
+          }
+        ],
+        "articleAttachments": [
+          {
+            "attachmentUid": "5c724f1e-4607-4c54-a1c2-10ce493b0870",
+            "attachmentDisplayName": "躲貓貓-櫻花祭",
+            "attachmentUrl": "/attachments/5c724f1e-4607-4c54-a1c2-10ce493b0870",
+            "attachmentFileExtension": "jpg"
+          }
+        ]
+      },
+      {
+        "articleUid": "6377630a-a44d-4fb2-a288-7ab3ceb311e9",
+        "articleTitle": "永恆慕夏",
+        "articleContentType": "U",
+        "articleAbstract": "<p class=\"resize-p\">＊無簡介＊</p>\n",
+        "articleContent": "<div id=\"scroll_div\" style=\"width:100%;overflow:auto;\"><div id=\"style_area\"><style> strong{font-weight: 900;}@media only screen and (max-device-width: 480px) { .resize{ height:100%; width:100%; } .resize-table{ word-wrap: break-word; table-layout:fixed; word-break: break-all; } .resize-td{ width:auto; word-wrap: break-word; word-break: break-all; } .resize-p{ word-wrap: break-word; word-break: break-all; } } </style></div>\n</div>",
+        "publishDate": 1622592000000,
+        "hasLink": true,
+        "hasAttachment": true,
+        "updateDate": 1622688861000,
+        "articleLinks": [
+          {
+            "linkName": "永恆慕夏",
+            "linkSource": "udn瘋活動",
+            "linkUrl": "http://uevent.udnfunlife.com/MuchaExhibition/",
+            "isOpenNewWindow": "Y"
+          }
+        ],
+        "articleAttachments": [
+          {
+            "attachmentUid": "842bf6a3-b26a-458f-8481-2ffa032c28c0",
+            "attachmentDisplayName": "永恆慕夏",
+            "attachmentUrl": "/attachments/842bf6a3-b26a-458f-8481-2ffa032c28c0",
+            "attachmentFileExtension": "jpg"
+          }
+        ]
+      },
+      {
+        "articleUid": "a5a88a06-0018-46b4-844f-2fad08dbcec7",
+        "articleTitle": "500輯 #植物，亂世最佳伴侶",
+        "articleContentType": "U",
+        "articleAbstract": "<p class=\"resize-p\">＊無簡介＊</p>\n",
+        "articleContent": "<div id=\"scroll_div\" style=\"width:100%;overflow:auto;\"><div id=\"style_area\"><style> strong{font-weight: 900;}@media only screen and (max-device-width: 480px) { .resize{ height:100%; width:100%; } .resize-table{ word-wrap: break-word; table-layout:fixed; word-break: break-all; } .resize-td{ width:auto; word-wrap: break-word; word-break: break-all; } .resize-p{ word-wrap: break-word; word-break: break-all; } } </style></div>\n</div>",
+        "publishDate": 1622588400000,
+        "hasLink": true,
+        "hasAttachment": true,
+        "updateDate": 1622689040000,
+        "articleLinks": [
+          {
+            "linkName": "500輯",
+            "linkSource": "udn",
+            "linkUrl": "https://500times.udn.com/wtimes/index",
+            "isOpenNewWindow": "Y"
+          }
+        ],
+        "articleAttachments": [
+          {
+            "attachmentUid": "caba8e11-c02d-43cb-b34e-148916a5d174",
+            "attachmentDisplayName": "500輯",
+            "attachmentUrl": "/attachments/caba8e11-c02d-43cb-b34e-148916a5d174",
+            "attachmentFileExtension": "png"
+          }
+        ]
+      }
+    ],
+    "success": true
+  }
