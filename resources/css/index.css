@@ -12,7 +12,8 @@
 @import './elements/_button.css';
 @import './elements/_dropdown.css';
 
-/* templet mobile */
+
+/* templet utilities */
 @import './templet/utilities/article-background.css';
 @import './templet/utilities/templet-popup.css';
 
@@ -23,6 +24,8 @@
 @import './templet/desktop/templet-table.css';
 @import './templet/desktop/article-templet-albums.css';
 @import './templet/desktop/article-templet-udn-member.css';
+@import './templet/desktop/page-templet-vertical';
+@import './templet/desktop/page-templet-time-line';
 
 /* templet mobile */
 @import './templet/mobile/article-templet-full-image.css';
@@ -31,6 +34,8 @@
 @import './templet/mobile/templet-table.css';
 @import './templet/mobile/article-templet-albums.css';
 @import './templet/mobile/article-templet-udn-member.css';
+@import './templet/mobile/page-templet-vertical';
+@import './templet/mobile/page-templet-time-line';
 
 
 
