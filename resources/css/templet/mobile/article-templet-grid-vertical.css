@@ -1,11 +1,15 @@
 [data-templet-mobile="article-templet-grid-vertical"] .sub-title {
     text-align: justify;
+    word-wrap: break-word;
+    word-break: break-all;
     text-justify:inter-ideograph;
     margin-bottom: 10px;
 }
 
 [data-templet-mobile="article-templet-grid-vertical"] .text {
     text-align: justify;
+    word-wrap: break-word;
+    word-break: break-all;
     color: var(--black);
     font-size: 20px;
     font-weight: 300;
@@ -15,6 +19,8 @@
 
 [data-templet-mobile="article-templet-grid-vertical"] .text-info {
     text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
     color: var(--gray-c4);
     font-size: 16px;
     font-weight: 300;
@@ -23,7 +29,7 @@
 
 [data-templet-mobile="article-templet-grid-vertical"] .grid-two-col {
     display: grid;
-    grid-template-columns: max-content auto;
+    grid-template-columns: max-content 1fr;
     grid-gap: 16px 0;
 }
 

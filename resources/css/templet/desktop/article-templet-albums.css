@@ -3,6 +3,8 @@
     color: var(--black);
     margin-bottom: 20px;
     text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 [data-templet-desktop="article-templet-albums"] [data-row="four-col"] {

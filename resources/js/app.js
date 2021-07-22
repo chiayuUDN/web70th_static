@@ -35,7 +35,7 @@ let app = new Vue({
     },
     computed: {
         getMediaVersion(){
-            return media.isPhone ? 'mobile' : 'desktop';
+            return media.isPhone ? 'desktop' : 'desktop';
         }
     },
     methods: {

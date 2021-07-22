@@ -80,7 +80,7 @@
                         "taxonomyUid": "8c418570-35b6-4995-ac97-06d224ad104c",
                         "taxonomyId": "mediaMap",
                         "taxonomyAbbrName": "媒體事業",
-                        "taxonomyName": "媒體事業版圖",
+                        "taxonomyName": "媒體事業",
                         "childTaxonomies": [
                             {
                                 "taxonomyUid": "563ddd50-542a-42b3-9aa8-7f77928e1e9e",
@@ -105,7 +105,7 @@
                         "taxonomyUid": "a2864094-e257-4cfb-963f-71f365e86cf7",
                         "taxonomyId": "multBu",
                         "taxonomyAbbrName": "多元事業",
-                        "taxonomyName": "多元事業版圖",
+                        "taxonomyName": "多元事業",
                         "childTaxonomies": [
                             {
                                 "taxonomyUid": "3f0ad376-c4a8-4751-a60a-e3486291f38f",

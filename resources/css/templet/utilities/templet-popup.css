@@ -1,0 +1,90 @@
+
+
+[data-templet="popup"] {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+
+    [data-templet="popup"][data-popup="show"] {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        overflow-y: auto;
+        background-color: rgba(0,0,0,0.56);
+        transition: opacity 0.1s linear;
+
+    }
+
+    [data-templet="popup"] [data-popup="container"] {
+        border-radius: 16px;
+        background-color: white;
+        overflow-y: auto;
+        width: 1280px;
+        margin: auto auto;
+    }
+
+        [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] {
+            height: 64px;
+            padding: 0 40px;
+            border-bottom: 1px solid #ebebeb;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+            [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] [data-popup="close"] {
+                position: absolute;
+                right: 40px;
+                background: none;
+                border: 0;
+                margin: 0;
+            }
+
+    [data-templet="popup"] [data-popup="container"] [data-popup="body"] {
+        margin: 40px 0;
+        padding: 0 40px;
+        max-height: calc(700px - 65px);
+        overflow-y: auto;
+    }
+
+        [data-templet="popup"] [data-popup="container"] [data-popup="body"] .title {
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0;
+            line-height: 1.5;
+            color: var(--black);
+            margin: 40px 0 24px;
+        }
+
+        [data-templet="popup"] [data-popup="container"] [data-popup="body"] .text {
+            text-align: justify;
+            word-wrap: break-word;
+            word-break: break-all;
+            color: var(--black);
+        }
+            [data-templet="popup"] [data-popup="container"] [data-popup="body"] .text:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+
+        [data-templet="popup"] [data-popup="container"] [data-popup="body"] [data-popup="header"]{
+            text-align: center;
+            font-size: 48px;
+            font-weight: 500;
+            margin: 0;
+            line-height: 1.5;
+            color: var(--black);
+        }
+
+        [data-templet="popup"] [data-popup="container"] [data-popup="body"] [data-popup="content"]{
+            margin-top: 24px;
+        }

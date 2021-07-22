@@ -3,11 +3,11 @@
 }
 
     [data-templet-mobile="article-templet-grid-organization"] .text {
-        padding: 0;
-        margin: 0;
         font-size: 18px;
         font-weight: 300;
         color: var(--gray-c4);
+        word-wrap: break-word;
+        word-break: break-all;
     }
 
     [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"] {
@@ -41,14 +41,40 @@
             display: block;
         }
 
-        [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
-            margin: 0;
-        }
+            [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .name {
+                white-space: nowrap;
+            }
+
+            [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
+                margin: 0;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
     
             [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] > .text:first-of-type {
                 margin-top: 12px;
             }
 
-            [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title > * {
-                white-space: nowrap;
+
+    
+            [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="0"] {
+                order: 0;
+            }
+            [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="1"] {
+                order: 1;
+            }
+            [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="2"] {
+                order: 2;
+            }
+            [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="3"] {
+                order: 3;
+            }
+            [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="4"] {
+                order: 4;
+            }
+            [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="5"] {
+                order: 5;
+            }
+            [data-templet-mobile="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="6"] {
+                order: 6;
             }

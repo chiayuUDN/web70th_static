@@ -12,6 +12,9 @@
 @import './elements/_button.css';
 @import './elements/_dropdown.css';
 
+/* templet mobile */
+@import './templet/utilities/article-background.css';
+@import './templet/utilities/templet-popup.css';
 
 /* templet desktop */
 @import './templet/desktop/article-templet-full-image.css';
@@ -19,6 +22,7 @@
 @import './templet/desktop/article-templet-grid-organization.css';
 @import './templet/desktop/templet-table.css';
 @import './templet/desktop/article-templet-albums.css';
+@import './templet/desktop/article-templet-udn-member.css';
 
 /* templet mobile */
 @import './templet/mobile/article-templet-full-image.css';
@@ -26,6 +30,7 @@
 @import './templet/mobile/article-templet-grid-organization.css';
 @import './templet/mobile/templet-table.css';
 @import './templet/mobile/article-templet-albums.css';
+@import './templet/mobile/article-templet-udn-member.css';
 
 
 
@@ -48,6 +53,36 @@
     background-image: url(../icons/icon-rightarrow.svg);
 }
 
+
+/* 共同設定 */
+
+ul[class*="disc"] {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+ol {
+    list-style-position: inside;
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+    ol > li {
+        display: table;
+        counter-increment: item;
+        padding: 6px 0;
+    }
+        ol > li::before {
+            content: counters(item, ".");
+            display: table-cell;
+            padding-right: 0.6em;
+        }
+
+ul li:not(:first-of-type),ul li:not(:last-of-type) ,
+ol li:not(:first-of-type),ol li:not(:last-of-type){
+    padding: 6px 0;
+}
 
 /* data 區塊開始 */
 #app {
@@ -82,14 +117,12 @@
     }
 
     #app .large-category-article { /* 大分類文章 */
-        /* margin: 80px 0; */
         padding-top: 80px;
         padding-bottom: 80px;
     }
 
     #app .fourth-category-article { /* 四分類文章 */
-        /* display: none; */
-        border: solid 1px #e4e4e4;
+        border: solid 1px var(--gray-c2);
         border-top: none;
         padding: 20px 24px;
     }
@@ -136,5 +169,12 @@
 @media (max-width: 767px) {
     #app .indexTitle {
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 413px) {
+    #app .container {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }

@@ -22,6 +22,8 @@
     font-size: 18px;
     font-weight: 300;
     color: var(--gray-c4);
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] {
@@ -43,12 +45,17 @@
 
 [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
 }
+    [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .name{
+        white-space: nowrap;
+    }
 
     [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
         margin-left: 8px;
+        word-wrap: break-word;
+        word-break: break-all;
     }
     
     [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] > .text:first-of-type {
@@ -56,7 +63,8 @@
     }
 
     [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title > * {
-        white-space: nowrap;
+        word-wrap: break-word;
+        word-break: break-all;
     }
     
 
@@ -114,4 +122,27 @@
         [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
             margin: 0;
         }
+
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="0"] {
+            order: 0;
+        }
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="1"] {
+            order: 1;
+        }
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="2"] {
+            order: 2;
+        }
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="3"] {
+            order: 3;
+        }
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="4"] {
+            order: 4;
+        }
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="5"] {
+            order: 5;
+        }
+        [data-templet-desktop="article-templet-grid-organization"] [data-grid="col"][data-mobile-order="6"] {
+            order: 6;
+        }
+    
 }

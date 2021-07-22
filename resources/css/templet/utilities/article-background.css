@@ -1,0 +1,35 @@
+[data-templet="article-background"]  {
+    padding: 40px 36px;
+    background-color: var(--white);
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+    [data-templet="article-background"][data-image-position="top-left"]  {
+        background-position: top left;
+    }
+
+    [data-templet="article-background"][data-image-position="bottom-right"]  {
+        background-position: bottom right;
+    }
+
+    [data-templet="article-background"][data-image-position="cente-cente"]  {
+        background-position: center center;
+    }
+
+
+        [data-templet="article-background"][data-backgroud-type="member"]  {
+            background-image: url('/resources/img/bg-becomeamember.png');
+        }
+
+
+@media (max-width: 767px){
+    [data-templet="article-background"] {
+        padding: 40px 20px;
+    }
+
+    [data-templet="article-background"][data-backgroud-type="member"]  {
+        background-image: url('/resources/img/bg-becomeamember.png');
+    }
+
+}

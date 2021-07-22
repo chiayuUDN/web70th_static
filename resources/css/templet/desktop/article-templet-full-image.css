@@ -1,5 +1,7 @@
 [data-templet-desktop="article-templet-full-image"] {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
     [data-templet-desktop="article-templet-full-image"] > .text {
@@ -40,12 +42,16 @@
 
     [data-templet-desktop="article-templet-full-image"] > .text {
         text-align: justify;
+        word-wrap: break-word;
+        word-break: break-all;
     }
 
     [data-templet-desktop="article-templet-full-image"] > .image-description {
         margin-top: 20px;
         font-size: 16px;
         text-align: left;
+        word-wrap: break-word;
+        word-break: break-all;
     }
 
     [data-templet-desktop="article-templet-full-image"] .udn-btn .icon {
