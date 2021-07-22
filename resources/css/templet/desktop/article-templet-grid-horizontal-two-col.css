@@ -113,7 +113,7 @@
     }
 
 @media (max-width: 767px) {
-    [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] [data-horizontal="two-col"] {
+    [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] {
         display: block;
     }
 
@@ -130,8 +130,8 @@
         }
     
 
-        [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] [data-horizontal="two-col"] [data-horizontal="left"],
-        [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] [data-horizontal="two-col"] [data-horizontal="right"] {
+        [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] [data-horizontal="left"],
+        [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] [data-horizontal="right"] {
             width: 100%;
             margin: 0;
         }
