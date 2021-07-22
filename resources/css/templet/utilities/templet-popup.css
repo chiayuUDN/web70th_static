@@ -1,5 +1,3 @@
-
-
 [data-templet="popup"] {
     width: 0;
     height: 0;
@@ -34,13 +32,17 @@
         margin: auto auto;
     }
 
+    [data-templet="popup"] [data-popup="container"] > div {
+        padding: 0 40px;
+    }
+
         [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] {
             height: 64px;
-            padding: 0 40px;
             border-bottom: 1px solid #ebebeb;
             position: relative;
             display: flex;
             align-items: center;
+            padding: 0 40px;
         }
             [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] [data-popup="close"] {
                 position: absolute;
@@ -51,8 +53,7 @@
             }
 
     [data-templet="popup"] [data-popup="container"] [data-popup="body"] {
-        margin: 40px 0;
-        padding: 0 40px;
+        padding: 40px 40px;
         max-height: calc(700px - 65px);
         overflow-y: auto;
     }
@@ -88,3 +89,38 @@
         [data-templet="popup"] [data-popup="container"] [data-popup="body"] [data-popup="content"]{
             margin-top: 24px;
         }
+
+
+
+@media (max-width: 767px) {
+    [data-templet="popup"][data-popup="show"] {
+        overflow: hidden;
+    }
+
+        [data-templet="popup"][data-popup="show"] [data-popup="container"] {
+            overflow: hidden;
+            position: relative;
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+            [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] {
+                height: 55px;
+                position: fixed;
+                width: calc(100% - 60px);
+                z-index: 2;
+                padding: 0 30px;
+            }
+            
+            [data-templet="popup"][data-popup="show"] [data-popup="container"] > div {
+                max-width: 100%;
+            }
+
+            [data-templet="popup"] [data-popup="container"] [data-popup="body"] {
+                margin: 56px 0 0;
+                padding: 40px 30px;
+                max-height: calc(100% - 136px);
+                overflow-y: auto;
+            }
+}
