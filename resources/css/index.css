@@ -1,17 +1,17 @@
-@import './utilities/_reset.css';
-@import './_var.css';
+@import '/resources/css/utilities/_reset.css';
+@import '/resources/css/_var.css';
 
 
 /* utilities */
-@import './utilities/_site.css';
-@import './utilities/_font.css';
-@import './utilities/_spacing.css';
+@import '/resources/css/utilities/_site.css';
+@import '/resources/css/utilities/_font.css';
+@import '/resources/css/utilities/_spacing.css';
 
 /* elements */
-@import './elements/_tab.css';
-@import './elements/_button.css';
-@import './elements/_dropdown.css';
-@import './elements/_carousel.css';
+@import '/resources/css/elements/_tab.css';
+@import '/resources/css/elements/_button.css';
+@import '/resources/css/elements/_dropdown.css';
+@import '/resources/css/elements/_carousel.css';
 
 /* templet utilities */
 @import '/resources/css/templet/utilities/article-background.css';
