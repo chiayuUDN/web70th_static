@@ -13,7 +13,6 @@ let app = new Vue({
         carousels: [1,2,3,4,5],
     },
     created() {
-        w3.includeHTML();
         getSectionTypes().then(response => {
             if(response.data.success) {
                 let result = response.data.result;
@@ -45,7 +44,7 @@ let app = new Vue({
     },
     computed: {
         getMediaVersion(){
-            return media.isPhone ? 'desktop' : 'desktop';
+            return media.isPhone ? 'mobile' : 'desktop';
         }
     },
     methods: {
@@ -116,4 +115,3 @@ function filledTab(taxonomies, order) {
     });
 
 }
-

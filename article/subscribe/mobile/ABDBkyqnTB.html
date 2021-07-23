@@ -1,1 +1,177 @@
-<div>成為會員 mobile html</div>
+<!-- 成為會員 -->
+<!-- mobile -->
+
+<div data-templet="article-background" data-image-position="cente-cente" data-backgroud-type="member">
+    <div data-templet-mobile="article-templet-udn-member">
+        <div data-horizontal="left">
+            <div class="top">
+                <p class="text-slogan">聯合報系把世界帶進你的生活</p>
+                <p class="text-slogan">會員一站到位．盡享精彩禮遇</p>
+            </div>
+            <div class="middle">
+                <ul class="disc text">
+                    <li >會員限定獨享內容</li>
+                    <li>內容訂閱特惠方案</li>
+                    <li>展演活動報名優待</li>
+                    <li>享消費購物金回饋</li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p class="text-info">誠摯邀請您成為udn會員</p>
+            </div>
+
+        </div>
+        <div data-horizontal="right">
+            <p class="sub-title text-color-orange">成功註冊會員 簡單輕鬆 2 步驟</p>
+
+            <div class="group">
+                <p class="text-info">
+                    <img src="/resources/icons/icon-edit.svg" alt="">
+                    <span class="step">填寫註冊資料送出</span>
+                </p>
+                <img class="arrow" src="/resources/icons/icon-step-downarrow.svg" alt="">
+                <p class="text-info">
+                    <img src="/resources/icons/icon-mail.svg" alt="">
+                    <span class="step">信箱點擊啟用連結認證</span>
+                </p>
+            </div>
+
+            <a class="udn-btn btn-orange" href="#">會員註冊</a>
+
+            <p class="text-info">
+                會員註冊&登入相關問題：請撥打 (02)7737-2920
+            </p>
+            <p class="text-info">
+                客服中心 email：cs@udnmembers.com
+            </p>
+
+            <div class="btn-group">
+                <button id="udn-member-btn-even" class="udn-btn btn-white" onclick="openNemberPopup()">udn 會員服務條款</button>
+                <button id="udn-member-benefits-btn-even" class="udn-btn btn-white" onclick="openNemberBenefitsPopup()">隱私權聲明</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- udn 會員服務條款 popup -->
+<div data-templet="popup" id="udn-member-popup">
+    <div data-popup="container">
+        <div data-popup="top-bar">
+            <button data-popup="close" id="udn-member-popup-close-btn-even" onclick="closeNemberPopup()">
+                <img src="/resources/icons/icon-close.svg" alt="關閉">
+            </button>
+        </div>
+        <div data-popup="body">
+            <div data-popup="header">udn 會員服務條款</div>
+            <div data-popup="content">
+                <p class="text">歡迎您加入成為udn 會員。</p>
+                <p class="text">
+                    udn 係由『聯合報股份有限公司』與『聯合線上股份有限公司』所合作建置之網路資訊平台，並就其等個別建置、營運部分提供服務予使用者 ( 以下稱 udn 會員服務 )。
+                    為避免使用者重複填寫資料及繁複之申請程序，所有申請使用會員服務之使用者 ( 以下稱會員或您 )，只需一次加入會員及同意服務條款與隱私權聲明，即可使用、試用或付費啟用 udn 所提供的各項會員服務。
+                </p>
+                <p class="text">
+                    本會員條款構成會員與聯合報系各公司間的契約，請您詳細閱讀本會員條款，當您完成相關基本資料提供、註冊驗證程序，開始使用 udn 會員服務時，即視為已知悉、並完全同意本會員條款所有約定。
+                </p>
+                <p class="text">
+                    udn 有權配合相關服務提供之需求，修改或變更本會員條款內容，其修改或變更將會公布本網站『會員註冊頁』、『會員登入頁』中。
+                    udn 經常推出新的服務，亦會更新服務條款及政策，如對會員個人權益較重大影響者，udn 將會透過會員留存的 e-mail 通知，請您隨時注意相關修改與變更。
+                    本會員條款修改或變更生效後，您所進行之相關交易活動，將適用修改或變更後之會員條款；若您不同意該等修改或變更，請勿繼續使用 udn 會員服務，修改或變更前之付費服務或交易相關權利義務，不會受到修改或變更之影響。
+                    定址會員及企業會員亦應要求其群組內使用者遵守本會員條款。特定產品因具備獨特功能或服務而設有附加條款，若本條款與附加條款有所牴觸時，該服務適用的規定將以附加條款為準。
+                </p>
+                <p class="text">
+                    udn 有權配合相關服務提供之需求，修改或變更本會員條款內容，其修改或變更將會公布本網站『會員註冊頁』、『會員登入頁』中。
+                    udn 經常推出新的服務，亦會更新服務條款及政策，如對會員個人權益較重大影響者，udn 將會透過會員留存的 e-mail 通知，請您隨時注意相關修改與變更。
+                    本會員條款修改或變更生效後，您所進行之相關交易活動，將適用修改或變更後之會員條款；若您不同意該等修改或變更，請勿繼續使用 udn 會員服務，修改或變更前之付費服務或交易相關權利義務，不會受到修改或變更之影響。
+                    定址會員及企業會員亦應要求其群組內使用者遵守本會員條款。特定產品因具備獨特功能或服務而設有附加條款，若本條款與附加條款有所牴觸時，該服務適用的規定將以附加條款為準。
+                </p>
+                <p class="text">
+                    udn 有權配合相關服務提供之需求，修改或變更本會員條款內容，其修改或變更將會公布本網站『會員註冊頁』、『會員登入頁』中。
+                    udn 經常推出新的服務，亦會更新服務條款及政策，如對會員個人權益較重大影響者，udn 將會透過會員留存的 e-mail 通知，請您隨時注意相關修改與變更。
+                    本會員條款修改或變更生效後，您所進行之相關交易活動，將適用修改或變更後之會員條款；若您不同意該等修改或變更，請勿繼續使用 udn 會員服務，修改或變更前之付費服務或交易相關權利義務，不會受到修改或變更之影響。
+                    定址會員及企業會員亦應要求其群組內使用者遵守本會員條款。特定產品因具備獨特功能或服務而設有附加條款，若本條款與附加條款有所牴觸時，該服務適用的規定將以附加條款為準。
+                </p>
+
+                <div class="title">會員服務：</div>
+                <ol>
+                    <li>
+                        一旦 udn 完成並確認您的申請後， udn 將提供予您『一般』會員服務內容有：
+
+                        <ol>
+                            <li>
+                                由聯合報股份有限公司提供之服務：聯合報系教育服務( 聯合報寫作教室、好讀周報、educoco、聯合學苑 )、主題旅遊、學生遊學、願景工作室 ( 願景工程專題報導、對外合作、公民沙龍、國際名人論壇、願景開講 )、
+                                展覽、表演、全民財經檢定網檢定考試服務或其他未來可能新增之一般會員服務。
+                            </li>
+                            <li>
+                                由聯合線上股份有限公司提供之服務：參加部落格社群、聯合知識庫新聞查詢、參加新聞討論、暫存新聞、追蹤熱門話題與人物、
+                                擁有 udn讀書吧(電子書報刊下載閱讀)服務、udn讀創故事(線上創作及閱讀)服務、U 值媒服務，或其他未來可能新增之一般會員服務。
+                            </li>
+                        </ol>
+
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 隱私權聲明 popup -->
+<div data-templet="popup" id="udn-member-benefits-popup">
+    <div data-popup="container">
+        <div data-popup="top-bar">
+            <button data-popup="close" id="udn-member-benefits-popup-close-btn-even" onclick="closeNemberBenefitsPopup()">
+                <img src="/resources/icons/icon-close.svg" alt="關閉">
+            </button>
+        </div>
+        <div data-popup="body">
+            <div data-popup="header">隱私權聲明</div>
+            <div data-popup="content">
+                <p class="text">聯合報系非常重視您的隱私權。所以我們制訂了「聯合報系網站隱私權聲明（下稱本聲明）」，
+                    載明我們如何蒐集、處理及利用您的個人資料。我們透過所經營之網站對於網友個人資料的蒐集、處理及利用，
+                    均遵守中華民國「個人資料保護法」及本聲明之規範，建議您閱讀本聲明， 以了解我們的作法：
+                </p>
+
+                <div class="title">一、聯合報系簡介（個人資料蒐集主體）：</div>
+                <ol>
+                    <li>
+                        聯合報系是一個匯集媒體、出版、資訊處理、電子商務、藝文活動、教育事業等領域的大家族，家族成員有：聯合報股份有限公司、聯合線上股份有限公司、
+                        聯合數位文創股份有限公司、聯合智網股份有限公司、聯合數位教育股份有限公司、聯合報系文化基金會、聯經出版股份有限公司、
+                        聯經數位股份有限公司及其他關係企業除聯合報系所屬網站或應用程式因採取相同之會員帳號機制，將共用會員資料外，其餘個人資料將依您所使用服務或產品之不同，
+                        而由不同主體進行蒐集、處理及利用。
+
+                    </li>
+                    <li>
+                        聯合報系所屬網站或應用程式（以下簡稱「 App 」）是聯合報系提供各種產品及服務的媒介（部分服務可能另需開通、訂閱或下載App的程序），包括：
+
+                        <ul class="disc">
+                            <li>
+                                udngroup.com：提供聯合報系各類活動資訊、訂報等服務；
+                            </li>
+                            <li>
+                                vision.udn.com ：提供願景工程專題報導、對外合作、公民沙龍、國際名人論壇、願景開講等服務；
+                            </li>
+                            <li>
+                                udn.com：提供聯合新聞網、聯合影音網、聯合電子報、噓!星聞、udn STYLE、元氣網、願景工程、發燒車訊、NBA 台灣、udn 部落格、udn 讀書吧、udn 讀創故事等服務；
+                            </li>
+                            <li>
+                                vip.udn.com ：提供udn會員「聯合報數位版」專屬訂閱制內容，開放公共議題討論空間；
+                            </li>
+                            <li>
+                                shopping.udn.com：提供網路購物與其他電子商務服務；
+                            </li>
+                            <li>
+                                udntalks.udn.com ：提供主題演講、論壇影片免費觀看服務；
+                            </li>
+                            <li>
+                                shopping.udn.com：提供網路購物與其他電子商務服務；
+                            </li>
+                            <li>
+                                udngroup.com：提供聯合報系各類活動資訊、訂報等服務；
+                            </li>
+                        </ul>
+
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
