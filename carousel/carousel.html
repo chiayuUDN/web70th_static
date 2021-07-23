@@ -1,13 +1,15 @@
-<div id="activiti" ref="activiti">
-    <transition-group tag="div" class="carousel" :name="transitionName">
+<div id="activiti" ref="activiti" class="carousel">
+    <transition-group tag="div" class="carousel-inner" :name="transitionName">
         <div class="carousel-item" v-for="(carousel, idx) in carousels" :key="idx" v-show="idx === show">
             <img :src="img[idx].src" :alt="carousel.articleTitle">
         </div>
     </transition-group>
-    <a class="carousel-control-prev" @click="show = show - 1">
-        <img class="icon" src="./resources/icons/icon-leftarrow.svg" alt="prev">
-    </a>
-    <a class="carousel-control-next" @click="show = show + 1">
-        <img src="./resources/icons/icon-rightarrow.svg" alt="next">
-    </a>
+    <div class="container">
+        <a class="carousel-control-prev" @click="setShow(show-1)" @mouseover="carouselStop" @mouseleave="carouselStart">
+            <img class="icon" src="./resources/icons/icon-leftarrow.svg" alt="prev">
+        </a>
+        <a class="carousel-control-next" @click="setShow(show+1)" @mouseover="carouselStop" @mouseleave="carouselStart">
+            <img src="./resources/icons/icon-rightarrow.svg" alt="next">
+        </a>
+    </div>
 </div>

@@ -16,47 +16,62 @@
 .right-in-enter {
     left: 100%;
 }
-.right-in-enter-active {
+.right-in-enter-active, .right-in-leave-active {
     transition: left 0.5s;
 }
-.right-in-enter-to {
+.right-in-enter-to, .right-in-leave {
     left: 0%
-}
-.right-in-leave {
-    left: 0%;
-}
-.right-in-leave-active {
-    transition: left 0.5s;
 }
 .right-in-leave-to {
     left: -100%
 }
 
+.left-in-enter {
+    left: -100%;
+}
+.left-in-enter-active, .left-in-leave-active {
+    transition: left 0.5s;
+}
+.left-in-enter-to, .left-in-leave {
+    left: 0%
+}
+.left-in-leave-to {
+    left: 100%
+}
+.carousel .container {
+    position: relative;
+    height: 100%;
+}
 .carousel-control-prev, 
 .carousel-control-next {
     position: absolute;
-    top:0;
-    bottom: 0;
+    top:45%;
     z-index: 1 ;
     width: 48px;
     height: 48px;
     background-color: var(--white);
     border-radius: 50px;
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 .carousel-control-prev {
-    left: 40px;
+    left: 0;
 }
 .carousel-control-next {
-    right: 40px;
+    right: 0;
 }
 
 @media (max-width: 1199px) {
     .carousel {
         height: 640px;
+    }
+    .carousel-control-prev {
+        left: 10px;
+    }
+    .carousel-control-next {
+        right: 10px;
     }
 }
 

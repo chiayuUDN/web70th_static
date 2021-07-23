@@ -1,3 +1,4 @@
+let timer;
 let app = new Vue({
     el: "#app",
     data: {
@@ -40,13 +41,14 @@ let app = new Vue({
             }
         }).catch(err => {
             console.log(err)
-        })
+        });        
     },
     mounted() {
         window.addEventListener('scroll', () => {
             this.isShowGoTop = window.pageYOffset > 0 ? true : false;
             this.mapScroll(window.pageYOffset);
         });
+        this.carouselStart();
     },
     updated(){
         w3.includeHTML();
@@ -85,8 +87,16 @@ let app = new Vue({
                 })
             }
         },
-        selectCurrect(value){
-            
+        setShow(index){
+            this.show = index;
+        },
+        carouselStop(){
+            clearInterval(timer);
+        },
+        carouselStart(){
+            timer = setInterval(()=>{
+                this.show ++;
+            }, 5000);
         },
         goTop() {
             window.scroll(0, 0);
@@ -98,6 +108,17 @@ let app = new Vue({
                 document.body.style.overflow = 'hidden';
             } else {
                 document.body.style.overflow = 'visible';
+            }
+        },
+        show(nVal, oVal){
+            if (nVal < 0) {
+                this.show = this.img.length - 1;
+            } else if(nVal > this.img.length-1) {
+                this.show = 0;
+            } else {
+                if(oVal < 0) this.transitionName = 'left-in';
+                else if(oVal > this.img.length-1) this.transitionName = 'right-in';
+                else this.transitionName = nVal > oVal ? 'right-in' : 'left-in';
             }
         }
     }
