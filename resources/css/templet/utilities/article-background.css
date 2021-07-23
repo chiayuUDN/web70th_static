@@ -18,8 +18,12 @@
     }
 
 
-        [data-templet="article-background"][data-backgroud-type="member"]  {
+        [data-templet="article-background"][data-backgroud-type="udn-member"]  {
             background-image: url('/resources/img/bg-becomeamember.png');
+        }
+        
+        [data-templet="article-background"][data-backgroud-type="udn-awards"]  {
+            background-image: url('/resources/img/img-unn-emptylogo-gold.png');
         }
 
 
@@ -28,7 +32,11 @@
         padding: 40px 20px;
     }
 
-    [data-templet="article-background"][data-backgroud-type="member"]  {
+    [data-templet="article-background"][data-backgroud-type="udn-member"]  {
+        background-image: url('/resources/img/bg-becomeamember.png');
+    }
+
+    [data-templet="article-background"][data-backgroud-type="udn-member"]  {
         background-image: url('/resources/img/bg-becomeamember.png');
     }
 

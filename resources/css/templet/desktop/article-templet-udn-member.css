@@ -84,7 +84,7 @@
     [data-templet-desktop="article-templet-udn-member"] [data-horizontal="right"] {
         width: 50%;
         background-color: var(--gray-c2);
-        padding: 40px 60px;
+        padding: 40px 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

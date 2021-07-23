@@ -62,12 +62,20 @@
 /* 共同設定 */
 
 ul[class*="disc"] li {
-    list-style-type: disc;
+    list-style-type: none;
     list-style-position: inside;
+    display: table;
+    counter-increment: item;
 }
 
     ul[class*="disc"] li::before {
+        content: '•';
         padding-right: 0.6em;
+        display: table-cell;
+    }
+    ul[class*="disc"].golden li::before {
+        padding-right: 0.6em;
+        color: var(--golden);
     }
 
 ol {

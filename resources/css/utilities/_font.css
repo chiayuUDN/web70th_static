@@ -33,3 +33,16 @@ h5 ,.h5 {
     font-size: 16px;
     font-weight: 300;
 }
+
+.text-golden {
+    color: var(--golden);
+}
+.text-orange {
+    color: var(--orange);
+}
+.text-black {
+    color: var(--black);
+}
+.text-white {
+    color: var(--white);
+}
