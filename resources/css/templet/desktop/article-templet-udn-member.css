@@ -27,7 +27,7 @@
     }
 
     [data-templet-desktop="article-templet-udn-member"] .text {
-        text-align: center;
+        text-align: left;
         word-wrap: break-word;
         word-break: break-all;
         color: var(--black);
@@ -74,6 +74,11 @@
         align-content: space-between;
         padding: 40px 40px 0;
     }
+
+        [data-templet-desktop="article-templet-udn-member"] [data-horizontal="left"] .middle {
+            display: flex;
+            justify-content: center;
+        }
 
     
     [data-templet-desktop="article-templet-udn-member"] [data-horizontal="right"] {

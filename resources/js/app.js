@@ -12,7 +12,6 @@ let app = new Vue({
         isShowGoTop: false
     },
     created() {
-        w3.includeHTML();
         getSectionTypes().then(response => {
             if(response.data.success) {
                 let result = response.data.result;

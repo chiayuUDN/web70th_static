@@ -61,10 +61,14 @@
 
 /* 共同設定 */
 
-ul[class*="disc"] {
-    list-style-position: inside;
+ul[class*="disc"] li {
     list-style-type: disc;
+    list-style-position: inside;
 }
+
+    ul[class*="disc"] li::before {
+        padding-right: 0.6em;
+    }
 
 ol {
     list-style-position: inside;
@@ -76,7 +80,6 @@ ol {
     ol > li {
         display: table;
         counter-increment: item;
-        padding: 6px 0;
     }
         ol > li::before {
             content: counters(item, ".");
@@ -86,7 +89,8 @@ ol {
 
 ul li:not(:first-of-type),ul li:not(:last-of-type) ,
 ol li:not(:first-of-type),ol li:not(:last-of-type){
-    padding: 6px 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 /* data 區塊開始 */
