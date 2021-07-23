@@ -35,7 +35,7 @@ let app = new Vue({
     },
     computed: {
         getMediaVersion(){
-            return media.isPhone ? 'desktop' : 'desktop';
+            return media.isPhone ? 'mobile' : 'desktop';
         }
     },
     methods: {
@@ -102,4 +102,3 @@ function filledTab(taxonomies, order) {
     });
 
 }
-

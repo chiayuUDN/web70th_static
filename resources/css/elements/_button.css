@@ -3,6 +3,7 @@
     padding: 10px 24px;
     background: none;
     border-radius: 24px;
+    font-size: 20px;
     display: flex;
     flex-wrap: nowrap;
     white-space: nowrap;
@@ -37,11 +38,22 @@
             color: var(--white);
         }
 
-            .udn-btn.btn-white:hover img{
+        .udn-btn.btn-white:active {
+            background-color: var(--black);
+            border: 1px solid var(--black);
+            color: var(--white);
+        }
+
+            .udn-btn.btn-white:hover img ,
+            .udn-btn.btn-white:active img{
                 filter: invert(1);
             }
 
 @media (max-width: 767px){
+    .udn-btn {
+        font-size: 18px;
+    }
+
     .btn-group {
         display: block;
     }

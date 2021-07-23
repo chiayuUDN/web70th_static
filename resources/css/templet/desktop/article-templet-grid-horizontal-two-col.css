@@ -16,8 +16,8 @@
         text-align: justify;
         word-wrap: break-word;
         word-break: break-all;
-        margin-bottom: 20px;
-        margin-top: 40px;
+        padding-bottom: 10px;
+        padding-top: 30px;
     }
 
     [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] .text {
@@ -38,7 +38,7 @@
         color: var(--gray-c4);
         font-size: 18px;
         font-weight: 300;
-        padding: 8px 0;
+        margin: 8px 0;
     }
 
     [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] .grid-two-col {
@@ -48,7 +48,7 @@
     }
 
     [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] .grid-two-col > * {
-        padding: 0;
+        margin: 0;
     }
 
     [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] .image {
@@ -84,7 +84,7 @@
 
         [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] [data-horizontal="left"] .sub-title:first-of-type,
         [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] [data-horizontal="right"] .sub-title:first-of-type {
-            margin-top: 0;
+            padding-top: 0;
         }
 
         [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] .text:first-of-type,
@@ -110,6 +110,7 @@
 
     [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] [data-horizontal="right"] {
         margin-right: 0;
+        margin-top: 20px;
     }
 
 @media (max-width: 767px) {
@@ -118,11 +119,12 @@
     }
 
         [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] .sub-title {
-            margin-bottom: 10px;
+            padding-top: 0;
+            padding-bottom: 10px;
         }
 
         [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] .text {
-            margin-bottom: 20px;
+            padding-bottom: 20px;
         }
 
         [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] .grid-two-col {
@@ -135,4 +137,10 @@
             width: 100%;
             margin: 0;
         }
+
+        [data-templet-desktop="article-templet-grid-horizontal-two-col"] [data-horizontal="two-col"] [data-horizontal="right"] {
+            margin-top: 20px;
+        }
+    
+
 }
