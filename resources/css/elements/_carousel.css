@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 650px;
+    overflow: hidden;
 }
 .carousel .carousel-item {
     position: absolute;
@@ -21,6 +22,15 @@
 .right-in-enter-to {
     left: 0%
 }
+.right-in-leave {
+    left: 0%;
+}
+.right-in-leave-active {
+    transition: left 0.5s;
+}
+.right-in-leave-to {
+    left: -100%
+}
 
 .carousel-control-prev, 
 .carousel-control-next {
@@ -30,7 +40,7 @@
     z-index: 1 ;
     width: 48px;
     height: 48px;
-    background-color: var(--gray-c4);
+    background-color: var(--white);
     border-radius: 50px;
     display: block;
     align-items: center;

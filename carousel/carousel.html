@@ -1,7 +1,9 @@
-<div class="carousel" id="activiti" ref="activiti" :name="transitionName">
-    <div class="carousel-item" v-for="(carousel, idx) in carousels" :key="idx" v-show="idx === show">
-        <img :src="img[idx].src" :alt="carousel.articleTitle">
-    </div>
+<div id="activiti" ref="activiti">
+    <transition-group tag="div" class="carousel" :name="transitionName">
+        <div class="carousel-item" v-for="(carousel, idx) in carousels" :key="idx" v-show="idx === show">
+            <img :src="img[idx].src" :alt="carousel.articleTitle">
+        </div>
+    </transition-group>
     <a class="carousel-control-prev" @click="show = show - 1">
         <img class="icon" src="resources/icons/icon-leftarrow.svg" alt="prev">
     </a>
