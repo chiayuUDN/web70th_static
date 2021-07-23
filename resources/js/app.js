@@ -104,11 +104,11 @@ let app = new Vue({
 });
 
 function getSectionTypes() {
-    return axios.get("./resources/js/type.json");
+    return axios.get("/resources/js/type.json");
 }
 
 function getNewsCarousel() {
-    return axios.get("./resources/js/carousel.json");
+    return axios.get("/resources/js/carousel.json");
 }
 
 // 傳入分類與層數，來記錄整個資料的第一個分類ID
