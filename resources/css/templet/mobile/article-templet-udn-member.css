@@ -65,8 +65,7 @@
         }
         
         [data-templet-mobile="article-templet-udn-member"] .group > .arrow {
-            margin-left: 16px;
-            margin-right: 16px;
+            margin: 4px auto;
         }
 
     [data-templet-mobile="article-templet-udn-member"] [data-horizontal="left"] {
