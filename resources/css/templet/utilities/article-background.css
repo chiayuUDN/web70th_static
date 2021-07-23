@@ -26,11 +26,11 @@
 
 
         [data-templet="article-background"][data-backgroud-type="udn-member"]  {
-            background-image: url('/resources/img/bg-becomeamember.png');
+            background-image: url('./../../../img/bg-becomeamember.png');
         }
         
         [data-templet="article-background"][data-backgroud-type="udn-awards"]  {
-            background-image: url('/resources/img/img-unn-emptylogo-gold.png');
+            background-image: url('./../../../img/img-unn-emptylogo-gold.png');
         }
 
 
@@ -53,11 +53,11 @@
         }
     
     [data-templet="article-background"][data-backgroud-type="udn-member"]  {
-        background-image: url('/resources/img/bg-becomeamember.png');
+        background-image: url('./../../../img/bg-becomeamember.png');
     }
 
     [data-templet="article-background"][data-backgroud-type="udn-member"]  {
-        background-image: url('/resources/img/bg-becomeamember.png');
+        background-image: url('./../../../img/bg-becomeamember.png');
     }
 
 }
