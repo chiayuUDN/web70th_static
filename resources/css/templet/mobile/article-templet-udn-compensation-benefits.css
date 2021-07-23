@@ -1,0 +1,63 @@
+
+
+[data-templet-mobile="article-templet-udn-compensation-benefits"] .text-slogan {
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+[data-templet-mobile="article-templet-udn-compensation-benefits"] .sub-title {
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+[data-templet-mobile="article-templet-udn-compensation-benefits"] .text {
+    text-align: justify;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 300;
+}
+[data-templet-mobile="article-templet-udn-compensation-benefits"] .text-remind {
+    text-align: justify;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: var(--gray-c5);
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 16px;
+}
+
+[data-templet-mobile="article-templet-udn-compensation-benefits"] [data-horizontal="two-col"] {
+    display: block;
+}
+
+    [data-templet-mobile="article-templet-udn-compensation-benefits"] [data-horizontal="two-col"] [data-horizontal="left"],
+    [data-templet-mobile="article-templet-udn-compensation-benefits"] [data-horizontal="two-col"] [data-horizontal="left"] {
+        width: 100%;
+    }
+
+    [data-templet-mobile="article-templet-udn-compensation-benefits"] [data-horizontal="two-col"] [data-grid="row"] {
+        display: grid;
+        grid-template-columns: repeat(3,minmax(auto,max-content));
+        grid-template-rows: repeat(2,minmax(auto,min-content));
+        grid-gap: 16px 16px;
+        padding: 16px;
+    }
+
+        [data-templet-mobile="article-templet-udn-compensation-benefits"] [data-horizontal="two-col"] [data-horizontal="left"] [data-grid="row"]:nth-of-type(odd),
+        [data-templet-mobile="article-templet-udn-compensation-benefits"] [data-horizontal="two-col"] [data-horizontal="right"] [data-grid="row"]:nth-of-type(even) {
+            background-color: var(--gray-c1);
+        }
+
+    [data-templet-mobile="article-templet-udn-compensation-benefits"] [data-horizontal="two-col"] [data-grid="row"] [data-grid="cell"]:nth-of-type(3) {
+        grid-column: 1/4;
+    }
