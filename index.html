@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁-聯合報系 United Daily News Group</title>
-    <link rel="stylesheet" href="./resources/css/index.css">
+    <link rel="stylesheet" href="/resources/css/index.css">
     <script src="./w3.js"></script>
 </head>
 
@@ -24,7 +24,7 @@
                     </div> 
     
                     <div class="udnLogo">
-                        <a class="img" href="#"><img class="udnLogo" src="./resources/icons/icon-udn-logo.svg" alt="聯合報系 United Daily News Group"></a>
+                        <a class="img" href="#"><img class="udnLogo" src="/resources/icons/icon-udn-logo.svg" alt="聯合報系 United Daily News Group"></a>
                     </div>
     
                     <div class="menus">
@@ -43,7 +43,7 @@
 
                         <div class="top">
                             <div class="udnLogo">
-                                <a class="img" href="#"><img class="udnLogo" src="./resources/icons/icon-udn-logo.svg" alt=""></a>
+                                <a class="img" href="#"><img class="udnLogo" src="/resources/icons/icon-udn-logo.svg" alt=""></a>
                             </div>
     
                             <div class="login">
@@ -77,7 +77,7 @@
                 <div v-if="type1TH.taxonomyId == specialBlock" class="container">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
                     <div class="note">{{type1TH.desc}}</div>
-                    <div :w3-include-html="`./article/mediaFeature/${getMediaVersion}/mediaFeature.html`"></div>
+                    <div :w3-include-html="`/article/mediaFeature/${getMediaVersion}/mediaFeature.html`"></div>
                 </div>
                 <div v-else class="container">
                     <div class="indexTitle">{{type1TH.taxonomyName}}</div>
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                     <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies" :id="type2TH.taxonomyId" class="secend-category-article" v-if="isCurrentTab(`${type1TH.taxonomyId}1TH`,type2TH.taxonomyId)">
-                        <div v-if="type2TH.childTaxonomies.length == 0" :w3-include-html="`./article/${type1TH.taxonomyId}/${getMediaVersion}/${type2TH.taxonomyId}.html`"></div>
+                        <div v-if="type2TH.childTaxonomies.length == 0" :w3-include-html="`/article/${type1TH.taxonomyId}/${getMediaVersion}/${type2TH.taxonomyId}.html`"></div>
                         <div v-else>
                             <div class="tabs-3th">
                                 <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies"
@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                             <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies" :id="type3TH.taxonomyId" class="third-category-article" v-if="isCurrentTab(`${type2TH.taxonomyId}2TH`,type3TH.taxonomyId)">
-                                <div v-if="type3TH.childTaxonomies.length == 0" :w3-include-html="`./article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${getMediaVersion}/${type3TH.taxonomyId}.html`"></div>
+                                <div v-if="type3TH.childTaxonomies.length == 0" :w3-include-html="`/article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${getMediaVersion}/${type3TH.taxonomyId}.html`"></div>
                                 <div v-else>
                                     <div class="tabs-4th">
                                         <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies"
@@ -112,7 +112,7 @@
                                         </div>
                                     </div>
                                     <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies" :id="type4TH.taxonomyId" class="fourth-category-article" v-if="isCurrentTab(`${type3TH.taxonomyId}3TH`,type4TH.taxonomyId)">
-                                        <div :w3-include-html="`./article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${type3TH.taxonomyId}/${getMediaVersion}/${type4TH.taxonomyId}.html`"></div>
+                                        <div :w3-include-html="`/article/${type1TH.taxonomyId}/${type2TH.taxonomyId}/${type3TH.taxonomyId}/${getMediaVersion}/${type4TH.taxonomyId}.html`"></div>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@
 
         <div class="fab-buttom" v-show="isShowGoTop">
             <a href="#app" v-smooth-scroll="{offset: -135}">
-               <img src="./resources/icons/icon-gotop.svg" alt=""> 
+               <img src="/resources/icons/icon-gotop.svg" alt=""> 
             </a>
         </div>
     </div>
@@ -147,9 +147,9 @@
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-<script type="module" src="./resources/js/plugins/vue2-smooth-scroll.js"></script>
-<script src="./resources/js/service/media.js"></script>
-<script type="module" src="./resources/js/app.js"></script>
+<script type="module" src="/resources/js/plugins/vue2-smooth-scroll.js"></script>
+<script src="/resources/js/service/media.js"></script>
+<script type="module" src="/resources/js/app.js"></script>
 
 
 
