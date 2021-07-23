@@ -1,43 +1,43 @@
-@import '/resources/css/utilities/_reset.css';
-@import '/resources/css/_var.css';
+@import 'utilities/_reset.css';
+@import '_var.css';
 
 
 /* utilities */
-@import '/resources/css/utilities/_site.css';
-@import '/resources/css/utilities/_font.css';
-@import '/resources/css/utilities/_spacing.css';
+@import 'utilities/_site.css';
+@import 'utilities/_font.css';
+@import 'utilities/_spacing.css';
 
 /* elements */
-@import '/resources/css/elements/_tab.css';
-@import '/resources/css/elements/_button.css';
-@import '/resources/css/elements/_dropdown.css';
-@import '/resources/css/elements/_carousel.css';
+@import 'elements/_tab.css';
+@import 'elements/_button.css';
+@import 'elements/_dropdown.css';
+@import 'elements/_carousel.css';
 
 /* templet utilities */
-@import '/resources/css/templet/utilities/article-background.css';
-@import '/resources/css/templet/utilities/templet-popup.css';
+@import 'templet/utilities/article-background.css';
+@import 'templet/utilities/templet-popup.css';
 
 /* templet desktop */
-@import '/resources/css/templet/desktop/article-templet-full-image.css';
-@import '/resources/css/templet/desktop/article-templet-grid-horizontal-two-col.css';
-@import '/resources/css/templet/desktop/article-templet-grid-organization.css';
-@import '/resources/css/templet/desktop/templet-table.css';
-@import '/resources/css/templet/desktop/article-templet-albums.css';
-@import '/resources/css/templet/desktop/article-templet-udn-member.css';
-@import '/resources/css/templet/desktop/article-templet-udn-compensation-benefits.css';
-@import '/resources/css/templet/desktop/page-templet-vertical.css';
-@import '/resources/css/templet/desktop/page-templet-time-line.css';
+@import 'templet/desktop/article-templet-full-image.css';
+@import 'templet/desktop/article-templet-grid-horizontal-two-col.css';
+@import 'templet/desktop/article-templet-grid-organization.css';
+@import 'templet/desktop/templet-table.css';
+@import 'templet/desktop/article-templet-albums.css';
+@import 'templet/desktop/article-templet-udn-member.css';
+@import 'templet/desktop/article-templet-udn-compensation-benefits.css';
+@import 'templet/desktop/page-templet-vertical.css';
+@import 'templet/desktop/page-templet-time-line.css';
 
 /* templet mobile */
-@import '/resources/css/templet/mobile/article-templet-full-image.css';
-@import '/resources/css/templet/mobile/article-templet-grid-vertical.css';
-@import '/resources/css/templet/mobile/article-templet-grid-organization.css';
-@import '/resources/css/templet/mobile/templet-table.css';
-@import '/resources/css/templet/mobile/article-templet-albums.css';
-@import '/resources/css/templet/mobile/article-templet-udn-member.css';
-@import '/resources/css/templet/mobile/article-templet-udn-compensation-benefits.css';
-@import '/resources/css/templet/mobile/page-templet-vertical.css';
-@import '/resources/css/templet/mobile/page-templet-time-line.css';
+@import 'templet/mobile/article-templet-full-image.css';
+@import 'templet/mobile/article-templet-grid-vertical.css';
+@import 'templet/mobile/article-templet-grid-organization.css';
+@import 'templet/mobile/templet-table.css';
+@import 'templet/mobile/article-templet-albums.css';
+@import 'templet/mobile/article-templet-udn-member.css';
+@import 'templet/mobile/article-templet-udn-compensation-benefits.css';
+@import 'templet/mobile/page-templet-vertical.css';
+@import 'templet/mobile/page-templet-time-line.css';
 
 
 
