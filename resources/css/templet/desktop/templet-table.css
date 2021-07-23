@@ -84,7 +84,7 @@
             display: block;
         }
 
-            [data-templet-desktop="templet-table"] table:not(:first-child)  {
+            [data-templet-desktop="templet-table"] table:first-of-type:not(:last-of-type)  {
                 border: none;
             }
 

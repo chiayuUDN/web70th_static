@@ -27,12 +27,6 @@
         margin-top: 46px;
     }
 
-        [data-templet-desktop="article-templet-full-image"] .udn-btn .icon {
-            margin-left: 8px;
-            width: 18px;
-            width: 18px;
-        }
-
 @media (max-width: 767px) {
 
 [data-templet-desktop="article-templet-full-image"] .udn-btn {
@@ -52,11 +46,5 @@
         text-align: left;
         word-wrap: break-word;
         word-break: break-all;
-    }
-
-    [data-templet-desktop="article-templet-full-image"] .udn-btn .icon {
-        margin-left: 8px;
-        width: 16px;
-        width: 16px;
     }
 }

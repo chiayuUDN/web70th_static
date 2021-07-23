@@ -41,6 +41,9 @@
         font-size: 18px;
         font-weight: 300;
     }
+    [data-templet-mobile="article-templet-udn-member"] .text-info:not(:last-of-type) {
+        margin-bottom: 12px;
+    }
 
         
     [data-templet-mobile="article-templet-udn-member"] .group {
@@ -58,6 +61,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            margin: 0;
         }
 
         [data-templet-mobile="article-templet-udn-member"] .group > .text-info .step {
@@ -72,12 +76,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-content: space-between;
         padding: 0 0 20px;
         border-bottom: 1px solid var(--gray-c3);
     }
         [data-templet-mobile="article-templet-udn-member"] [data-horizontal="left"] .middle {
             margin: 20px auto;
+            display: flex;
+            justify-content: center;
         }
     
     [data-templet-mobile="article-templet-udn-member"] [data-horizontal="right"] {
@@ -89,11 +94,11 @@
         [data-templet-mobile="article-templet-udn-member"] [data-horizontal="right"] > .sub-title {
             margin-bottom: 24px;
         }
-        [data-templet-mobile="article-templet-udn-member"] [data-horizontal="right"] > .udn-btn {
-            margin: 24px auto;
-        }
         [data-templet-mobile="article-templet-udn-member"] [data-horizontal="right"] > .btn-group {
             margin-top: 24px;
+        }
+        [data-templet-mobile="article-templet-udn-member"] [data-horizontal="right"] > .sign-up {
+            margin: 24px auto;
         }
         [data-templet-mobile="article-templet-udn-member"] [data-horizontal="right"] > .text-info {
             text-align: left;

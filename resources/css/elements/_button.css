@@ -1,5 +1,5 @@
 .udn-btn {
-    width: 100%;
+    min-width: 215px;
     padding: 10px 24px;
     background: none;
     border-radius: 24px;
@@ -10,7 +10,13 @@
     border: none;
     align-items: center;
     justify-content: center;
+    line-height: 1;
 }
+    .udn-btn .icon {
+        margin-left: 8px;
+        width: 18px;
+        width: 18px;
+    }
 
 .btn-group {
     display: flex;
@@ -53,10 +59,18 @@
     .udn-btn {
         font-size: 18px;
     }
+        .udn-btn .icon {
+            margin-left: 8px;
+            width: 16px;
+            width: 16px;
+        }
 
     .btn-group {
         display: block;
     }
+        .btn-group .udn-btn{
+            width: 100%;
+        }
 
         .btn-group .udn-btn:not(:last-child) {
             margin-bottom: 24px;
