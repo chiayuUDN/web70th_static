@@ -1,9 +1,16 @@
 [data-templet="article-background"]  {
     padding: 40px 24px;
-    background-color: var(--white);
     position: relative;
     background-repeat: no-repeat;
 }
+
+    [data-background-color="white"]  {
+        background-color: var(--white);
+    }
+
+    [data-background-color="gray"]  {
+        background-color: var(--gray-c1);
+    }
 
     [data-templet="article-background"][data-image-position="top-left"]  {
         background-position: top left;
@@ -32,6 +39,19 @@
         padding: 40px 20px;
     }
 
+        [data-background-color-mobile="white"]  {
+            background-color: var(--white);
+        }
+
+        [data-background-color-mobile="gray"]  {
+            background-color: var(--gray-c1);
+        }
+
+        [data-background-color-mobile="none"]  {
+            background-color: transparent;
+            padding: 0;
+        }
+    
     [data-templet="article-background"][data-backgroud-type="udn-member"]  {
         background-image: url('/resources/img/bg-becomeamember.png');
     }

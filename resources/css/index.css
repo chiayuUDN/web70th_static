@@ -24,6 +24,7 @@
 @import './templet/desktop/templet-table.css';
 @import './templet/desktop/article-templet-albums.css';
 @import './templet/desktop/article-templet-udn-member.css';
+@import './templet/desktop/article-templet-udn-compensation-benefits.css';
 @import './templet/desktop/page-templet-vertical.css';
 @import './templet/desktop/page-templet-time-line.css';
 
@@ -34,6 +35,7 @@
 @import './templet/mobile/templet-table.css';
 @import './templet/mobile/article-templet-albums.css';
 @import './templet/mobile/article-templet-udn-member.css';
+@import './templet/mobile/article-templet-udn-compensation-benefits.css';
 @import './templet/mobile/page-templet-vertical.css';
 @import './templet/mobile/page-templet-time-line.css';
 
