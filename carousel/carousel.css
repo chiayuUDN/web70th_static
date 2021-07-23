@@ -1,0 +1,17 @@
+.carousel .carousel-item > img {
+    width: 100%;
+    height: 650px;
+    /* height: 345px; */
+}
+
+@media (max-width: 1199px) {
+    .carousel .carousel-item > img {
+        height: 640px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel .carousel-item > img {
+        height: 345px;
+    }
+}
