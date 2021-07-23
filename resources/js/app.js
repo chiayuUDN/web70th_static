@@ -9,7 +9,8 @@ let app = new Vue({
         order: 1,
         openNav: false,
         media: media,
-        isShowGoTop: false
+        isShowGoTop: false,
+        carousels: [1,2,3,4,5],
     },
     created() {
         getSectionTypes().then(response => {
@@ -22,6 +23,15 @@ let app = new Vue({
                 console.log('err')
             }
         }).catch(err => console.log(err));
+        getNewsCarousel().then(res => {
+            if(res.data.success) {
+                this.carousels = res.data.result;
+            } else {
+                console.log('err')
+            }
+        }).catch(err => {
+            console.log(err)
+        })
     },
     mounted() {
         window.addEventListener('scroll', () => {
@@ -82,7 +92,11 @@ let app = new Vue({
 });
 
 function getSectionTypes() {
-    return  axios.get("./../../resources/js/type.json");
+    return axios.get("./../../resources/js/type.json");
+}
+
+function getNewsCarousel() {
+    return axios.get("./../../resources/js/carousel.json");
 }
 
 // 傳入分類與層數，來記錄整個資料的第一個分類ID

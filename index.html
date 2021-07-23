@@ -65,8 +65,12 @@
         <div class="main">
             <!-- data 區塊開始 -->
             <!-- 最新消息(輪播) -->
-            <div id="activiti" ref="activiti" w3-include-html="carousel/carousel.html"></div>
-    
+            <div w3-include-html="carousel/carousel.html"></div>
+            <!-- <div class="carousel">
+                <div v-for="carousel in carousels">
+                    {{carousel.articleUid}}
+                </div>
+            </div> -->
             <!-- 迴圈產生資料 -->
             <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies" :id="type1TH.taxonomyId" :class="['large-category-article',{'bg-gray': idx1TH%2 == 0}]" :ref="type1TH.taxonomyId" v-if="idx1TH > 0">
                 <!-- 媒體發展 -->
