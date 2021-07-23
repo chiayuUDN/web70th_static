@@ -13,6 +13,7 @@ let app = new Vue({
         carousels: [1,2,3,4,5],
     },
     created() {
+        w3.includeHTML();
         getSectionTypes().then(response => {
             if(response.data.success) {
                 let result = response.data.result;

@@ -68,6 +68,9 @@
     .btn-group {
         display: block;
     }
+        .btn-group .udn-btn{
+            width: 100%;
+        }
 
         .btn-group .udn-btn:not(:last-child) {
             margin-bottom: 24px;

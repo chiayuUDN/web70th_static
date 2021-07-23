@@ -147,9 +147,9 @@
             text-align: left;
         }
 
-        [data-templet-desktop="article-templet-udn-member"] [data-horizontal="right"] > .udn-btn {
-            margin-top: 24px;
-            margin-bottom: 24px;
+        [data-templet-desktop="article-templet-udn-member"] [data-horizontal="right"] > .sign-up {
+           margin: 24px auto;
+            
         }
 
 
