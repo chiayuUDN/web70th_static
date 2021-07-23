@@ -41,6 +41,9 @@
         font-size: 18px;
         font-weight: 300;
     }
+    [data-templet-mobile="article-templet-udn-member"] .text-info:not(:last-of-type) {
+        margin-bottom: 12px;
+    }
 
         
     [data-templet-mobile="article-templet-udn-member"] .group {
@@ -58,6 +61,7 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            margin: 0;
         }
 
         [data-templet-mobile="article-templet-udn-member"] .group > .text-info .step {
@@ -89,6 +93,9 @@
     }
         [data-templet-mobile="article-templet-udn-member"] [data-horizontal="right"] > .sub-title {
             margin-bottom: 24px;
+        }
+        [data-templet-mobile="article-templet-udn-member"] [data-horizontal="right"] > .btn-group {
+            margin-top: 24px;
         }
         [data-templet-mobile="article-templet-udn-member"] [data-horizontal="right"] > .sign-up {
             margin: 24px auto;
