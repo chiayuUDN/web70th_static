@@ -41,8 +41,8 @@
 
 
 
-@import '/resources/css/menu.css';
-@import '/resources/css/footer.css';
+@import 'menu.css';
+@import 'footer.css';
 
 
 /* 待整理 */
