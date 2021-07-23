@@ -11,7 +11,7 @@
 @import './elements/_tab.css';
 @import './elements/_button.css';
 @import './elements/_dropdown.css';
-
+@import './elements/_carousel.css';
 
 /* templet utilities */
 @import '/resources/css/templet/utilities/article-background.css';

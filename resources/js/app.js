@@ -10,7 +10,15 @@ let app = new Vue({
         openNav: false,
         media: media,
         isShowGoTop: false,
-        carousels: [1,2,3,4,5],
+        carousels: [],
+        currectCarousel: '07e4354a-7141-4779-8be8-5014c8094a84',
+        show: 0,
+        transitionName: 'right-in',
+        img: [
+            {src:'resources/img/1.jpg'},
+            {src:'resources/img/2.jpg'},
+            {src:'resources/img/3.jpg'},
+        ]
     },
     created() {
         w3.includeHTML();
@@ -76,6 +84,9 @@ let app = new Vue({
                     })
                 })
             }
+        },
+        selectCurrect(value){
+            
         },
         goTop() {
             window.scroll(0, 0);
