@@ -1,4 +1,4 @@
-<div id="activiti" ref="activiti" class="carousel">
+<div class="carousel">
     <transition-group tag="div" class="carousel-inner" :name="transitionName">
         <div class="carousel-item" v-for="(carousel, idx) in carousels" :key="idx" v-show="idx === show">
             <img :src="img[idx].src" :alt="carousel.articleTitle">
