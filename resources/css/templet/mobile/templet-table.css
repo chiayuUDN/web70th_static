@@ -1,17 +1,17 @@
-[data-templet-mobile="templet-table"] {
+[data-template-mobile="template-table"] {
     background-color: transparent;
     text-align: justify;
     padding: 0;
 }
 
-[data-templet-mobile="templet-table"] .text{
+[data-template-mobile="template-table"] .text{
     font-size: 20px;
     font-weight: 300;
     color: var(--black);
     margin-bottom: 40px;
 }
 
-[data-templet-mobile="templet-table"] .image-description {
+[data-template-mobile="template-table"] .image-description {
     font-size: 18px;
     color: var(--gray-c4);
     text-align: justify;
@@ -21,49 +21,49 @@
     margin-top: 20px;
 }
 
-[data-templet-mobile="templet-table"] .sub-title {
+[data-template-mobile="template-table"] .sub-title {
     margin-bottom: 20px;
     color: var(--black);
 }
 
-    [data-templet-mobile="templet-table"] {
+    [data-template-mobile="template-table"] {
         display: block;
     }
 
-        [data-templet-mobile="templet-table"] table:not(:first-child)  {
+        [data-template-mobile="template-table"] table:not(:first-child)  {
             border: none;
         }
 
-    [data-templet-mobile="templet-table"] table,
-    [data-templet-mobile="templet-table"] thead,
-    [data-templet-mobile="templet-table"] tbody,
-    [data-templet-mobile="templet-table"] tr,
-    [data-templet-mobile="templet-table"] th,
-    [data-templet-mobile="templet-table"] td {
+    [data-template-mobile="template-table"] table,
+    [data-template-mobile="template-table"] thead,
+    [data-template-mobile="template-table"] tbody,
+    [data-template-mobile="template-table"] tr,
+    [data-template-mobile="template-table"] th,
+    [data-template-mobile="template-table"] td {
         display: block;
     }
 
-    [data-templet-mobile="templet-table"] thead {
+    [data-template-mobile="template-table"] thead {
         display: none;
     }
 
-    [data-templet-mobile="templet-table"] table tbody tr {
+    [data-template-mobile="template-table"] table tbody tr {
         padding: 8px 16px;
     }
 
-        [data-templet-mobile="templet-table"] table tbody tr:nth-child(odd) {
+        [data-template-mobile="template-table"] table tbody tr:nth-child(odd) {
             background-color: #fbfbfb; 
         }
 
 
-            [data-templet-mobile="templet-table"] table tbody tr td {
+            [data-template-mobile="template-table"] table tbody tr td {
                 padding: 8px 0;
                 font-size: 18px;
                 font-weight: 300;
                 color: var(--black);
             }
 
-            [data-templet-mobile="templet-table"] table tbody tr td a {
+            [data-template-mobile="template-table"] table tbody tr td a {
                     position: relative;
                     vertical-align: middle;
                 }

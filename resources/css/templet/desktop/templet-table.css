@@ -1,8 +1,8 @@
-[data-templet-desktop="templet-table"]  {
+[data-template-desktop="template-table"]  {
 
 }
 
-    [data-templet-desktop="templet-table"] .text {
+    [data-template-desktop="template-table"] .text {
         font-size: 20px;
         font-weight: 300;
         color: var(--black);
@@ -10,7 +10,7 @@
         text-align: center;
     }
     
-    [data-templet-desktop="templet-table"] .image-description {
+    [data-template-desktop="template-table"] .image-description {
         font-size: 18px;
         color: var(--gray-c4);
         text-align: left;
@@ -18,29 +18,29 @@
         margin-top: 40px;
     }
 
-    [data-templet-desktop="templet-table"] .sub-title {
+    [data-template-desktop="template-table"] .sub-title {
         margin-bottom: 20px;
         color: var(--black);
     }
 
-    [data-templet-desktop="templet-table"] [data-horizontal="two-col"] {
+    [data-template-desktop="template-table"] [data-horizontal="two-col"] {
         display: flex;
         align-items: flex-start;
     }
 
-    [data-templet-desktop="templet-table"] table {
+    [data-template-desktop="template-table"] table {
         width: 100%;
     }
 
-    [data-templet-desktop="templet-table"] table:first-of-type:not(:last-of-type) {
+    [data-template-desktop="template-table"] table:first-of-type:not(:last-of-type) {
             border-right: 1px solid #e4e4e4;;
     }
 
-        [data-templet-desktop="templet-table"] table thead tr {
+        [data-template-desktop="template-table"] table thead tr {
             background-color: var(--orange);
         }
         
-            [data-templet-desktop="templet-table"] table thead tr th {
+            [data-template-desktop="template-table"] table thead tr th {
                 padding: 13px 24px;
                 font-size: 20px;
                 font-weight: 500;
@@ -48,64 +48,64 @@
                 text-align: left;
             }
 
-        [data-templet-desktop="templet-table"] table tbody tr {
+        [data-template-desktop="template-table"] table tbody tr {
             background-color: var(--white);
         }
 
-            [data-templet-desktop="templet-table"] table tbody tr:nth-child(odd) {
+            [data-template-desktop="template-table"] table tbody tr:nth-child(odd) {
                 background-color: #fbfbfb; 
             }
 
-            [data-templet-desktop="templet-table"] table tbody tr td {
+            [data-template-desktop="template-table"] table tbody tr td {
                 padding: 13px 24px;
                 font-size: 20px;
                 font-weight: 300;
                 color: var(--black);
             }
 
-                [data-templet-desktop="templet-table"] table tbody tr td a {
+                [data-template-desktop="template-table"] table tbody tr td a {
                     position: relative;
                     vertical-align: middle;
                 }
 
 
 @media (max-width: 767px) {
-    [data-templet-desktop="templet-table"] {
+    [data-template-desktop="template-table"] {
         background-color: transparent;
         text-align: justify;
         padding: 0;
     }
 
-    [data-templet-desktop="templet-table"] .text{
+    [data-template-desktop="template-table"] .text{
         text-align: justify;
     }
 
-        [data-templet-desktop="templet-table"] [data-horizontal="two-col"] {
+        [data-template-desktop="template-table"] [data-horizontal="two-col"] {
             display: block;
         }
 
-            [data-templet-desktop="templet-table"] table:first-of-type:not(:last-of-type)  {
+            [data-template-desktop="template-table"] table:first-of-type:not(:last-of-type)  {
                 border: none;
             }
 
-        [data-templet-desktop="templet-table"] table,
-        [data-templet-desktop="templet-table"] thead,
-        [data-templet-desktop="templet-table"] tbody,
-        [data-templet-desktop="templet-table"] tr,
-        [data-templet-desktop="templet-table"] th,
-        [data-templet-desktop="templet-table"] td {
+        [data-template-desktop="template-table"] table,
+        [data-template-desktop="template-table"] thead,
+        [data-template-desktop="template-table"] tbody,
+        [data-template-desktop="template-table"] tr,
+        [data-template-desktop="template-table"] th,
+        [data-template-desktop="template-table"] td {
             display: block;
         }
 
-        [data-templet-desktop="templet-table"] thead {
+        [data-template-desktop="template-table"] thead {
             display: none;
         }
 
-        [data-templet-desktop="templet-table"] table tbody tr {
+        [data-template-desktop="template-table"] table tbody tr {
             padding: 8px 16px;
         }
 
-            [data-templet-desktop="templet-table"] table tbody tr td {
+            [data-template-desktop="template-table"] table tbody tr td {
                 padding: 8px 0;
                 font-size: 18px;
                 font-weight: 300;

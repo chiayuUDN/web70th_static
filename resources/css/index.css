@@ -13,31 +13,31 @@
 @import 'elements/dropdown.css';
 @import 'elements/carousel.css';
 
-/* templet utilities */
-@import 'templet/utilities/article-background.css';
-@import 'templet/utilities/templet-popup.css';
+/* template utilities */
+@import 'template/utilities/article-background.css';
+@import 'template/utilities/template-popup.css';
 
-/* templet desktop */
-@import 'templet/desktop/article-templet-full-image.css';
-@import 'templet/desktop/article-templet-grid-horizontal-two-col.css';
-@import 'templet/desktop/article-templet-grid-organization.css';
-@import 'templet/desktop/templet-table.css';
-@import 'templet/desktop/article-templet-albums.css';
-@import 'templet/desktop/article-templet-udn-member.css';
-@import 'templet/desktop/article-templet-udn-compensation-benefits.css';
-@import 'templet/desktop/page-templet-vertical.css';
-@import 'templet/desktop/page-templet-time-line.css';
+/* template desktop */
+@import 'template/desktop/article-template-full-image.css';
+@import 'template/desktop/article-template-grid-horizontal-two-col.css';
+@import 'template/desktop/article-template-grid-organization.css';
+@import 'template/desktop/template-table.css';
+@import 'template/desktop/article-template-albums.css';
+@import 'template/desktop/article-template-udn-member.css';
+@import 'template/desktop/article-template-udn-compensation-benefits.css';
+@import 'template/desktop/page-template-vertical.css';
+@import 'template/desktop/page-template-time-line.css';
 
-/* templet mobile */
-@import 'templet/mobile/article-templet-full-image.css';
-@import 'templet/mobile/article-templet-grid-vertical.css';
-@import 'templet/mobile/article-templet-grid-organization.css';
-@import 'templet/mobile/templet-table.css';
-@import 'templet/mobile/article-templet-albums.css';
-@import 'templet/mobile/article-templet-udn-member.css';
-@import 'templet/mobile/article-templet-udn-compensation-benefits.css';
-@import 'templet/mobile/page-templet-vertical.css';
-@import 'templet/mobile/page-templet-time-line.css';
+/* template mobile */
+@import 'template/mobile/article-template-full-image.css';
+@import 'template/mobile/article-template-grid-vertical.css';
+@import 'template/mobile/article-template-grid-organization.css';
+@import 'template/mobile/template-table.css';
+@import 'template/mobile/article-template-albums.css';
+@import 'template/mobile/article-template-udn-member.css';
+@import 'template/mobile/article-template-udn-compensation-benefits.css';
+@import 'template/mobile/page-template-vertical.css';
+@import 'template/mobile/page-template-time-line.css';
 
 
 

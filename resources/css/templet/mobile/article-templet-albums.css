@@ -1,25 +1,25 @@
 
-[data-templet-mobile="article-templet-albums"] .text {
+[data-template-mobile="article-template-albums"] .text {
     color: var(--black);
     margin-bottom: 40px;
     text-align: left;
 }
 
-[data-templet-mobile="article-templet-albums"] [data-row="four-col"] {
+[data-template-mobile="article-template-albums"] [data-row="four-col"] {
     display: grid;
     grid-template-columns: repeat(2,auto);
     grid-gap: 20px 20px;
 }
 
-    [data-templet-mobile="article-templet-albums"] [data-row="four-col"] [data-col="col"] {
+    [data-template-mobile="article-template-albums"] [data-row="four-col"] [data-col="col"] {
         text-align: center;
     }
 
-        [data-templet-mobile="article-templet-albums"] [data-row="four-col"] [data-col="col"] > .image {
+        [data-template-mobile="article-template-albums"] [data-row="four-col"] [data-col="col"] > .image {
             width: 100%;
         }
 
-        [data-templet-mobile="article-templet-albums"] [data-row="four-col"] [data-col="col"] > .image-description {
+        [data-template-mobile="article-template-albums"] [data-row="four-col"] [data-col="col"] > .image-description {
             margin-top: 10px;
             font-size: 18px;
             font-weight: 300;

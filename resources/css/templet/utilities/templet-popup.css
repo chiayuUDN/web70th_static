@@ -1,4 +1,4 @@
-[data-templet="popup"] {
+[data-template="popup"] {
     width: 0;
     height: 0;
     overflow: hidden;
@@ -6,7 +6,7 @@
     opacity: 0;
 }
 
-    [data-templet="popup"][data-popup="show"] {
+    [data-template="popup"][data-popup="show"] {
         visibility: visible;
         opacity: 1;
         display: flex;
@@ -24,7 +24,7 @@
 
     }
 
-    [data-templet="popup"] [data-popup="container"] {
+    [data-template="popup"] [data-popup="container"] {
         border-radius: 16px;
         background-color: white;
         overflow-y: auto;
@@ -32,11 +32,11 @@
         margin: auto auto;
     }
 
-    [data-templet="popup"] [data-popup="container"] > div {
+    [data-template="popup"] [data-popup="container"] > div {
         padding: 0 40px;
     }
 
-        [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] {
+        [data-template="popup"] [data-popup="container"] [data-popup="top-bar"] {
             height: 64px;
             border-bottom: 1px solid #ebebeb;
             position: relative;
@@ -44,7 +44,7 @@
             align-items: center;
             padding: 0 40px;
         }
-            [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] [data-popup="close"] {
+            [data-template="popup"] [data-popup="container"] [data-popup="top-bar"] [data-popup="close"] {
                 position: absolute;
                 right: 40px;
                 background: none;
@@ -52,19 +52,19 @@
                 margin: 0;
                 padding: 0;
             }
-                [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] [data-popup="close"] img {
+                [data-template="popup"] [data-popup="container"] [data-popup="top-bar"] [data-popup="close"] img {
                     width: 24px;
                     height: 24px;
 
                 }
 
-    [data-templet="popup"] [data-popup="container"] [data-popup="body"] {
+    [data-template="popup"] [data-popup="container"] [data-popup="body"] {
         padding: 40px 40px;
         max-height: calc(700px - 65px);
         overflow-y: auto;
     }
 
-        [data-templet="popup"] [data-popup="container"] [data-popup="body"] .title {
+        [data-template="popup"] [data-popup="container"] [data-popup="body"] .title {
             font-size: 36px;
             font-weight: 500;
             margin: 0;
@@ -73,17 +73,17 @@
             margin: 40px 0 24px;
         }
 
-        [data-templet="popup"] [data-popup="container"] [data-popup="body"] .text {
+        [data-template="popup"] [data-popup="container"] [data-popup="body"] .text {
             text-align: justify;
             word-wrap: break-word;
             word-break: break-all;
             color: var(--black);
         }
-            [data-templet="popup"] [data-popup="container"] [data-popup="body"] .text:not(:last-of-type) {
+            [data-template="popup"] [data-popup="container"] [data-popup="body"] .text:not(:last-of-type) {
                 margin-bottom: 20px;
             }
 
-        [data-templet="popup"] [data-popup="container"] [data-popup="body"] [data-popup="header"]{
+        [data-template="popup"] [data-popup="container"] [data-popup="body"] [data-popup="header"]{
             text-align: center;
             font-size: 48px;
             font-weight: 500;
@@ -92,18 +92,18 @@
             color: var(--black);
         }
 
-        [data-templet="popup"] [data-popup="container"] [data-popup="body"] [data-popup="content"]{
+        [data-template="popup"] [data-popup="container"] [data-popup="body"] [data-popup="content"]{
             margin-top: 24px;
         }
 
 
 
 @media (max-width: 767px) {
-    [data-templet="popup"][data-popup="show"] {
+    [data-template="popup"][data-popup="show"] {
         overflow: hidden;
     }
 
-        [data-templet="popup"][data-popup="show"] [data-popup="container"] {
+        [data-template="popup"][data-popup="show"] [data-popup="container"] {
             overflow: hidden;
             position: relative;
             border-radius: 0;
@@ -111,30 +111,30 @@
             height: 100%;
 
         }
-            [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] {
+            [data-template="popup"] [data-popup="container"] [data-popup="top-bar"] {
                 height: 55px;
                 position: fixed;
                 width: calc(100% - 60px);
                 z-index: 2;
                 padding: 0 30px;
             }
-                [data-templet="popup"] [data-popup="container"] [data-popup="top-bar"] [data-popup="close"] img {
+                [data-template="popup"] [data-popup="container"] [data-popup="top-bar"] [data-popup="close"] img {
                     width: 18px;
                     height: 18px;
                 }
             
-            [data-templet="popup"][data-popup="show"] [data-popup="container"] > div {
+            [data-template="popup"][data-popup="show"] [data-popup="container"] > div {
                 max-width: 100%;
             }
 
-            [data-templet="popup"] [data-popup="container"] [data-popup="body"] {
+            [data-template="popup"] [data-popup="container"] [data-popup="body"] {
                 margin: 56px 0 0;
                 padding: 40px 30px;
                 max-height: calc(100% - 136px);
                 overflow-y: auto;
             }
 
-                [data-templet="popup"] [data-popup="container"] [data-popup="body"] [data-popup="header"]{
+                [data-template="popup"] [data-popup="container"] [data-popup="body"] [data-popup="header"]{
                     font-size: 36px;
                 }
 }

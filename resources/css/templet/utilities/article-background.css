@@ -1,4 +1,4 @@
-[data-templet="article-background"]  {
+[data-template="article-background"]  {
     padding: 40px 24px;
     position: relative;
     background-repeat: no-repeat;
@@ -12,30 +12,30 @@
         background-color: var(--gray-c1);
     }
 
-    [data-templet="article-background"][data-image-position="top-left"]  {
+    [data-template="article-background"][data-image-position="top-left"]  {
         background-position: top left;
     }
 
-    [data-templet="article-background"][data-image-position="bottom-right"]  {
+    [data-template="article-background"][data-image-position="bottom-right"]  {
         background-position: bottom right;
     }
 
-    [data-templet="article-background"][data-image-position="cente-cente"]  {
+    [data-template="article-background"][data-image-position="cente-cente"]  {
         background-position: center center;
     }
 
 
-        [data-templet="article-background"][data-backgroud-type="udn-member"]  {
+        [data-template="article-background"][data-backgroud-type="udn-member"]  {
             background-image: url('./../../../img/bg-becomeamember.png');
         }
         
-        [data-templet="article-background"][data-backgroud-type="udn-awards"]  {
+        [data-template="article-background"][data-backgroud-type="udn-awards"]  {
             background-image: url('./../../../img/img-unn-emptylogo-gold.png');
         }
 
 
 @media (max-width: 767px){
-    [data-templet="article-background"] {
+    [data-template="article-background"] {
         padding: 40px 20px;
     }
 
@@ -52,11 +52,11 @@
             padding: 0;
         }
     
-    [data-templet="article-background"][data-backgroud-type="udn-member"]  {
+    [data-template="article-background"][data-backgroud-type="udn-member"]  {
         background-image: url('./../../../img/bg-becomeamember.png');
     }
 
-    [data-templet="article-background"][data-backgroud-type="udn-member"]  {
+    [data-template="article-background"][data-backgroud-type="udn-member"]  {
         background-image: url('./../../../img/bg-becomeamember.png');
     }
 
