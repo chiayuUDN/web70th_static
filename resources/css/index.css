@@ -164,6 +164,20 @@ ol li:not(:first-of-type),ol li:not(:last-of-type){
         border-radius: 50%;
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
     }
+    #app .fab-buttom a .icon {
+        filter: invert(42%) sepia(94%) saturate(1663%) hue-rotate(2deg) brightness(94%) contrast(102%);
+    }
+
+        #app .fab-buttom:hover a,
+        #app .fab-buttom:active a  {
+            background-color: var(--orange);
+        }
+        
+        #app .fab-buttom:hover a .icon,
+        #app .fab-buttom:active a .icon {
+            filter: unset;
+        }
+
 
 
 

@@ -17,14 +17,6 @@
         width: 18px;
         height: 18px;
     }
-        .udn-btn > .icon::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: 0;
-        }
 
 .btn-group {
     display: flex;
@@ -39,36 +31,28 @@
         background-color: var(--orange);
         color: var(--white);
     }
-        .udn-btn.btn-orange:hover {
-            background-color: #ee4700;
-            color: var(--white);
-        }
-
+        .udn-btn.btn-orange:hover,
         .udn-btn.btn-orange:active {
             background-color: #ee4700;
             color: var(--white);
         }
 
-
+        .udn-btn.btn-orange:hover .icon,
+        .udn-btn.btn-orange:hover .icon {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(264deg) brightness(106%) contrast(101%);
+        }
 
     .udn-btn.btn-outline-light-gray {
         background-color: var(--white);
         color: var(--black);
         border: solid 1px #e4e4e4;
     }
-        .udn-btn.btn-outline-light-gray:hover {
-            background-color: var(--gray-c3);
-            color: var(--black);
-            border: solid 1px #e4e4e4;
-        }
+        .udn-btn.btn-outline-light-gray:hover,
         .udn-btn.btn-outline-light-gray:active {
             background-color: var(--gray-c3);
             color: var(--black);
             border: solid 1px #e4e4e4;
         }
-
-
-
 
     .udn-btn.btn-outline-gray {
         background-color: var(--white);
@@ -76,20 +60,15 @@
         border: solid 1px var(--gray-c5);
     }
 
-        .udn-btn.btn-outline-gray:hover {
-            background-color: var(--black);
-            border: 1px solid var(--black);
-            color: var(--white);
-        }
-
+        .udn-btn.btn-outline-gray:hover,
         .udn-btn.btn-outline-gray:active {
             background-color: var(--black);
             border: 1px solid var(--black);
             color: var(--white);
         }
 
-            .udn-btn.btn-outline-gray:hover .icon::before ,
-            .udn-btn.btn-outline-gray:active .icon::before {
+            .udn-btn.btn-outline-gray:hover .icon ,
+            .udn-btn.btn-outline-gray:active .icon {
                 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
             }
 
