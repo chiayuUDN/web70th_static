@@ -1,0 +1,57 @@
+/* 濾鏡參考:https://codepen.io/sosuke/pen/Pjoqqp */
+.icon {
+    line-height: 1;
+    display: inline-block;
+}
+.icon-udn-logo::before {
+    content: url('../../icons/icon-udn-logo.svg');
+}
+.icon-fb::before {
+    content: url('../../icons/btn_fb.svg');
+}
+.icon-ig::before {
+    content: url('../../icons/btn-ig.svg');
+}
+.icon-line::before {
+    content: url('../../icons/btn-line.svg');
+}
+.icon-youtube::before {
+    content: url('../../icons/btn-youtube.svg');
+}
+
+.icon-hamburger-btn::before {
+    content: url('../../icons/icon-hamburgerbtn.svg');
+}
+.icon-close::before {
+    content: url('../../icons/icon-close.svg');
+}
+.icon-left-arrow::before {
+    content: url('../../icons/icon-leftarrow.svg');
+}
+.icon-right-arrow::before {
+    content: url('../../icons/icon-rightarrow.svg');
+}
+.icon-gotop::before {
+    content: url('../../icons/icon-gotop.svg');
+}
+
+.icon-new-window::before {
+    content: url('../../icons/icon-newwindow.svg');
+}
+
+.icon-edit::before {
+    content: url('../../icons/icon-edit.svg');
+}
+
+.icon-mail::before {
+    content: url('../../icons/icon-mail.svg');
+}
+
+
+.icon-address::before {
+    content: url('../../icons/icon-address.svg');
+}
+
+.icon-collapse::before {
+    content: url('../../icons/icon-collapse.svg');
+}
