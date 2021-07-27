@@ -1,88 +1,57 @@
+/* 濾鏡參考:https://codepen.io/sosuke/pen/Pjoqqp */
 .icon {
+    line-height: 1;
     display: inline-block;
 }
-
-.icon-udn-logo {
-    background: url('../../icons/icon-udn-logo.svg') no-repeat center;
-    width: 143px;
-    height: 48px;
+.icon-udn-logo::before {
+    content: url('../../icons/icon-udn-logo.svg');
 }
-.icon-hamburger-btn {
-    background: url('../../icons/icon-hamburgerbtn.svg') no-repeat center;
-    width: 24px;
-    height: 18px;
+.icon-fb::before {
+    content: url('../../icons/btn_fb.svg');
 }
-.icon-close {
-    background: url('../../icons/icon-close.svg') no-repeat center;
-    width: 23px;
-    height: 23px;
+.icon-ig::before {
+    content: url('../../icons/btn-ig.svg');
 }
-.icon-left-arrow {
-    background: url('../../icons/icon-leftarrow.svg') no-repeat center;
-    width: 24px;
-    height: 20px;
+.icon-line::before {
+    content: url('../../icons/btn-line.svg');
 }
-.icon-right-arrow {
-    background: url('../../icons/icon-rightarrow.svg') no-repeat center;
-    width: 24px;
-    height: 20px;
-}
-.icon-gotop {
-    background: url('../../icons/icon-gotop.svg') no-repeat center;
-    width: 20px;
-    height: 24px;
+.icon-youtube::before {
+    content: url('../../icons/btn-youtube.svg');
 }
 
-.icon-new-window {
-    background: url('../../icons/icon-newwindow.svg') no-repeat center;
-    width: 24px;
-    height: 24px;
+.icon-hamburger-btn::before {
+    content: url('../../icons/icon-hamburgerbtn.svg');
+}
+.icon-close::before {
+    content: url('../../icons/icon-close.svg');
+}
+.icon-left-arrow::before {
+    content: url('../../icons/icon-leftarrow.svg');
+}
+.icon-right-arrow::before {
+    content: url('../../icons/icon-rightarrow.svg');
+}
+.icon-gotop::before {
+    content: url('../../icons/icon-gotop.svg');
 }
 
-.icon-edit {
-    background: url('../../icons/icon-edit.svg') no-repeat center;
-    width: 24px;
-    height: 25px;
+.icon-new-window::before {
+    content: url('../../icons/icon-newwindow.svg');
 }
 
-.icon-mail {
-    background: url('../../icons/icon-mail') no-repeat center;
-    width: 24px;
-    height: 17px;
+.icon-edit::before {
+    content: url('../../icons/icon-edit.svg');
 }
 
-.icon-fb {
-    background: url('../../icons/btn_fb.svg') no-repeat center;
-    width: 32px;
-    height: 32px;
+.icon-mail::before {
+    content: url('../../icons/icon-mail.svg');
 }
 
-.icon-ig {
-    background: url('../../icons/btn-ig.svg') no-repeat center;
-    width: 32px;
-    height: 32px;
+
+.icon-address::before {
+    content: url('../../icons/icon-address.svg');
 }
 
-.icon-line {
-    background: url('../../icons/btn-line.svg') no-repeat center;
-    width: 32px;
-    height: 32px;
-}
-
-.icon-youtube {
-    background: url('../../icons/btn-youtube.svg') no-repeat center;
-    width: 32px;
-    height: 32px;
-}
-
-.icon-address {
-    background: url('../../icons/icon-address.svg') no-repeat center;
-    width: 21px;
-    height: 26px;
-}
-
-.icon-collapse {
-    background: url('../../icons/icon-collapse.svg') no-repeat center;
-    width: 24px;
-    height: 24px;
+.icon-collapse::before {
+    content: url('../../icons/icon-collapse.svg');
 }
