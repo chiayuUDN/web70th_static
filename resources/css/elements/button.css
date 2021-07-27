@@ -1,5 +1,5 @@
 .udn-btn {
-    min-width: 215px;
+    width: 354px;
     padding: 10px 24px;
     background: none;
     border-radius: 24px;
@@ -31,33 +31,66 @@
         background-color: var(--orange);
         color: var(--white);
     }
+        .udn-btn.btn-orange:hover {
+            background-color: #ee4700;
+            color: var(--white);
+        }
 
-    .udn-btn.btn-white {
+        .udn-btn.btn-orange:active {
+            background-color: #ee4700;
+            color: var(--white);
+        }
+
+
+
+    .udn-btn.btn-outline-light-gray {
+        background-color: var(--white);
+        color: var(--black);
+        border: solid 1px #e4e4e4;
+    }
+        .udn-btn.btn-outline-light-gray:hover {
+            background-color: var(--gray-c3);
+            color: var(--black);
+            border: solid 1px #e4e4e4;
+        }
+        .udn-btn.btn-outline-light-gray:active {
+            background-color: var(--gray-c3);
+            color: var(--black);
+            border: solid 1px #e4e4e4;
+        }
+
+
+
+
+    .udn-btn.btn-outline-gray {
         background-color: var(--white);
         color: var(--black);
         border: solid 1px var(--gray-c5);
     }
 
-        .udn-btn.btn-white:hover {
+        .udn-btn.btn-outline-gray:hover {
             background-color: var(--black);
             border: 1px solid var(--black);
             color: var(--white);
         }
 
-        .udn-btn.btn-white:active {
+        .udn-btn.btn-outline-gray:active {
             background-color: var(--black);
             border: 1px solid var(--black);
             color: var(--white);
         }
 
-            .udn-btn.btn-white:hover img ,
-            .udn-btn.btn-white:active img{
-                filter: invert(1);
+            .udn-btn.btn-outline-gray:hover .icon ,
+            .udn-btn.btn-outline-gray:active .icon {
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
             }
+
+
 
 @media (max-width: 767px){
     .udn-btn {
         font-size: 18px;
+        width: 100%;
     }
         .udn-btn .icon {
             margin-left: 8px;

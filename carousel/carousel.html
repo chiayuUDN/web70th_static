@@ -3,6 +3,7 @@
         <div class="carousel-item" v-for="(carousel, idx) in carousels" :key="idx" v-show="idx === show">
             <img :src="img[idx].src" :alt="carousel.articleTitle">
         </div>
+
     </transition-group>
     <div class="container">
         <a class="carousel-control-prev" @click="setShow(show-1)" @mouseover="carouselStop" @mouseleave="carouselStart">
