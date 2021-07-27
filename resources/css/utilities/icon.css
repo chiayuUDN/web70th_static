@@ -1,0 +1,88 @@
+.icon {
+    display: inline-block;
+}
+
+.icon-udn-logo {
+    background: url('../../icons/icon-udn-logo.svg') no-repeat center;
+    width: 143px;
+    height: 48px;
+}
+.icon-hamburger-btn {
+    background: url('../../icons/icon-hamburgerbtn.svg') no-repeat center;
+    width: 24px;
+    height: 18px;
+}
+.icon-close {
+    background: url('../../icons/icon-close.svg') no-repeat center;
+    width: 23px;
+    height: 23px;
+}
+.icon-left-arrow {
+    background: url('../../icons/icon-leftarrow.svg') no-repeat center;
+    width: 24px;
+    height: 20px;
+}
+.icon-right-arrow {
+    background: url('../../icons/icon-rightarrow.svg') no-repeat center;
+    width: 24px;
+    height: 20px;
+}
+.icon-gotop {
+    background: url('../../icons/icon-gotop.svg') no-repeat center;
+    width: 20px;
+    height: 24px;
+}
+
+.icon-new-window {
+    background: url('../../icons/icon-newwindow.svg') no-repeat center;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-edit {
+    background: url('../../icons/icon-edit.svg') no-repeat center;
+    width: 24px;
+    height: 25px;
+}
+
+.icon-mail {
+    background: url('../../icons/icon-mail') no-repeat center;
+    width: 24px;
+    height: 17px;
+}
+
+.icon-fb {
+    background: url('../../icons/btn_fb.svg') no-repeat center;
+    width: 32px;
+    height: 32px;
+}
+
+.icon-ig {
+    background: url('../../icons/btn-ig.svg') no-repeat center;
+    width: 32px;
+    height: 32px;
+}
+
+.icon-line {
+    background: url('../../icons/btn-line.svg') no-repeat center;
+    width: 32px;
+    height: 32px;
+}
+
+.icon-youtube {
+    background: url('../../icons/btn-youtube.svg') no-repeat center;
+    width: 32px;
+    height: 32px;
+}
+
+.icon-address {
+    background: url('../../icons/icon-address.svg') no-repeat center;
+    width: 21px;
+    height: 26px;
+}
+
+.icon-collapse {
+    background: url('../../icons/icon-collapse.svg') no-repeat center;
+    width: 24px;
+    height: 24px;
+}
