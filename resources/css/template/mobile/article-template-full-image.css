@@ -29,12 +29,5 @@
     }
 
     [data-template-mobile="article-template-full-image"] .udn-btn {
-        width: 100%;
         margin-top: 40px;
     }
-
-        [data-template-mobile="article-template-full-image"] .udn-btn .icon {
-            margin-left: 8px;
-            width: 16px;
-            width: 16px;
-        }

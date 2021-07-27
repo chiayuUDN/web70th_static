@@ -15,6 +15,7 @@
 @import 'elements/carousel.css';
 
 /* template utilities */
+@import 'template/utilities/position.css';
 @import 'template/utilities/article-background.css';
 @import 'template/utilities/template-popup.css';
 
@@ -26,8 +27,7 @@
 @import 'template/desktop/article-template-albums.css';
 @import 'template/desktop/article-template-udn-member.css';
 @import 'template/desktop/article-template-udn-compensation-benefits.css';
-@import 'template/desktop/page-template-activity.css';
-@import 'template/desktop/page-template-udn-info.css';
+@import 'template/desktop/page-template-vartical.css';
 @import 'template/desktop/page-template-time-line.css';
 
 /* template mobile */
@@ -38,8 +38,6 @@
 @import 'template/mobile/article-template-albums.css';
 @import 'template/mobile/article-template-udn-member.css';
 @import 'template/mobile/article-template-udn-compensation-benefits.css';
-@import 'template/mobile/page-template-activity.css';
-@import 'template/mobile/page-template-udn-info.css';
 @import 'template/mobile/page-template-time-line.css';
 
 
@@ -66,14 +64,14 @@
 
 /* 共同設定 */
 
-ul[class*="disc"] li {
+ul[class*="disc"] > li {
     list-style-type: none;
     list-style-position: inside;
     display: table;
     counter-increment: item;
 }
 
-    ul[class*="disc"] li::before {
+    ul[class*="disc"] > li::before {
         content: '•';
         padding-right: 0.6em;
         display: table-cell;
@@ -83,7 +81,7 @@ ul[class*="disc"] li {
         color: var(--golden);
     }
 
-ol {
+ol > li {
     list-style-position: inside;
     list-style-type: none;
     counter-reset: item;

@@ -17,6 +17,7 @@ a {
     text-decoration: none;
     line-height: 1;
 }
+
 a:hover {
     color: var(--orange);
 }

@@ -12,11 +12,20 @@
     justify-content: center;
     line-height: 1;
 }
-    .udn-btn .icon {
+    .udn-btn > .icon {
         margin-left: 8px;
         width: 18px;
-        width: 18px;
+        height: 18px;
+        position: relative;
     }
+        .udn-btn > .icon::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+        }
 
 .btn-group {
     display: flex;
@@ -80,8 +89,8 @@
             color: var(--white);
         }
 
-            .udn-btn.btn-outline-gray:hover .icon ,
-            .udn-btn.btn-outline-gray:active .icon {
+            .udn-btn.btn-outline-gray:hover .icon::before ,
+            .udn-btn.btn-outline-gray:active .icon::before {
                 filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
             }
 
