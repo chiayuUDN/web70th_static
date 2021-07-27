@@ -18,7 +18,6 @@
 .icon-youtube::before {
     content: url('../../icons/btn-youtube.svg');
 }
-
 .icon-hamburger-btn::before {
     content: url('../../icons/icon-hamburgerbtn.svg');
 }
@@ -34,24 +33,33 @@
 .icon-gotop::before {
     content: url('../../icons/icon-gotop.svg');
 }
-
 .icon-new-window::before {
     content: url('../../icons/icon-newwindow.svg');
 }
-
 .icon-edit::before {
     content: url('../../icons/icon-edit.svg');
 }
-
 .icon-mail::before {
     content: url('../../icons/icon-mail.svg');
 }
-
-
 .icon-address::before {
     content: url('../../icons/icon-address.svg');
 }
-
+.icon-locationmap::before {
+    content: url('../../icons/icon-locationmap.svg');
+}
 .icon-collapse::before {
     content: url('../../icons/icon-collapse.svg');
+}
+.icon-down-arrow::before {
+    content: url('../../icons/icon-downarrow.svg');
+}
+.icon-step-right-arrow::before {
+    content: url('../../icons/icon-step-rightarrow.svg');
+}
+.icon-step-down-arrow::before {
+    content: url('../../icons/icon-step-downarrow.svg');
+}
+.icon-attached::before {
+    content: url('../../icons/icon-attached.svg');
 }
