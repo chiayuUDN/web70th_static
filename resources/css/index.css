@@ -25,7 +25,8 @@
 @import 'template/desktop/article-template-albums.css';
 @import 'template/desktop/article-template-udn-member.css';
 @import 'template/desktop/article-template-udn-compensation-benefits.css';
-@import 'template/desktop/page-template-vertical.css';
+@import 'template/desktop/page-template-activity.css';
+@import 'template/desktop/page-template-udn-info.css';
 @import 'template/desktop/page-template-time-line.css';
 
 /* template mobile */
@@ -36,7 +37,8 @@
 @import 'template/mobile/article-template-albums.css';
 @import 'template/mobile/article-template-udn-member.css';
 @import 'template/mobile/article-template-udn-compensation-benefits.css';
-@import 'template/mobile/page-template-vertical.css';
+@import 'template/mobile/page-template-activity.css';
+@import 'template/mobile/page-template-udn-info.css';
 @import 'template/mobile/page-template-time-line.css';
 
 
@@ -114,7 +116,6 @@ ol li:not(:first-of-type),ol li:not(:last-of-type){
         position: relative;
         margin-top: 65px;
         width: 100%;
-        
     }
 
     #app .container {
@@ -130,7 +131,7 @@ ol li:not(:first-of-type),ol li:not(:last-of-type){
         text-align: center;
         margin-bottom: 24px;
     }
-    #app  .note {
+    #app .note {
         line-height: 1.5;
         margin-bottom: 40px;
     }

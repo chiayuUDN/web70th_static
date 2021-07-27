@@ -35,14 +35,29 @@ h5 ,.h5 {
 }
 
 .text-golden {
-    color: var(--golden);
+    color: var(--golden) !important;
 }
 .text-orange {
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 .text-black {
-    color: var(--black);
+    color: var(--black) !important;
 }
 .text-white {
-    color: var(--white);
+    color: var(--white) !important;
+}
+.text-gray-c1 {
+    color: var(--gray-c1) !important;
+}
+.text-gray-c2 {
+    color: var(--gray-c2) !important;
+}
+.text-gray-c3 {
+    color: var(--gray-c3) !important;
+}
+.text-gray-c4 {
+    color: var(--gray-c4) !important;
+}
+.text-gray-c5 {
+    color: var(--gray-c5) !important;
 }

@@ -16,10 +16,10 @@ let app = new Vue({
         show: 0,
         transitionName: 'right-in',
         img: [
-            {src:'resources/img/1.jpg'},
-            {src:'resources/img/2.jpg'},
-            {src:'resources/img/3.jpg'},
-        ]
+            {src:'/resources/img/1.jpg'},
+            {src:'/resources/img/2.jpg'},
+            {src:'/resources/img/3.jpg'},
+        ],
     },
     created() {
         w3.includeHTML();
@@ -41,7 +41,7 @@ let app = new Vue({
             }
         }).catch(err => {
             console.log(err)
-        });        
+        });
     },
     mounted() {
         window.addEventListener('scroll', () => {
@@ -56,7 +56,7 @@ let app = new Vue({
     computed: {
         getMediaVersion(){
             return media.isPhone ? 'mobile' : 'desktop';
-        }
+        },
     },
     methods: {
         selectedTab(parentsIdKey,childrenId) {
