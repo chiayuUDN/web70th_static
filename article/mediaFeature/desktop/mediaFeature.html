@@ -1,11 +1,25 @@
 <!-- 新媒體發展 -->
 <!-- desktop -->
 <div>
-    新媒體發展 desktop html
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    
+    <div class="carousel">
+        <transition-group tag="div" class="carousel-inner">
+            <div class="carousel-item" v-for="(mediaCard, idx) in mediaCards" :key="idx" v-show="idx === show">
+                <!-- <img :src="img[idx].src" :alt="carousel.articleTitle"> -->
+                {{mediaCard.path}}
+                <!-- <div :w3-include-html="mediaCard.path"></div> -->
+            </div>
+        </transition-group>
+        <div class="carousel-control">
+            <a class="carousel-control-prev" @click="setShow(show-1)" @mouseover="carouselStop" @mouseleave="carouselStart">
+                <img src="/resources/icons/icon-leftarrow.svg" alt="prev">
+            </a>
+            <a class="carousel-control-next" @click="setShow(show+1)" @mouseover="carouselStop" @mouseleave="carouselStart">
+                <img src="/resources/icons/icon-rightarrow.svg" alt="prev">
+            </a>
+        </div>
+    </div>
 </div>
+<style>
+
+</style>
