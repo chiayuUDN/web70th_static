@@ -38,7 +38,7 @@
 .left-in-leave-to {
     left: 100%
 }
-.carousel .container {
+.carousel .carousel-control {
     position: relative;
     height: 100%;
 }
@@ -50,11 +50,28 @@
     width: 48px;
     height: 48px;
     background-color: var(--white);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    background-color: var(--black);
+}
+.carousel-control-prev:hover > img, 
+.carousel-control-next:hover > img {
+    filter: invert(97%) sepia(0%) saturate(224%) hue-rotate(30deg) brightness(119%) contrast(100%);
+}
+.carousel-control-prev:active, 
+.carousel-control-next:active {
+    background-color: var(--black);
+}
+.carousel-control-prev:hover > img, 
+.carousel-control-next:hover > img {
+    filter: invert(97%) sepia(0%) saturate(224%) hue-rotate(30deg) brightness(119%) contrast(100%);
 }
 .carousel-control-prev {
     left: 0;

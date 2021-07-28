@@ -3,14 +3,13 @@
         <div class="carousel-item" v-for="(carousel, idx) in carousels" :key="idx" v-show="idx === show">
             <img :src="img[idx].src" :alt="carousel.articleTitle">
         </div>
-
     </transition-group>
-    <div class="container">
+    <div class="carousel-control container">
         <a class="carousel-control-prev" @click="setShow(show-1)" @mouseover="carouselStop" @mouseleave="carouselStart">
-            <i class="icon icon-left-arrow"></i>
+            <img src="/resources/icons/icon-leftarrow.svg" alt="prev">
         </a>
         <a class="carousel-control-next" @click="setShow(show+1)" @mouseover="carouselStop" @mouseleave="carouselStart">
-            <i class="icon icon-right-arrow"></i>
+            <img src="/resources/icons/icon-rightarrow.svg" alt="prev">
         </a>
     </div>
 </div>
