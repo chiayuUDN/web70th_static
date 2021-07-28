@@ -16,133 +16,132 @@
     grid-gap: 24px 24px;
 }
 
-[data-template-desktop="article-template-grid-organization"] .text {
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--gray-c4);
-    word-wrap: break-word;
-    word-break: break-all;
-}
+    [data-template-desktop="article-template-grid-organization"] .text {
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--gray-c4);
+        word-wrap: break-word;
+        word-break: break-all;
+    }
 
-[data-template-desktop="article-template-grid-organization"] [data-grid="col"] {
-    background-color: var(--gray-c1);
-    padding: 24px 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-[data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child {
-    grid-column: 1/calc(var(--pc-col) + 1);
-    justify-content: center;
-}
-
-[data-template-desktop="article-template-grid-organization"] [data-grid="col"] .personal-image {
-    margin-right: 16px;
-}
-
-[data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-    [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .name{
+    [data-template-desktop="article-template-grid-organization"] .name {
         white-space: nowrap;
-    }
-
-    [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
-        margin-left: 8px;
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--black);
         word-wrap: break-word;
         word-break: break-all;
     }
-    
-    [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] > .text:first-of-type {
-        margin-top: 12px;
+
+    [data-template-desktop="article-template-grid-organization"] [data-grid="col"] {
+        background-color: var(--gray-c1);
+        padding: 24px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
-    [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title > * {
-        word-wrap: break-word;
-        word-break: break-all;
+    [data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child {
+        grid-column: 1/calc(var(--pc-col) + 1);
+        justify-content: center;
     }
-    
 
-    [data-template-desktop="article-template-grid-organization"] [data-grid="col"] .personal-image img {
-        width: 118px;
-        height: 118px;
+    [data-template-desktop="article-template-grid-organization"] [data-grid="col"] .personal-image {
+        margin-right: 16px;
     }
+
+    [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+    }
+
+        [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
+            margin-left: 8px;
+        }
+        
+        [data-template-desktop="article-template-grid-organization"] [data-grid="col"] > .text:first-of-type {
+            margin-top: 12px;
+        }
+        
+        [data-template-desktop="article-template-grid-organization"] [data-grid="col"] .personal-image img {
+            width: 118px;
+            height: 118px;
+        }
 
 @media (max-width: 1199px) {
 
-[data-template-desktop="article-template-grid-organization"] {
-    grid-template-columns: repeat(var(--pad-col), 1fr);
-    grid-template-rows: repeat(var(--pad-row), 1fr);
-}
-
-    [data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child  {
-        grid-column: 1/calc(var(--pad-col) + 1);
+    [data-template-desktop="article-template-grid-organization"] {
+        grid-template-columns: repeat(var(--pad-col), 1fr);
+        grid-template-rows: repeat(var(--pad-row), 1fr);
     }
+
+        [data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child  {
+            grid-column: 1/calc(var(--pad-col) + 1);
+        }
 }
 
 @media (max-width: 767px) {
 
-[data-template-desktop="article-template-grid-organization"] {
-    grid-template-columns: repeat(var(--mobile-col), 1fr);
-    grid-template-rows: repeat(var(--mobile-row), min-content) ;
-}
-
-    [data-template-desktop="article-template-grid-organization"] [data-grid="col"] {
-        order: attr(data-count,number);
-        padding: 16px;
-        align-items: flex-start;
-        position: relative;
+    [data-template-desktop="article-template-grid-organization"] {
+        grid-template-columns: repeat(var(--mobile-col), 1fr);
+        grid-template-rows: repeat(var(--mobile-row), min-content) ;
     }
-    
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child {
-            grid-column: unset;
-            justify-content: space-between;
-        }
 
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child .personal-image {
-            order: 1;
-            margin-right: 0;
-            margin-left: 24px;
+        [data-template-desktop="article-template-grid-organization"] [data-grid="col"] {
+            order: attr(data-count,number);
+            padding: 16px;
+            align-items: flex-start;
+            position: relative;
         }
+        
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child {
+                grid-column: unset;
+                justify-content: space-between;
+            }
 
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child .personal-image img {
-            width: 80px;
-            height: 80px;
-        }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child .personal-image {
+                order: 1;
+                margin-right: 0;
+                margin-left: 24px;
+            }
 
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title {
-            display: block;
-        }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"]:first-child .personal-image img {
+                width: 80px;
+                height: 80px;
+            }
 
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
-            margin: 0;
-        }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title {
+                display: block;
+                margin-bottom: 12px;
+            }
 
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="0"] {
-            order: 0;
-        }
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="1"] {
-            order: 1;
-        }
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="2"] {
-            order: 2;
-        }
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="3"] {
-            order: 3;
-        }
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="4"] {
-            order: 4;
-        }
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="5"] {
-            order: 5;
-        }
-        [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="6"] {
-            order: 6;
-        }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"] [data-title="job-title"] .title .text {
+                margin: 0;
+            }
+
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="0"] {
+                order: 0;
+            }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="1"] {
+                order: 1;
+            }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="2"] {
+                order: 2;
+            }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="3"] {
+                order: 3;
+            }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="4"] {
+                order: 4;
+            }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="5"] {
+                order: 5;
+            }
+            [data-template-desktop="article-template-grid-organization"] [data-grid="col"][data-mobile-order="6"] {
+                order: 6;
+            }
     
 }

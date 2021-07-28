@@ -6,7 +6,6 @@
 @import 'utilities/site.css';
 @import 'utilities/font.css';
 @import 'utilities/spacing.css';
-@import 'utilities/icon.css';
 
 /* elements */
 @import 'elements/tab.css';

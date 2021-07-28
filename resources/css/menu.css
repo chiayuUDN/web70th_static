@@ -98,6 +98,10 @@ opacity: 0;
             #app nav .navContent .menus .menu-item .active {
                 color: var(--orange)
             }
+            
+            #app nav .navContent .menus .menu-item.employee {
+                border-left: 1px solid #d8d8d8;
+            }
 
 
 @media (max-width: 1199px) {
