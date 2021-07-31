@@ -102,6 +102,35 @@ nav {
             }
 
 
+.fab-button {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 1;
+}
+
+.fab-button a {
+    display: block;
+    background-color: var(--white);
+    padding: 7px 10px;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+}
+.fab-button a .icon {
+    filter: invert(42%) sepia(94%) saturate(1663%) hue-rotate(2deg) brightness(94%) contrast(102%);
+}
+
+    .fab-button:hover a,
+    .fab-button:active a  {
+        background-color: var(--orange);
+    }
+    
+    .fab-button:hover a .icon,
+    .fab-button:active a .icon {
+        filter: unset;
+    }
+        
+
 @media (max-width: 1199px) {
 
     nav .nav-pc {
