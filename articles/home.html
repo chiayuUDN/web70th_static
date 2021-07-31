@@ -28,8 +28,9 @@
     <div v-else-if="type1TH.taxonomyId == specialBlock" class="container">
         <div class="indexTitle">{{type1TH.taxonomyName}}</div>
         <div class="note">{{type1TH.desc}}</div>
-        <div v-if="sectionArticles[type1TH.taxonomyUid].mobile && media.isPhone" v-html="sectionArticles[type1TH.taxonomyUid].mobile"></div>
-        <div v-else v-html="sectionArticles[type1TH.taxonomyUid].desktop"></div>
+        <div v-if="media.isPhone && isMobileVersion"
+            :w3-include-html="`/template/articles/main-category/mobile/${type1TH.taxonomyId}.html`"></div>
+        <div v-else :w3-include-html="`/template/articles/main-category/desktop/${type1TH.taxonomyId}.html`"></div>
     </div>
 
     <!-- 其他文章 -->
@@ -38,43 +39,46 @@
         <div class="tabs-2th">
             <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies"
                 :class="['tab',{'selected': isCurrentTab(`${type1TH.taxonomyId}1TH`,type2TH.taxonomyId)}]"
-                @click="selectedTab(`${type1TH.taxonomyId}1TH`, type2TH.taxonomyId)"
+                @click="selectedTab(`${type1TH.taxonomyId}1TH`, type2TH)"
                 :data-id="type2TH.taxonomyId">
                 {{type2TH.taxonomyName}}
             </div>
         </div>
         <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies" :id="type2TH.taxonomyId" class="secend-category-article" v-if="isCurrentTab(`${type1TH.taxonomyId}1TH`,type2TH.taxonomyId)">
             <template v-if="type2TH.childTaxonomies.length == 0">
-                <div v-if="sectionArticles[type2TH.taxonomyUid].mobile && media.isPhone" v-html="sectionArticles[type2TH.taxonomyUid].mobile"></div>
-                <div v-else v-html="sectionArticles[type2TH.taxonomyUid].desktop"></div>
+                <div v-if="media.isPhone && isMobileVersion"
+                    :w3-include-html="`/template/articles/${type1TH.taxonomyId}/mobile/${type2TH.taxonomyId}.html`"></div>
+                <div v-else :w3-include-html="`/template/articles/${type1TH.taxonomyId}/desktop/${type2TH.taxonomyId}.html`"></div>
             </template>
             <div v-else>
                 <div class="tabs-3th">
                     <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies"
                     :class="['tab', {'selected': isCurrentTab(`${type2TH.taxonomyId}2TH`,type3TH.taxonomyId)}]"
-                    @click="selectedTab(`${type2TH.taxonomyId}2TH`, type3TH.taxonomyId)"
+                    @click="selectedTab(`${type2TH.taxonomyId}2TH`, type3TH)"
                     :data-id="type3TH.taxonomyId">
                         {{type3TH.taxonomyName}}
                     </div>
                 </div>
                 <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies" :id="type3TH.taxonomyId" class="third-category-article" v-if="isCurrentTab(`${type2TH.taxonomyId}2TH`,type3TH.taxonomyId)">
                     <template v-if="type3TH.childTaxonomies.length == 0">
-                        <div v-if="sectionArticles[type3TH.taxonomyUid].mobile && media.isPhone" v-html="sectionArticles[type3TH.taxonomyUid].mobile"></div>
-                        <div v-else v-html="sectionArticles[type3TH.taxonomyUid].desktop"></div>
+                        <div v-if="media.isPhone && isMobileVersion"
+                            :w3-include-html="`/template/articles/${type1TH.taxonomyId}/mobile/${type3TH.taxonomyId}.html`"></div>
+                        <div v-else :w3-include-html="`/template/articles/${type1TH.taxonomyId}/desktop/${type3TH.taxonomyId}.html`"></div>
                     </template>
                     <div v-else>
                         <div class="tabs-4th">
                             <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies"
                             :class="['tab', {'selected': isCurrentTab(`${type3TH.taxonomyId}3TH`,type4TH.taxonomyId)}]"
-                            @click="selectedTab(`${type3TH.taxonomyId}3TH`, type4TH.taxonomyId)"
+                            @click="selectedTab(`${type3TH.taxonomyId}3TH`, type4TH)"
                             :data-id="type4TH.taxonomyId">
                                 {{type4TH.taxonomyName}}
                             </div>
                         </div>
                         <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies" :id="type4TH.taxonomyId" class="fourth-category-article" v-if="isCurrentTab(`${type3TH.taxonomyId}3TH`,type4TH.taxonomyId)">
                             <template v-if="type4TH.childTaxonomies.length == 0">
-                                <div v-if="sectionArticles[type4TH.taxonomyUid].mobile && media.isPhone" v-html="sectionArticles[type4TH.taxonomyUid].mobile"></div>
-                                <div v-else v-html="sectionArticles[type4TH.taxonomyUid].desktop"></div>
+                                <div v-if="media.isPhone && isMobileVersion"
+                                    :w3-include-html="`/template/articles/${type1TH.taxonomyId}/mobile/${type4TH.taxonomyId}.html`"></div>
+                                <div v-else :w3-include-html="`/template/articles/${type1TH.taxonomyId}/desktop/${type4TH.taxonomyId}.html`"></div>
                             </template>
                         </div>
                     </div>

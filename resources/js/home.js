@@ -10,7 +10,7 @@ w3.includeHTML(() => {
             tabs: {}, // 紀錄選擇的tabs
             order: 1,
             media: media,
-            site: null,
+            site: site,
             init: {},
             carousel: { // 最新消息輪播
                 timer: null,
@@ -23,7 +23,7 @@ w3.includeHTML(() => {
                     {src:'/resources/img/3.jpg'},
                 ]
             },
-            parentId: null
+            finish: false
         },
         created() {
             udnAPI.getSectionTypes().then(response => {
@@ -36,11 +36,8 @@ w3.includeHTML(() => {
 
                         if(children.taxonomyId == this.newsCarouselBlock) {
                             //輪播區塊
+                            this.init[children.taxonomyId] = false;
                             this.getTaxonomyArticlesAPI(children,'first',null)
-                        }
-
-                        if(children.taxonomyId == this.specialBlock) {
-                            this.getTaxonomyArticlesAPI(children,'first','main-category')
                         }
                     })
 
@@ -48,18 +45,34 @@ w3.includeHTML(() => {
                 } else {console.log('error')}
             }).catch(error => console.log(error));
         },
+        updated(){
+            w3.includeHTML(() => {
+                if(this.finish && this.isHome) {
+                    this.successful();
+                }
+            })
+        },
         mounted() {
             this.carouselStart();
         },
+        computed:{
+            isHome(){
+                return this.site.isHome();
+            },
+            isMobileVersion(){
+                return currentVersion == 'mobile';
+            }
+        },
         methods: {
-            selectedTab(parentsIdKey,childrenId) {
-                this.tabs[parentsIdKey] = childrenId;
+            selectedTab(parentsIdKey,children) {
+                this.tabs[parentsIdKey] = children.taxonomyId;
                 this.$forceUpdate(); // 強迫更新畫面
+                this.init[children.taxonomyId] = true;
             },
             isCurrentTab(parentsIdKey,childrenId){
                 return this.tabs[parentsIdKey] == childrenId;
             },
-            getTaxonomyArticlesAPI(item,type, parentId = null) {
+            getTaxonomyArticlesAPI(item,type) {
                 if(item.taxonomyId == this.newsCarouselBlock) {
                     //輪播文章
                     udnAPI.getNewsCarousel().then(response => {
@@ -69,37 +82,37 @@ w3.includeHTML(() => {
                             if(item.taxonomyId == this.newsCarouselBlock) {
                                 
                                 this.$set(this.sectionArticles,item.taxonomyUid,result);
-                                this.carousel.length = this.sectionArticles[item.taxonomyUid].length
+                                this.carousel.length = this.sectionArticles[item.taxonomyUid].length;
+
+                                if(type == 'first'){
+                                    this.init[item.taxonomyId] = true;
+                                    this.finish = true;
+                                }
                             }
 
                         } else {console.log('error')}
                     }).catch(error => console.log(error));
 
-                } else if(item.taxonomyId == this.specialBlock){
-                    this.$set(this.sectionArticles,item.taxonomyUid,{});
-                    this.getmediaVersionHtml('main-category',item,'desktop');
-                    this.getmediaVersionHtml('main-category',item,'mobile');
-                } else {
-                    //其他區塊 html
-                    this.$set(this.sectionArticles,item.taxonomyUid,{});
-                    this.getmediaVersionHtml(this.parentId,item,'desktop');
-                    this.getmediaVersionHtml(this.parentId,item,'mobile');
                 }
             },
-            getmediaVersionHtml(parentId,item,version){
+            successful(){
+                this.$nextTick(() => {
+                    let hash = window.location.hash;
+                    let currentMenu = hash == '' ? 'activiti' : hash.replace('#','');
+    
+                    let offset = currentMenu == 'activiti' ? -130 : -65;
 
-                this.$set(this.sectionArticles[item.taxonomyUid],version,null);
-                udnAPI.getArticle(parentId,item.taxonomyId,version).then(response => {
-
-                    let result = response.data;
-
-                    if(result) {
-
-                        this.$set(this.sectionArticles[item.taxonomyUid],version,result);
-
-                    } else {console.log('error')}
-
-                }).catch(error => console.log(error));
+                    let isInit = Object.keys(this.init).every(Id => {
+                        return this.init[Id] == true;
+                    })
+                    if(isInit && this.finish) {
+                        this.$smoothScroll({
+                            scrollTo: document.getElementById(currentMenu),
+                            offset: offset,
+                        })
+                        this.finish = false;
+                    } else { return }
+                })
             },
             carouselStop(){
                 clearInterval(this.carousel.timer);
@@ -140,27 +153,12 @@ w3.includeHTML(() => {
                         
                     }
 
-                    if(children.childTaxonomies.length == 0) {
-                        getTaxonomyId(app,parent,order);
-                        app.getTaxonomyArticlesAPI(children,'first');
-                        
-                    }
                 })
     
                 filledTab(app,parent, order + 1);
                 
             } else { return }
         });
-    }
-
-    function getTaxonomyId(app,parent,order){
-        if(order == 1 ) {
-
-            app.parentId = parent.taxonomyId;
-
-        } 
-
-        return app.parentId
     }
 
 })

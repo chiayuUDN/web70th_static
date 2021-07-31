@@ -1,14 +1,3 @@
-let site = {
-    // 顯示 body 的捲動條
-    showScrollbar() {
-        document.body.style.overflow = 'visible';
-    },
-    // 隱藏 body 的捲動條
-    hideScrollbar() {
-        document.body.style.overflow = 'hidden';
-    }
-};
-
 // open udn 會員服務條款 popup
 const openNemberPopup = function(){
     //udn 會員服務條款 popup

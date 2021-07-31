@@ -15,7 +15,14 @@
         <div class="menus">
             <div class="menu-item" v-for="menu in menus" v-if="menus.length != 0">
                 <a :href="`#${menu.taxonomyId}`" :class="{'active': menu.taxonomyId == currentMenu}" title="menu.taxonomyName" v-text="menu.taxonomyName"
-                    v-smooth-scroll="{offset: -65}" @click="currentMenu = menu.taxonomyId"></a>
+                    v-smooth-scroll="{offset: -130}" @click="currentMenu = menu.taxonomyId" v-if="isHome && menu.taxonomyId == 'activiti'">
+                </a>
+                <a :href="`#${menu.taxonomyId}`" :class="{'active': menu.taxonomyId == currentMenu}" title="menu.taxonomyName" v-text="menu.taxonomyName"
+                    v-smooth-scroll="{offset: -65}" @click="currentMenu = menu.taxonomyId" v-else-if="isHome">
+                </a>
+                <a :href="`/#${menu.taxonomyId}`" :class="{'active': menu.taxonomyId == currentMenu}" title="menu.taxonomyName" v-text="menu.taxonomyName"
+                    @click="currentMenu = menu.taxonomyId" v-else>
+                </a>
             </div>
             <div class="menu-item employee">
                 <a href="#" title="員工登入" v-text="`員工登入`"></a>
@@ -28,7 +35,7 @@
 
             <div class="top">
                 <div class="udnLogo">
-                    <a class="img" href="#"><img class="udnLogo" src="/resources/icons/icon-udn-logo.svg" alt=""></a>
+                    <a class="img" href="/"><img class="udnLogo" src="/resources/icons/icon-udn-logo.svg" alt=""></a>
                 </div>
 
                 <div class="login">
@@ -39,7 +46,14 @@
             <div class="menus">
                 <div class="menu-item" v-for="menu in menus" v-if="menus.length != 0">
                     <a :href="`#${menu.taxonomyId}`" :class="{'active': menu.taxonomyId == currentMenu}" title="menu.taxonomyName" v-text="menu.taxonomyName"
-                        v-smooth-scroll="{offset: -65}" @click="openNav = false"></a>
+                        v-smooth-scroll="{offset: -65}" @click="openNav = false" v-if="isHome && menu.taxonomyId == 'activiti'">
+                    </a>
+                    <a :href="`#${menu.taxonomyId}`" :class="{'active': menu.taxonomyId == currentMenu}" title="menu.taxonomyName" v-text="menu.taxonomyName"
+                        v-smooth-scroll="{offset: -65}" @click="openNav = false" v-else-if="isHome">
+                    </a>
+                    <a :href="`/#${menu.taxonomyId}`" :class="{'active': menu.taxonomyId == currentMenu}" title="menu.taxonomyName" v-text="menu.taxonomyName"
+                        @click="openNav = false" v-else>
+                    </a>
                 </div>
             </div>
         </div>

@@ -7,6 +7,7 @@ w3.includeHTML(() => {
             media: media,
             openNav: false,
             isShowGoTop: false,
+            site: site
         },
         created() {
             udnAPI.getSectionTypes().then(response => {
@@ -30,6 +31,11 @@ w3.includeHTML(() => {
                 this.mapScroll(window.pageYOffset);
             });
         },
+        computed:{    
+            isHome(){ 
+                return this.site.isHome();
+            }
+        },
         methods: {
             mapScroll(pageYOffset) {
                 this.menus.forEach((item,idx) => {
@@ -43,14 +49,14 @@ w3.includeHTML(() => {
                         }
                     }
                 })
-            },
+            }
         },
         watch: {
             openNav(){
                 if(this.openNav) {
-                    document.body.style.overflow = 'hidden';
+                    site.hideScrollbar();
                 } else {
-                    document.body.style.overflow = 'visible';
+                    site.showScrollbar();
                 }
             },
         }
