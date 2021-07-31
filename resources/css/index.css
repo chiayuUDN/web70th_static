@@ -67,40 +67,6 @@
 
 
 
-
-
-
-    .fab-buttom {
-        position: fixed;
-        right: 40px;
-        bottom: 40px;
-        z-index: 1;
-    }
-    
-    .fab-buttom a {
-        display: block;
-        background-color: var(--white);
-        padding: 7px 10px;
-        border-radius: 50%;
-        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
-    }
-    .fab-buttom a .icon {
-        filter: invert(42%) sepia(94%) saturate(1663%) hue-rotate(2deg) brightness(94%) contrast(102%);
-    }
-
-        .fab-buttom:hover a,
-        .fab-buttom:active a  {
-            background-color: var(--orange);
-        }
-        
-        .fab-buttom:hover a .icon,
-        .fab-buttom:active a .icon {
-            filter: unset;
-        }
-
-
-
-
 @media (max-width: 1199px) {
 
     .container {
