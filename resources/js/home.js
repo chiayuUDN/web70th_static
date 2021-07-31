@@ -36,17 +36,11 @@ w3.includeHTML(() => {
 
                         if(children.taxonomyId == this.newsCarouselBlock) {
                             //輪播區塊
-
-                            let payload = null
-                            this.getTaxonomyArticlesAPI(children,'first',payload)
+                            this.getTaxonomyArticlesAPI(children,'first',null)
                         }
 
                         if(children.taxonomyId == this.specialBlock) {
-                            let payload = {
-                                parentId: 'main-category',
-                                taxonomyId: children.taxonomyId
-                            }
-                            this.getTaxonomyArticlesAPI(children,'first',payload)
+                            this.getTaxonomyArticlesAPI(children,'first','main-category')
                         }
                     })
 
@@ -65,7 +59,7 @@ w3.includeHTML(() => {
             isCurrentTab(parentsIdKey,childrenId){
                 return this.tabs[parentsIdKey] == childrenId;
             },
-            getTaxonomyArticlesAPI(item,type, payload = null) {
+            getTaxonomyArticlesAPI(item,type, parentId = null) {
                 if(item.taxonomyId == this.newsCarouselBlock) {
                     //輪播文章
                     udnAPI.getNewsCarousel().then(response => {
@@ -82,30 +76,30 @@ w3.includeHTML(() => {
                     }).catch(error => console.log(error));
 
                 } else if(item.taxonomyId == this.specialBlock){
-
-                    udnAPI.getArticle('main-category',payload.taxonomyId).then(response => {
-
-                        let result = response.data;
-                        if(result) {
-                            this.$set(this.sectionArticles,item.taxonomyUid,result);
-
-                        } else {console.log('error')}
-
-                    }).catch(error => console.log(error));
+                    this.$set(this.sectionArticles,item.taxonomyUid,{});
+                    this.getmediaVersionHtml('main-category',item,'desktop');
+                    this.getmediaVersionHtml('main-category',item,'mobile');
                 } else {
                     //其他區塊 html
-                    udnAPI.getArticle(payload.parentId,payload.taxonomyId).then(response => {
-
-                        let result = response.data;
-
-                        if(result) {
-    
-                            this.$set(this.sectionArticles,item.taxonomyUid,result);
-
-                        } else {console.log('error')}
-
-                    }).catch(error => console.log(error));
+                    this.$set(this.sectionArticles,item.taxonomyUid,{});
+                    this.getmediaVersionHtml(this.parentId,item,'desktop');
+                    this.getmediaVersionHtml(this.parentId,item,'mobile');
                 }
+            },
+            getmediaVersionHtml(parentId,item,version){
+
+                this.$set(this.sectionArticles[item.taxonomyUid],version,null);
+                udnAPI.getArticle(parentId,item.taxonomyId,version).then(response => {
+
+                    let result = response.data;
+
+                    if(result) {
+
+                        this.$set(this.sectionArticles[item.taxonomyUid],version,result);
+
+                    } else {console.log('error')}
+
+                }).catch(error => console.log(error));
             },
             carouselStop(){
                 clearInterval(this.carousel.timer);
@@ -143,14 +137,12 @@ w3.includeHTML(() => {
                     if(childrenIdx == 0) {
 
                         app.tabs[`${parent.taxonomyId}${order}TH`] = children.taxonomyId;
-
-                        
                         
                     }
 
                     if(children.childTaxonomies.length == 0) {
-                        let payload = getTaxonomyId(app,taxonomies,parent,children,order);
-                        app.getTaxonomyArticlesAPI(children,'first',payload);
+                        getTaxonomyId(app,parent,order);
+                        app.getTaxonomyArticlesAPI(children,'first');
                         
                     }
                 })
@@ -161,29 +153,14 @@ w3.includeHTML(() => {
         });
     }
 
-    function getTaxonomyId(app,category,parent,children,order){
-        let taxonomyId;
-
+    function getTaxonomyId(app,parent,order){
         if(order == 1 ) {
-
-            taxonomyId = `${children.taxonomyId}`;
 
             app.parentId = parent.taxonomyId;
 
-        } else if(order == 2) {
+        } 
 
-            taxonomyId = `${parent.taxonomyId}-${children.taxonomyId}`;
-
-        } else if(order == 3) {
-
-            taxonomyId = `${category.taxonomyId}-${parent.taxonomyId}-${children.taxonomyId}`;
-
-        }
-
-        return {
-            taxonomyId: taxonomyId,
-            parentId: app.parentId
-        }
+        return app.parentId
     }
 
 })
