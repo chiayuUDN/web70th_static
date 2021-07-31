@@ -21,3 +21,43 @@ a {
 a:hover {
     color: var(--orange);
 }
+
+ul[class*="disc"] > li {
+    list-style-type: none;
+    list-style-position: inside;
+    display: table;
+    counter-increment: item;
+}
+
+    ul[class*="disc"] > li::before {
+        content: '•';
+        padding-right: 0.6em;
+        display: table-cell;
+    }
+    ul[class*="disc"].golden li::before {
+        padding-right: 0.6em;
+        color: var(--golden);
+    }
+
+ol > li {
+    list-style-position: inside;
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+    ol > li {
+        display: table;
+        counter-increment: item;
+    }
+        ol > li::before {
+            content: counters(item, ".");
+            display: table-cell;
+            padding-right: 0.6em;
+        }
+
+ul li:not(:first-of-type),ul li:not(:last-of-type) ,
+ol li:not(:first-of-type),ol li:not(:last-of-type){
+    padding-top: 6px;
+    padding-bottom: 6px;
+}

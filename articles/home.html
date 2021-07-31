@@ -1,0 +1,75 @@
+<!-- data 區塊開始 -->
+
+<div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies" :id="type1TH.taxonomyId" :class="['large-category-article',{'bg-gray': idx1TH%2 == 0}]" :ref="type1TH.taxonomyId">
+
+    <!-- 最新消息(輪播) -->
+
+    <div v-if="type1TH.taxonomyId == newsCarouselBlock" class="carousel">
+
+        <transition-group tag="div" class="carousel-inner" :name="carousel.transitionName">
+            <a class="carousel-item" v-for="(article, idx) in sectionArticles[type1TH.taxonomyUid]"
+                :key="idx" v-show="idx === carousel.show">
+                <img :src="carousel.img[idx].src" :alt="article.articleTitle">
+            </a>
+        </transition-group>
+
+        <div class="carousel-control container">
+            <a class="carousel-control-prev" @click="carousel.show = carousel.show - 1,carousel.transitionName = 'left-in' " @mouseover="carouselStop" @mouseleave="carouselStart">
+                <img src="/resources/icons/icon-leftarrow.svg" alt="prev">
+            </a>
+            <a class="carousel-control-next" @click="carousel.show = carousel.show + 1,carousel.transitionName = 'right-in'" @mouseover="carouselStop" @mouseleave="carouselStart">
+                <img src="/resources/icons/icon-rightarrow.svg" alt="prev">
+            </a>
+        </div>
+
+    </div>
+
+    <!-- 媒體發展 -->
+    <div v-else-if="type1TH.taxonomyId == specialBlock" class="container">
+        <div class="indexTitle">{{type1TH.taxonomyName}}</div>
+        <div class="note">{{type1TH.desc}}</div>
+        <div v-html="sectionArticles[type1TH.taxonomyUid]"></div>
+    </div>
+
+    <!-- 其他文章 -->
+    <div v-else class="container">
+        <div class="indexTitle">{{type1TH.taxonomyName}}</div>
+        <div class="tabs-2th">
+            <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies"
+                :class="['tab',{'selected': isCurrentTab(`${type1TH.taxonomyId}1TH`,type2TH.taxonomyId)}]"
+                @click="selectedTab(`${type1TH.taxonomyId}1TH`, type2TH.taxonomyId)"
+                :data-id="type2TH.taxonomyId">
+                {{type2TH.taxonomyName}}
+            </div>
+        </div>
+        <div v-for="(type2TH, idx2TH) in type1TH.childTaxonomies" :id="type2TH.taxonomyId" class="secend-category-article" v-if="isCurrentTab(`${type1TH.taxonomyId}1TH`,type2TH.taxonomyId)">
+            <div v-if="type2TH.childTaxonomies.length == 0" v-html="sectionArticles[type2TH.taxonomyUid]"></div>
+            <div v-else>
+                <div class="tabs-3th">
+                    <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies"
+                    :class="['tab', {'selected': isCurrentTab(`${type2TH.taxonomyId}2TH`,type3TH.taxonomyId)}]"
+                    @click="selectedTab(`${type2TH.taxonomyId}2TH`, type3TH.taxonomyId)"
+                    :data-id="type3TH.taxonomyId">
+                        {{type3TH.taxonomyName}}
+                    </div>
+                </div>
+                <div v-for="(type3TH, idx3TH) in type2TH.childTaxonomies" :id="type3TH.taxonomyId" class="third-category-article" v-if="isCurrentTab(`${type2TH.taxonomyId}2TH`,type3TH.taxonomyId)">
+                    <div v-if="type3TH.childTaxonomies.length == 0" v-html="sectionArticles[type3TH.taxonomyUid]"></div>
+                    <div v-else>
+                        <div class="tabs-4th">
+                            <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies"
+                            :class="['tab', {'selected': isCurrentTab(`${type3TH.taxonomyId}3TH`,type4TH.taxonomyId)}]"
+                            @click="selectedTab(`${type3TH.taxonomyId}3TH`, type4TH.taxonomyId)"
+                            :data-id="type4TH.taxonomyId">
+                                {{type4TH.taxonomyName}}
+                            </div>
+                        </div>
+                        <div v-for="(type4TH, idx4TH) in type3TH.childTaxonomies" :id="type4TH.taxonomyId" class="fourth-category-article" v-if="isCurrentTab(`${type3TH.taxonomyId}3TH`,type4TH.taxonomyId)">
+                            <div v-html="sectionArticles[type4TH.taxonomyUid]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

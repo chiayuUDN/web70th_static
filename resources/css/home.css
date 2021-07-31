@@ -1,0 +1,52 @@
+#udn-home .indexTitle {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 24px;
+}
+#udn-home .note {
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+#udn-home .large-category-article { /* 大分類文章 */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+    #udn-home .large-category-article:first-of-type { /* 大分類文章 */
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+#udn-home .fourth-category-article {
+    border: solid 1px var(--gray-c2);
+    border-top: none;
+    padding: 20px 24px;
+}
+
+#udn-home .showArticle {
+    display: block;
+}
+
+
+@media (max-width: 1199px) {
+
+
+    #udn-home .large-category-article {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #udn-home .fourth-category-article {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    #udn-home .indexTitle {
+        margin-bottom: 20px;
+    }
+}

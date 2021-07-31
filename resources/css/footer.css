@@ -1,11 +1,11 @@
-#app footer {
+footer {
     background-image: url('./../img/imgFooterBg.png');
     line-height: 1.2;
     color: #444444;
     position: relative;
 }
 
-    #app footer .footerContent {
+    footer .footer-content {
         padding-top: 82px;
         padding-bottom: 82px;
         display: flex;
@@ -13,43 +13,43 @@
         align-items: center;
     }
 
-    #app footer .footerContent .infoText, .footerContent .udngroupText{
+    footer .footer-content .infoText, .footer-content .udngroupText{
         width: 50%;
     }
     
-    #app footer .footerContent .udngroupText {
+    footer .footer-content .udngroupText {
         text-align: right;
         color: var(--gray-c4);
         letter-spacing: normal;
     }
 
 @media (max-width: 1199px) {
-    #app footer .footerContent {
+    footer .footer-content {
         padding-top: 40px;
         padding-bottom: 40px;
     }
 
-    #app footer .footerContent .infoText, .footerContent .udngroupText{
+    footer .footer-content .infoText, .footer-content .udngroupText{
         width: 100%;
     }
 
-    #app footer .footerContent .udngroupText {
+    footer .footer-content .udngroupText {
         margin-top: 40px;
         text-align: left;
     }
 }
 
 @media (max-width: 767px) {
-    #app footer {
+    footer {
         font-size: 14px;
     }
 
-        #app footer .footerContent {
+        footer .footer-content {
             padding-top: 20px;
             padding-bottom: 30px;
         }
         
-        #app footer .footerContent .udngroupText {
+        footer .footer-content .udngroupText {
             margin-top: 20px;
             color: var(--black);
         }

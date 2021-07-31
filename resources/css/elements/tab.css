@@ -1,33 +1,33 @@
 /* 二分類tabs */
-#app .main .tab {
+.main .tab {
     cursor: pointer;
 }
 
-#app .main .tabs-2th {
+.main .tabs-2th {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-    #app .main .tabs-2th .tab {
+    .main .tabs-2th .tab {
         position: relative;
         margin: 0 18px;
         font-size: 20px;
         line-height: 1.5;
         padding-bottom: 8px;
     }
-        #app .main .tabs-2th .tab:first-of-type {
+        .main .tabs-2th .tab:first-of-type {
             margin-left: 0;
         }
-        #app .main .tabs-2th .tab:last-of-type {
+        .main .tabs-2th .tab:last-of-type {
             margin-right: 0;
         }
 
-        #app .main .tabs-2th .tab.selected {
+        .main .tabs-2th .tab.selected {
             border-bottom: var(--orange) 3px solid;
         }
 
-            #app .main .tabs-2th .tab.selected::before {
+            .main .tabs-2th .tab.selected::before {
                 content: "";
                 position: absolute;
                 bottom: -11px;
@@ -40,13 +40,13 @@
             }
 
 /* 三分類tabs */
-#app .main .tabs-3th {
+.main .tabs-3th {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-    #app .main .tabs-3th .tab {
+    .main .tabs-3th .tab {
         margin: 0 12px;
         padding: 12px 16px;
         font-size: 18px;
@@ -56,20 +56,20 @@
         margin-bottom: 24px;
     }
 
-       #app .main .tabs-3th .tab.selected {
+       .main .tabs-3th .tab.selected {
             background-color: var(--black);
             color: var(--white);
         }
 
 /* 四分類tabs */
-#app .main .tabs-4th {
+.main .tabs-4th {
     background-color: var(--gray-c2);
     padding: 0 24px;
     display: flex;
     flex-wrap: wrap;
 }
 
-    #app .main .tabs-4th .tab {
+    .main .tabs-4th .tab {
         font-size: 18px;
         line-height: 1.5;
         padding: 0 8px;
@@ -78,54 +78,54 @@
         border-right: solid 1px var(--gray-c3);
     }
 
-        #app .main .tabs-4th .tab:first-of-type {
+        .main .tabs-4th .tab:first-of-type {
             line-height: 1.5;
         }
 
-        #app .main .tabs-4th .tab:last-of-type {
+        .main .tabs-4th .tab:last-of-type {
             line-height: 1.5;
             border: none;
         }
 
-        #app .main .tabs-4th .tab.selected {
+        .main .tabs-4th .tab.selected {
             color: var(--orange);
         }
 
 @media (max-width: 767px) {
-    #app .main .tabs-2th {
+    .main .tabs-2th {
         margin-bottom: 38px;
     }
 
-        #app .main .tabs-2th .tab {
+        .main .tabs-2th .tab {
             margin: 0 10px;
             font-size: 16px;
             font-weight: 300;
         }
 
-    #app .main .tabs-3th {
+    .main .tabs-3th {
         justify-content: center;
     }
 
-        #app .main .tabs-3th .tab{
+        .main .tabs-3th .tab{
             margin-bottom: 20px;
             font-size: 16px;
         }
 
-    #app .main .tabs-4th .tab {
+    .main .tabs-4th .tab {
         font-size: 16px;
     }
 }
 
 @media (max-width: 413px) { 
-    #app .main .tabs-2th .tab {
+    .main .tabs-2th .tab {
         font-size: 14px;
     }
 
-    #app .main .tabs-3th .tab {
+    .main .tabs-3th .tab {
         font-size: 14px;
     }
 
-    #app .main .tabs-4th .tab{
+    .main .tabs-4th .tab{
         font-size: 14px;
     }
 }

@@ -1,7 +1,6 @@
 // js 版的 media query
 const md = 768;
 const lg = 1200;
-// const xl = 1200;
 
 const min = (value) => `(min-width: ${value}px)`;
 const max = (value) => `(max-width: ${value - 1}px)`;
@@ -14,7 +13,7 @@ const padUp = window.matchMedia(min(md));
 const pcDown = window.matchMedia(max(lg));
 const pc = window.matchMedia(min(lg));
 const pcUp = window.matchMedia(min(lg));
-// const wide = window.matchMedia(min(xl));
+const wide = window.matchMedia(min(lg));
 
 let media = Vue.observable({
     isPhone: false,
@@ -24,14 +23,14 @@ let media = Vue.observable({
     isPcDown: false,
     isPc: false,
     isPcUp: false,
-    // isWide: false
+    isWide: false
 });
 
 setMediaQuery();
 addListener(phone);
 addListener(pad);
 addListener(pc);
-// addListener(wide);
+addListener(wide);
 
 function addListener(matchMedia) {
     matchMedia.addListener((query) => {
@@ -49,5 +48,5 @@ function setMediaQuery() {
     media.isPcDown = pcDown.matches;
     media.isPc = pc.matches;
     media.isPcUp = pcUp.matches;
-    // media.isWide = wide.matches;
+    media.isWide = wide.matches;
 }
