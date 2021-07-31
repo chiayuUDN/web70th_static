@@ -35,7 +35,6 @@ addListener(wide);
 function addListener(matchMedia) {
     matchMedia.addListener((query) => {
         if (query.matches) {
-            console.log(query.matches)
             setMediaQuery();
         }
     });
