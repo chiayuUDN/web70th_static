@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-聯合報系 United Daily News Group</title>
+    <link rel="stylesheet" href="/resources/css/index.css">
+    <script src="/resources/js/plugins/w3.js"></script>
+</head>
+<body>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/resources/js/plugins/vue.js"></script>
+    <script src="/_demo_components/js/plugins/http-vue-loader.js"></script> 
+    <script src="/resources/js/plugins/vue-smooth-scroll.min.js"></script>
+    
+    <script src="/template/select-version.js"></script>
+    
+
+    <script src="/resources/js/service/media.js"></script>
+    
+    <script src="/resources/js/service/site.js"></script>
+
+    <script src="/resources/js/service/api.js"></script>
+
+    <script src="/resources/js/service/button-event.js"></script>
+
+
+
+    <div id="udn-header" w3-include-html="/components/header.html"></div>
+
+    <div id="demo" class="main">
+        <div class="header">
+            <div class="tabs container">
+                <div :class="['tab',{'activity':tab.type == selectTab}]" v-for="tab in tabs" @click="selectTab = tab.type" v-text="tab.name"></div>
+            </div>
+        </div>
+        <div class="template container">
+            <components :is="selectTab"></components>
+        </div>
+    </div>
+
+    <div id="udn-footer" w3-include-html="/components/footer.html"></div>
+
+    <script src="/resources/js/header.js"></script>
+    <script src="/_demo_components/js/demo.js"></script>
+</body>
+
+</html>
+
+<style>
+    #demo .header {
+        background-color: var(--gray-c2);
+        border: 1px solid var(--gray-c3);
+    }
+    
+        #demo .header .tabs {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+            #demo .header .tabs .tab {
+                margin: 8px;
+                cursor: pointer;
+                color: var(--black);
+            }
+
+            #demo .header .tabs .tab.activity {
+                color: var(--orange);
+            }
+            
+            #demo .header .tabs .tab:hover {
+                color: var(--orange);
+            }
+
+    #demo .template {
+        padding: 40px 0;
+    }
+            
+</style>
