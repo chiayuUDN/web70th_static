@@ -47,6 +47,10 @@
 
 /* 共同設定 */
 
+[v-cloak] {
+    display: none;
+}
+
 .bg-gray {
     background-color: var(--gray-c1);
 }
