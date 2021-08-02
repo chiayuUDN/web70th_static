@@ -17,6 +17,7 @@
 @import 'elements/button.css';
 @import 'elements/dropdown.css';
 @import 'elements/carousel.css';
+@import 'elements/media-side.css';
 
 /* template utilities */
 @import 'template/utilities/position.css';

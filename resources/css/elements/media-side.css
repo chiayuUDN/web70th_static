@@ -1,0 +1,92 @@
+.media-slide {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.media-slide-overflow {
+    overflow: hidden;
+}
+.media-slide-inner {
+    display: flex;
+}
+.media-slide .card-outer {
+    position: relative;
+    min-width: 352px;
+    min-height: 522px;
+    margin-right: 24px;
+}
+.media-slide .card-outer .card-logo{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    border-radius: 50%;
+}
+.media-slide .card-outer .card {
+    min-height: auto;
+    height: 234px;
+    background-color: var(--white);
+    margin-top: 91px;
+    padding: 157px 24px 40px 24px;
+    transition: background 0.1s ease-in-out;
+}
+.media-slide .card-outer .card:hover,
+.media-slide .card-outer .card:active {
+    background-color: var(--light-orange);
+}
+.media-slide .card-outer .card h2 {
+    margin-bottom: 24px;
+    text-align: center;
+}
+.media-slide .article {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.media-slide .article .content{
+    margin-bottom: 24px;
+}
+.media-slide .article .slogan{
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+
+    .media-slide-phone .card{
+        background-color: var(--white);
+        padding: 0 16px;
+    }
+    .media-slide-phone .card:hover,
+    .media-slide-phone .card:active {
+        background-color: var(--light-orange);
+    }
+    .media-slide-phone .card:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .media-slide-phone .card-header {
+        height: 112px;
+        display: flex;
+        align-items: center;
+        transition: background 0.1s ease-in-out;
+    }
+    .media-slide-phone .card-header .card-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .media-slide-phone .card-header h2 {
+        margin-left: 12px;
+    }
+    .media-slide-phone .card-header .card-option {
+        margin-left: auto;
+    }
+    .card-option .icon-close {
+        width: 18px;
+        height: 18px;
+    }
+    .media-slide-phone .card-body {
+        transition: display 0.1s ease-in-out;
+    }
+    .media-slide-phone .card-body .content,
+    .media-slide-phone .card-body .slogan {
+        padding-bottom: 16px;
+    }
+}
