@@ -2,7 +2,7 @@
     <div id="icon">
         <div class="box" v-for="icon in icons" :key="icon">
             <img :src="`/resources/icons/${icon}.svg`" :alt="icon">
-            <h5 v-text="icon"></h5>
+            <h5 v-text="`${icon}.svg`"></h5>
         </div>
     </div>
 </template>

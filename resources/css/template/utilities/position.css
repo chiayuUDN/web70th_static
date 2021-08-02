@@ -15,11 +15,13 @@
     align-items: flex-end;
     justify-content: flex-start;
 }
+
 [data-position="right-top"] {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
 }
+
 [data-position="right-center"] {
     display: flex;
     align-items: center;
@@ -31,6 +33,7 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
+
 [data-position="center-top"] {
     display: flex;
     align-items: flex-start;
@@ -42,6 +45,7 @@
     align-items: center;
     justify-content: center;
 }
+
 [data-position="center-bottom"] {
     display: flex;
     align-items: flex-end;
