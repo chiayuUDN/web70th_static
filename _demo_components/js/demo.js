@@ -5,9 +5,9 @@ new Vue({
             {name: 'Icon', type: 'icon-component'},
             {name: 'Button', type: 'button-component'},
             {name: 'Font', type: 'font-component'},
-            {name: 'Template', type: 'template-component'},
+            {name: 'Page Link', type: 'template-component'},
         ],
-        selectTab: 'template-component',
+        selectTab: 'icon-component',
     },
     components: {
         'icon-component': httpVueLoader('/_demo_components/icon.vue'),

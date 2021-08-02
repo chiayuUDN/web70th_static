@@ -22,7 +22,7 @@ module.exports = {
     #template-demo .page-link {
         margin-bottom: 32px;
     }
-    #template-demo .page-link > *{
+    #template-demo .page-link > * {
         padding: 8px;
     }
 </style>

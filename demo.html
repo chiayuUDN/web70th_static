@@ -63,10 +63,16 @@
         }
 
             #demo .header .tabs .tab {
-                margin: 8px;
+                padding: 0 8px;
+                margin: 8px 0;
                 cursor: pointer;
                 color: var(--black);
+                border-right: 1px solid var(--gray-c5);
             }
+            
+                #demo .header .tabs .tab:last-of-type {
+                    border-right: none;
+                }
 
             #demo .header .tabs .tab.activity {
                 color: var(--orange);
