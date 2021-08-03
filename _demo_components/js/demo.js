@@ -5,7 +5,7 @@ new Vue({
             {name: 'Icon', type: 'icon-component'},
             {name: 'Button', type: 'button-component'},
             {name: 'Font', type: 'font-component'},
-            {name: 'Page Link', type: 'template-component'},
+            {name: 'Page Link and Template', type: 'template-component'},
         ],
         selectTab: 'icon-component',
     },

@@ -1,8 +1,10 @@
 <template>
     <div id="icon">
-        <div class="box" v-for="icon in icons" :key="icon">
-            <img :src="`/resources/icons/${icon}.svg`" :alt="icon">
-            <h5 v-text="`${icon}.svg`"></h5>
+        <div class="wrapper">
+            <div class="cel" v-for="icon in icons" :key="icon">
+                <img :src="`/resources/icons/${icon}.svg`" :alt="icon">
+                <h5 v-text="`${icon}.svg`"></h5>
+            </div>
         </div>
     </div>
 </template>
@@ -26,13 +28,13 @@ module.exports = {
 </script>
 
 <style>
-    #icon {
+    #icon .wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
     }
-        #icon .box {
+        #icon .wrapper .cel {
             width: 180px;
             display: grid;
             grid-template-rows: auto;
