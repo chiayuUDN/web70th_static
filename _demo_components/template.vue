@@ -7,8 +7,8 @@
             <a href="/articles/triaffic.html">交通位置</a>
             <a href="/articles/subscription.html">訂報服務</a>
             <a href="/articles/udn-memorabilia.html">聯合報系大事紀</a>
-            <a href="#">隱私權聲明</a>
-            <a href="#">會員條款</a>
+            <a href="/articles/member.html">隱私權聲明</a>
+            <a href="/articles/member-benefits.html">會員條款</a>
         </div>
 
         <h1 class="mb-4">Template</h1>
