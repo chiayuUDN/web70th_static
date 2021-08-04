@@ -1,0 +1,201 @@
+{
+    "result": [
+        {
+            "articleUid": "cf132ce2-429d-4ad5-b57a-21f39f4aa87b",
+            "articleTitle": "立體的多媒體敘事",
+            "articleContentType": "P",
+            "articleAbstract": null,
+            "articleContent": "<!-- desktop -->\n<p class=\"content\">在文字之上，我們透過影音、插畫等多媒體敘事呈現專題報導，讓新聞不再只是資訊傳遞，而是更觸動情感、有血有肉、立體的故事。</p>\n\n<p class=\"slogan\">她們的故事</p>\n",
+            "publishDate": 1627930800000,
+            "activityStartDate": null,
+            "hasFeatureImage": true,
+            "hasArticleImage": false,
+            "hasLink": false,
+            "hasAttachment": false,
+            "hasArticleTaxonomies": true,
+            "updateDate": 1627963536000,
+            "articleTaxonomies": [
+                {
+                    "taxonomyUid": "6f6703f2-4296-4f71-a9d0-81eb14b95293",
+                    "taxonomyId": "mediaFeature",
+                    "taxonomyType": "C",
+                    "taxonomyAbbrName": "媒體發展",
+                    "taxonomyName": "媒體發展"
+                }
+            ],
+            "articleLinks": [],
+            "articleAttachments": []
+        },
+        {
+            "articleUid": "2074686d-234e-4305-9e9f-777cb999f195",
+            "articleTitle": "行動關懷改變社會",
+            "articleContentType": "P",
+            "articleAbstract": null,
+            "articleContent": "<!-- desktop -->\n<p class=\"content\">探勘、演算、分析上億筆使用者行為大數據，協助企業提供更精準、更能滿足使用者需求的內容與服務，創造大數據的商業應用價值。</p>\n\n<p class=\"slogan\">憂鬱世代：誰殺了青少年</p>\n",
+            "publishDate": 1622152800000,
+            "activityStartDate": null,
+            "hasFeatureImage": true,
+            "hasArticleImage": true,
+            "hasLink": false,
+            "hasAttachment": true,
+            "hasArticleTaxonomies": true,
+            "updateDate": 1627975078000,
+            "articleTaxonomies": [
+                {
+                    "taxonomyUid": "6f6703f2-4296-4f71-a9d0-81eb14b95293",
+                    "taxonomyId": "mediaFeature",
+                    "taxonomyType": "C",
+                    "taxonomyAbbrName": "媒體發展",
+                    "taxonomyName": "媒體發展"
+                }
+            ],
+            "articleLinks": [],
+            "articleAttachments": [
+                {
+                    "attachmentUid": "1616f80d-585f-4ec1-8af3-d75bf452b645",
+                    "attachmentDisplayName": "背景",
+                    "attachmentUrl": "/attachments/1616f80d-585f-4ec1-8af3-d75bf452b645",
+                    "attachmentFileExtension": "png"
+                }
+            ]
+        },
+        {
+            "articleUid": "ff6d348c-3b34-4354-bcc2-30dfd9a61e2c",
+            "articleTitle": "演算法分析大數據",
+            "articleContentType": "P",
+            "articleAbstract": "<!-- mobile -->\n<p class=\"content\">透過數據整理、分析，從中挖掘政府沒有說的秘密。我們並將圖表、地圖等資料動態視覺化，讓新聞議題更直觀、好解讀、容易懂。</p>\n\n<p class=\"slogan\">推薦引擎及受眾洞察分析</p>\n",
+            "articleContent": "<!-- desktop -->\n<p class=\"content\">透過數據整理、分析，從中挖掘政府沒有說的秘密。我們並將圖表、地圖等資料動態視覺化，讓新聞議題更直觀、好解讀、容易懂。</p>\n\n<p class=\"slogan\">推薦引擎及受眾洞察分析</p>\n",
+            "publishDate": 1622152800000,
+            "activityStartDate": null,
+            "hasFeatureImage": true,
+            "hasArticleImage": false,
+            "hasLink": false,
+            "hasAttachment": false,
+            "hasArticleTaxonomies": true,
+            "updateDate": 1627960886000,
+            "articleTaxonomies": [
+                {
+                    "taxonomyUid": "6f6703f2-4296-4f71-a9d0-81eb14b95293",
+                    "taxonomyId": "mediaFeature",
+                    "taxonomyType": "C",
+                    "taxonomyAbbrName": "媒體發展",
+                    "taxonomyName": "媒體發展"
+                }
+            ],
+            "articleLinks": [],
+            "articleAttachments": []
+        },
+        {
+            "articleUid": "2d5a19d5-def7-4d59-8b64-e80f3813b20e",
+            "articleTitle": "人工智慧數位服務",
+            "articleContentType": "P",
+            "articleAbstract": "<p class=\"content\">經濟日報導入人工智慧爬梳數據資料，自動化產出股市資訊，並透過「聊天機器人」與使用者互動，快速回應媒體內容及客服問題。</p>\n\n<p class=\"slogan\">AI新聞 & 對話商務機器人</p>",
+            "articleContent": "<p class=\"content\">經濟日報導入人工智慧爬梳數據資料，自動化產出股市資訊，並透過「聊天機器人」與使用者互動，快速回應媒體內容及客服問題。</p>\n\n<p class=\"slogan\">AI新聞 & 對話商務機器人</p>",
+            "publishDate": 1618790400000,
+            "activityStartDate": null,
+            "hasFeatureImage": true,
+            "hasArticleImage": false,
+            "hasLink": false,
+            "hasAttachment": false,
+            "hasArticleTaxonomies": true,
+            "updateDate": 1627628584000,
+            "articleTaxonomies": [
+                {
+                    "taxonomyUid": "6f6703f2-4296-4f71-a9d0-81eb14b95293",
+                    "taxonomyId": "mediaFeature",
+                    "taxonomyType": "C",
+                    "taxonomyAbbrName": "媒體發展",
+                    "taxonomyName": "媒體發展"
+                }
+            ],
+            "articleLinks": [],
+            "articleAttachments": []
+        },
+        {
+            "articleUid": "45c086b2-162b-47aa-8aa3-b9edf43c663b",
+            "articleTitle": "量身打造媒體工具",
+            "articleContentType": "P",
+            "articleAbstract": "<p class=\"content\">觀察與研究使用者情境，量身打造符合報系新聞生產節奏及流程，滿足編輯與記者需求的工具，使新聞產製更即時流暢，並有加值空間。</p>\n<p class=\"slogan\">發稿系統、CMS、資料庫</p>\n",
+            "articleContent": "<p class=\"content\">觀察與研究使用者情境，量身打造符合報系新聞生產節奏及流程，滿足編輯與記者需求的工具，使新聞產製更即時流暢，並有加值空間。</p>\n<p class=\"slogan\">發稿系統、CMS、資料庫</p>",
+            "publishDate": 1618790400000,
+            "activityStartDate": null,
+            "hasFeatureImage": true,
+            "hasArticleImage": false,
+            "hasLink": false,
+            "hasAttachment": false,
+            "hasArticleTaxonomies": true,
+            "updateDate": 1627628718000,
+            "articleTaxonomies": [
+                {
+                    "taxonomyUid": "6f6703f2-4296-4f71-a9d0-81eb14b95293",
+                    "taxonomyId": "mediaFeature",
+                    "taxonomyType": "C",
+                    "taxonomyAbbrName": "媒體發展",
+                    "taxonomyName": "媒體發展"
+                }
+            ],
+            "articleLinks": [],
+            "articleAttachments": []
+        },
+        {
+            "articleUid": "42c7313c-7b63-4b58-8a01-d8fe7fde99f4",
+            "articleTitle": "沈浸式報導新體驗",
+            "articleContentType": "P",
+            "articleAbstract": "<p class=\"content\">集結新聞、資訊工程、美術設計三大領域人才，探索創新的內容閱讀體驗，運用新科技「說故事」，產製多媒體深度報導。</p>\n\n<p class=\"slogan\">案例 | 聯合報數位版</p>\n",
+            "articleContent": "<p class=\"content\">集結新聞、資訊工程、美術設計三大領域人才，探索創新的內容閱讀體驗，運用新科技「說故事」，產製多媒體深度報導。</p>\n\n<p class=\"slogan\">案例 | 聯合報數位版</p>\n",
+            "publishDate": 1618786800000,
+            "activityStartDate": null,
+            "hasFeatureImage": true,
+            "hasArticleImage": true,
+            "hasLink": false,
+            "hasAttachment": true,
+            "hasArticleTaxonomies": true,
+            "updateDate": 1627628823000,
+            "articleTaxonomies": [
+                {
+                    "taxonomyUid": "6f6703f2-4296-4f71-a9d0-81eb14b95293",
+                    "taxonomyId": "mediaFeature",
+                    "taxonomyType": "C",
+                    "taxonomyAbbrName": "媒體發展",
+                    "taxonomyName": "媒體發展"
+                }
+            ],
+            "articleLinks": [],
+            "articleAttachments": [
+                {
+                    "attachmentUid": "713e70a1-da58-422c-b9b5-57fcad9c028e",
+                    "attachmentDisplayName": "附件1",
+                    "attachmentUrl": "/attachments/713e70a1-da58-422c-b9b5-57fcad9c028e",
+                    "attachmentFileExtension": "gif"
+                }
+            ]
+        },
+        {
+            "articleUid": "f2572b8b-0a8f-4ad5-8fe8-76cf65b0df13",
+            "articleTitle": "互動機制解構議題",
+            "articleContentType": "P",
+            "articleAbstract": "<p class=\"content\">從數據中挖掘新聞點，運用資訊圖表、地圖等視覺化方式呈現，提高新聞的視覺創意。</p>\n\n<p class=\"slogan\">案例｜新冠肺炎 全球疫情追蹤</p>\n",
+            "articleContent": "<p class=\"content\">從數據中挖掘新聞點，運用資訊圖表、地圖等視覺化方式呈現，提高新聞的視覺創意。</p>\n\n<p class=\"slogan\">案例｜新冠肺炎 全球疫情追蹤</p>\n",
+            "publishDate": 1618786800000,
+            "activityStartDate": null,
+            "hasFeatureImage": true,
+            "hasArticleImage": false,
+            "hasLink": false,
+            "hasAttachment": false,
+            "hasArticleTaxonomies": true,
+            "updateDate": 1627628942000,
+            "articleTaxonomies": [
+                {
+                    "taxonomyUid": "6f6703f2-4296-4f71-a9d0-81eb14b95293",
+                    "taxonomyId": "mediaFeature",
+                    "taxonomyType": "C",
+                    "taxonomyAbbrName": "媒體發展",
+                    "taxonomyName": "媒體發展"
+                }
+            ],
+            "articleLinks": [],
+            "articleAttachments": []
+        }
+    ],
+    "success": true
+}

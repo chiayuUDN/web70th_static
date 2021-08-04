@@ -3,9 +3,7 @@
 <div v-for="(type1TH, idx1TH) in sectionTypes.childTaxonomies" :id="type1TH.taxonomyId" :class="['large-category-article',{'bg-gray': idx1TH%2 == 0}]" :ref="type1TH.taxonomyId">
 
     <!-- 最新消息(輪播) -->
-
     <div v-if="type1TH.taxonomyId == newsCarouselBlock" class="carousel">
-
         <transition-group tag="div" class="carousel-inner" :name="carousel.transitionName">
             <a class="carousel-item" v-for="(article, idx) in sectionArticles[type1TH.taxonomyUid]"
                 :key="idx" v-show="idx === carousel.show">
@@ -25,12 +23,44 @@
     </div>
 
     <!-- 媒體發展 -->
-    <div v-else-if="type1TH.taxonomyId == specialBlock" class="container">
+    <div v-else-if="type1TH.taxonomyId == specialBlock">
         <div class="indexTitle">{{type1TH.taxonomyName}}</div>
         <div class="note">{{type1TH.desc}}</div>
-        <div v-if="media.isPhone && isMobileVersion"
-            :w3-include-html="`/template/articles/main-category/mobile/${type1TH.taxonomyId}.html`"></div>
-        <div v-else :w3-include-html="`/template/articles/main-category/desktop/${type1TH.taxonomyId}.html`"></div>
+        <div class="media-slide" v-if="!media.isPhone">
+            <div class="container media-slide-overflow">
+                <div id="media-inner" class="media-slide-inner">
+                    <div v-for="(card, idx) in mediaCard.cards" :key="idx" class="card-outer">
+                        <img src="/resources/img/img-mf-datanews-analysis.png" class="card-logo">
+                        <div class="card">
+                            <h2>{{card.articleTitle}} {{card.index}}</h2>
+                            <div class="article" :w3-include-html="returnArticle(type1TH)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a v-if="mediaCard.cards.length > 2" class="carousel-control-prev" @click="prevHandler">
+                <img src="/resources/icons/icon-leftarrow.svg" alt="prev">
+            </a>
+            <a v-if="mediaCard.cards.length > 2" class="carousel-control-next" @click="nextHandler">
+                <img src="/resources/icons/icon-rightarrow.svg" alt="prev">
+            </a>
+        </div>
+        <!-- phone -->
+        <div v-else class="media-slide-phone container">
+            <div v-for="(card, idx) in mediaCard.cards" :key="idx" class="card">
+                <div class="card-header">
+                    <img class="card-logo" src="/resources/img/img-mf-datanews-analysis.png">
+                    <h2>{{card.articleTitle}}</h2>
+                    <a class="card-option" @click="setMediaShow(card)">
+                        <img v-if="returnMediaShow(card)" class="icon-close" src="/resources/icons/icon-close.svg">
+                        <img v-else src="/resources/icons/icon-collapse.svg">
+                    </a>
+                </div>
+                <div v-show="returnMediaShow(card)" class="card-body" :w3-include-html="returnArticle(type1TH)"></div>
+            </div>
+        </div>
+        
     </div>
 
     <!-- 其他文章 -->

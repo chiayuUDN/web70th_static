@@ -1,5 +1,4 @@
 w3.includeHTML(() => {
-
     let udnHomeVue = new Vue({
         el: '#udn-home',
         data: {
@@ -23,6 +22,11 @@ w3.includeHTML(() => {
                     {src:'/resources/img/3.jpg'},
                 ]
             },
+            mediaCard: {
+                cards:[],
+                count: 1,
+            },
+            mediaShow: [],
             finish: false
         },
         created() {
@@ -34,8 +38,8 @@ w3.includeHTML(() => {
                     result.childTaxonomies.forEach(children => {
                         this.init[children.taxonomyId] = true;
 
-                        if(children.taxonomyId == this.newsCarouselBlock) {
-                            //輪播區塊
+                        if(children.taxonomyId == this.newsCarouselBlock || children.taxonomyId == this.specialBlock) {
+                            // 輪播文章, 媒體發展
                             this.init[children.taxonomyId] = false;
                             this.getTaxonomyArticlesAPI(children,'first',null)
                         }
@@ -93,7 +97,38 @@ w3.includeHTML(() => {
                         } else {console.log('error')}
                     }).catch(error => console.log(error));
 
+                } else if(item.taxonomyId == this.specialBlock){
+                    // 媒體發展
+                    udnAPI.getMedia().then(res => {
+                        let result = res.data.result;
+                        if(res.data.success) {
+                            this.mediaCard.cards = result;
+                        }
+                    }).catch(err => {console.log(err)});
                 }
+            },
+            setMediaShow(value){
+                if(this.mediaShow.includes(value.articleUid)) {
+                    var index = this.mediaShow.findIndex(item => item == value.articleUid )
+                    this.mediaShow.splice(index, 1);
+                }else {
+                    this.mediaShow.push(value.articleUid)
+                }
+            },
+            returnMediaShow(value) {
+                return this.mediaShow.includes(value.articleUid);
+            },
+            returnArticle(value){
+                // 回傳簡介或內文的文章
+                let article = "";
+                if(this.media.isPhone && this.isMobileVersion) {
+                    // mobile
+                    article = `/template/articles/main-category/mobile/${value.taxonomyId}.html`;
+                } else {
+                    // desktop
+                    article = `/template/articles/main-category/desktop/${value.taxonomyId}.html`;
+                }
+                return article;
             },
             successful(){
                 this.$nextTick(() => {
@@ -121,6 +156,44 @@ w3.includeHTML(() => {
                 this.carousel.timer = setInterval(()=>{
                     this.carousel.show ++;
                 }, 5000);
+            },
+            animateHandler(element, keyframes, option){
+                if(this.mediaCard.count == 2 && option == 'right'){
+                    this.mediaCard.cards.shift();
+                    this.mediaCard.cards.push(element);
+                } else if(this.mediaCard.count == 1 && option == 'left') {
+                    this.mediaCard.cards.unshift(element);
+                    this.mediaCard.cards.pop();
+                }
+                let x = document.getElementById('media-inner')
+                x.animate(keyframes, {
+                    easing: "ease-in-out",
+                    duration: 500,
+                    fill: 'both',
+                })
+            },
+            prevHandler(){
+                let last = this.mediaCard.cards[this.mediaCard.cards.length-1];
+    
+                this.animateHandler(last, [
+                    // keyframes
+                    { transform: 'translateX(-376px)'},
+                    { transform: 'translateX(0px)'},
+                ], 'left')
+    
+                this.mediaCard.count = 1;
+            },
+    
+            nextHandler(){
+                let first = this.mediaCard.cards[0];
+                let x = document.getElementById('media-inner')
+    
+                this.animateHandler(first, [
+                    // keyframes
+                    { transform: 'translateX(0px)'},
+                    { transform: 'translateX(-376px)' }
+                ], 'right')
+                this.mediaCard.count = 2;
             }
         },
         watch: {
